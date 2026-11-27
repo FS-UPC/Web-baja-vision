@@ -1,0 +1,418 @@
+{
+  "_nota": "Glossari inicial de termes clau (indicador I15 de la memòria). Pendent de validació per l'equip clínic i pel Servei de Llengües i Terminologia de la UPC.",
+  "index_label": {
+    "ca": "Índex alfabètic",
+    "es": "Índice alfabético",
+    "en": "Alphabetical index"
+  },
+  "terms": [
+    {
+      "term": {
+        "ca": "Agudesa visual",
+        "es": "Agudeza visual",
+        "en": "Visual acuity"
+      },
+      "def": {
+        "ca": "Capacitat de l'ull per distingir detalls petits. Es mesura amb optotips (lletres o símbols de mida decreixent) i s'expressa, per exemple, en escala decimal (1,0 és la referència habitual) o en logMAR.",
+        "es": "Capacidad del ojo para distinguir detalles pequeños. Se mide con optotipos (letras o símbolos de tamaño decreciente) y se expresa, por ejemplo, en escala decimal (1,0 es la referencia habitual) o en logMAR.",
+        "en": "The eye's ability to see fine detail. It is measured with charts of letters or symbols of decreasing size and recorded, for example, as a decimal value (1.0 is the usual reference), a Snellen fraction or logMAR."
+      }
+    },
+    {
+      "term": {
+        "ca": "Ajuda òptica",
+        "es": "Ayuda óptica",
+        "en": "Optical low vision aid"
+      },
+      "def": {
+        "ca": "Dispositiu amb lents que augmenta la mida de la imatge: lupes de mà o amb peu, lupes amb llum, ulleres d'alta addició o telescopis. Cal triar-la i aprendre a fer-la servir amb un professional.",
+        "es": "Dispositivo con lentes que aumenta el tamaño de la imagen: lupas de mano o con pie, lupas con luz, gafas de alta adición o telescopios. Hay que elegirla y aprender a usarla con un profesional.",
+        "en": "A device with lenses that makes the image larger: hand-held or stand magnifiers, illuminated magnifiers, high-addition spectacles or telescopes. It should be chosen, and its use learned, with a professional."
+      }
+    },
+    {
+      "term": {
+        "ca": "Baixa visió",
+        "es": "Baja visión",
+        "en": "Low vision"
+      },
+      "def": {
+        "ca": "Pèrdua de visió que no es pot corregir del tot amb ulleres, lents de contacte, medicació o cirurgia i que dificulta activitats quotidianes, però en què es conserva una resta visual aprofitable.",
+        "es": "Pérdida de visión que no se puede corregir del todo con gafas, lentes de contacto, medicación o cirugía y que dificulta actividades cotidianas, pero en la que se conserva un resto visual aprovechable.",
+        "en": "Vision loss that cannot be fully corrected with glasses, contact lenses, medication or surgery and that makes everyday tasks difficult, but where some useful residual vision remains."
+      }
+    },
+    {
+      "term": {
+        "ca": "Camp visual",
+        "es": "Campo visual",
+        "en": "Visual field"
+      },
+      "def": {
+        "ca": "Tota l'àrea que es veu quan l'ull mira fixament un punt, incloent-hi la visió perifèrica (la que hi ha als costats, a dalt i a baix).",
+        "es": "Toda el área que se ve cuando el ojo mira fijamente un punto, incluida la visión periférica (la que hay a los lados, arriba y abajo).",
+        "en": "The whole area you can see while looking straight at one point, including peripheral (side) vision."
+      }
+    },
+    {
+      "term": {
+        "ca": "Cocreació",
+        "es": "Cocreación",
+        "en": "Co-creation"
+      },
+      "def": {
+        "ca": "Manera de dissenyar un recurs o un servei amb la participació activa de les persones que l'utilitzaran. En aquest projecte hi participen persones amb baixa visió, professionals i entitats.",
+        "es": "Forma de diseñar un recurso o un servicio con la participación activa de las personas que lo usarán. En este proyecto participan personas con baja visión, profesionales y entidades.",
+        "en": "Designing a resource or service together with the people who will use it. In this project, people with low vision, professionals and organisations take part."
+      }
+    },
+    {
+      "term": {
+        "ca": "DMAE (degeneració macular associada a l'edat)",
+        "es": "DMAE (degeneración macular asociada a la edad)",
+        "en": "AMD (age-related macular degeneration)"
+      },
+      "def": {
+        "ca": "Malaltia de la màcula, la zona central de la retina, relacionada amb l'edat. Afecta la visió central (llegir, reconèixer cares), mentre que la visió perifèrica sol mantenir-se.",
+        "es": "Enfermedad de la mácula, la zona central de la retina, relacionada con la edad. Afecta a la visión central (leer, reconocer caras), mientras que la visión periférica suele mantenerse.",
+        "en": "An age-related disease of the macula, the central part of the retina. It affects central vision (reading, recognising faces), while peripheral vision is usually preserved."
+      }
+    },
+    {
+      "term": {
+        "ca": "Enlluernament",
+        "es": "Deslumbramiento",
+        "en": "Glare"
+      },
+      "def": {
+        "ca": "Molèstia o pèrdua de visió causada per un excés de llum o per reflexos. És molt freqüent en persones amb baixa visió i es pot reduir amb filtres, visera i una bona il·luminació.",
+        "es": "Molestia o pérdida de visión causada por un exceso de luz o por reflejos. Es muy frecuente en personas con baja visión y se puede reducir con filtros, visera y una buena iluminación.",
+        "en": "Discomfort or loss of vision caused by too much light or by reflections. It is very common in low vision and can be reduced with filters, a visor or cap, and good lighting."
+      }
+    },
+    {
+      "term": {
+        "ca": "Escotoma",
+        "es": "Escotoma",
+        "en": "Scotoma"
+      },
+      "def": {
+        "ca": "Zona del camp visual on no es veu o es veu malament, envoltada de zones on la visió es conserva. Pot ser central (per exemple, en la DMAE) o perifèric.",
+        "es": "Zona del campo visual en la que no se ve o se ve mal, rodeada de zonas donde la visión se conserva. Puede ser central (por ejemplo, en la DMAE) o periférico.",
+        "en": "An area of the visual field where vision is missing or reduced, surrounded by areas of preserved vision. It can be central (for example in AMD) or peripheral."
+      }
+    },
+    {
+      "term": {
+        "ca": "Filtre selectiu",
+        "es": "Filtro selectivo",
+        "en": "Filter lenses"
+      },
+      "def": {
+        "ca": "Lent tintada que bloqueja una part de la llum (sovint la de longitud d'ona curta) per reduir l'enlluernament i millorar la sensació de contrast.",
+        "es": "Lente tintada que bloquea una parte de la luz (a menudo la de longitud de onda corta) para reducir el deslumbramiento y mejorar la sensación de contraste.",
+        "en": "A tinted lens that blocks part of the light (often short-wavelength light) to reduce glare and improve perceived contrast."
+      }
+    },
+    {
+      "term": {
+        "ca": "Glaucoma",
+        "es": "Glaucoma",
+        "en": "Glaucoma"
+      },
+      "def": {
+        "ca": "Grup de malalties que danyen el nervi òptic, sovint associades a una pressió intraocular elevada. Sol afectar primer la visió perifèrica i, al principi, no fa símptomes; per això són importants les revisions.",
+        "es": "Grupo de enfermedades que dañan el nervio óptico, a menudo asociadas a una presión intraocular elevada. Suele afectar primero a la visión periférica y, al principio, no da síntomas; por eso son importantes las revisiones.",
+        "en": "A group of diseases that damage the optic nerve, often associated with raised eye pressure. It usually affects peripheral vision first and has no symptoms at the start, which is why regular check-ups matter."
+      }
+    },
+    {
+      "term": {
+        "ca": "Lector de pantalla",
+        "es": "Lector de pantalla",
+        "en": "Screen reader"
+      },
+      "def": {
+        "ca": "Programa que llegeix en veu alta (o mostra en braille) el contingut de la pantalla. Alguns exemples són NVDA, JAWS, VoiceOver o TalkBack.",
+        "es": "Programa que lee en voz alta (o muestra en braille) el contenido de la pantalla. Algunos ejemplos son NVDA, JAWS, VoiceOver o TalkBack.",
+        "en": "Software that reads the screen content aloud (or shows it in braille). Examples include NVDA, JAWS, VoiceOver and TalkBack."
+      }
+    },
+    {
+      "term": {
+        "ca": "Lectura fàcil",
+        "es": "Lectura fácil",
+        "en": "Easy read"
+      },
+      "def": {
+        "ca": "Manera d'escriure i de presentar textos perquè els entengui més gent: frases curtes, paraules d'ús comú i idees ordenades.",
+        "es": "Forma de escribir y presentar textos para que los entienda más gente: frases cortas, palabras de uso común e ideas ordenadas.",
+        "en": "A way of writing and presenting text so that more people can understand it: short sentences, everyday words and ideas in a clear order."
+      }
+    },
+    {
+      "term": {
+        "ca": "Lupa electrònica",
+        "es": "Lupa electrónica",
+        "en": "Electronic magnifier"
+      },
+      "def": {
+        "ca": "Dispositiu amb càmera i pantalla que amplia textos i objectes i permet canviar colors i contrast. N'hi ha de portàtils i de sobretaula (telelupes).",
+        "es": "Dispositivo con cámara y pantalla que amplía textos y objetos y permite cambiar colores y contraste. Los hay portátiles y de sobremesa (telelupas).",
+        "en": "A device with a camera and screen that enlarges text and objects and lets you change colours and contrast. There are portable and desktop models (video magnifiers or CCTVs)."
+      }
+    },
+    {
+      "term": {
+        "ca": "Magnificador de pantalla",
+        "es": "Magnificador de pantalla",
+        "en": "Screen magnifier"
+      },
+      "def": {
+        "ca": "Programa que amplia una part de la pantalla de l'ordinador o del mòbil. Els sistemes operatius n'inclouen un (Lupa de Windows, Zoom d'Apple, Ampliació d'Android) i també n'hi ha d'específics, com ZoomText.",
+        "es": "Programa que amplía una parte de la pantalla del ordenador o del móvil. Los sistemas operativos incluyen uno (Lupa de Windows, Zoom de Apple, Ampliación de Android) y también los hay específicos, como ZoomText.",
+        "en": "Software that enlarges part of a computer or phone screen. Operating systems include one (Windows Magnifier, Apple Zoom, Android Magnification) and there are dedicated products such as ZoomText."
+      }
+    },
+    {
+      "term": {
+        "ca": "Màcula",
+        "es": "Mácula",
+        "en": "Macula"
+      },
+      "def": {
+        "ca": "Zona central de la retina, responsable de la visió detallada i de bona part de la visió dels colors.",
+        "es": "Zona central de la retina, responsable de la visión detallada y de buena parte de la visión de los colores.",
+        "en": "The central part of the retina, responsible for detailed vision and much of our colour vision."
+      }
+    },
+    {
+      "term": {
+        "ca": "Rehabilitació visual",
+        "es": "Rehabilitación visual",
+        "en": "Visual rehabilitation"
+      },
+      "def": {
+        "ca": "Procés d'entrenament, guiat per professionals, per aprendre a aprofitar millor la resta visual: tècniques de lectura, visió excèntrica, ús d'ajudes i estratègies per a la vida diària.",
+        "es": "Proceso de entrenamiento, guiado por profesionales, para aprender a aprovechar mejor el resto visual: técnicas de lectura, visión excéntrica, uso de ayudas y estrategias para la vida diaria.",
+        "en": "Training, guided by professionals, to make the best use of residual vision: reading techniques, eccentric viewing, using aids and strategies for daily life."
+      }
+    },
+    {
+      "term": {
+        "ca": "Resta visual",
+        "es": "Resto visual",
+        "en": "Residual vision"
+      },
+      "def": {
+        "ca": "La visió que es conserva. Amb ajudes, bona il·luminació i entrenament es pot aprofitar molt millor.",
+        "es": "La visión que se conserva. Con ayudas, buena iluminación y entrenamiento se puede aprovechar mucho mejor.",
+        "en": "The vision a person still has. With aids, good lighting and training it can be used much more effectively."
+      }
+    },
+    {
+      "term": {
+        "ca": "Retinopatia diabètica",
+        "es": "Retinopatía diabética",
+        "en": "Diabetic retinopathy"
+      },
+      "def": {
+        "ca": "Lesió dels vasos sanguinis de la retina causada per la diabetis. Les revisions oculars periòdiques i un bon control de la diabetis ajuden a prevenir-ne la progressió.",
+        "es": "Lesión de los vasos sanguíneos de la retina causada por la diabetes. Las revisiones oculares periódicas y un buen control de la diabetes ayudan a prevenir su progresión.",
+        "en": "Damage to the blood vessels of the retina caused by diabetes. Regular eye examinations and good diabetes control help prevent it from progressing."
+      }
+    },
+    {
+      "term": {
+        "ca": "Retinosi pigmentària",
+        "es": "Retinosis pigmentaria",
+        "en": "Retinitis pigmentosa"
+      },
+      "def": {
+        "ca": "Grup de malalties hereditàries de la retina. Sovint comença amb dificultat per veure-hi de nit i una reducció progressiva del camp visual perifèric.",
+        "es": "Grupo de enfermedades hereditarias de la retina. A menudo empieza con dificultad para ver de noche y una reducción progresiva del campo visual periférico.",
+        "en": "A group of inherited retinal diseases. It often starts with difficulty seeing at night and a gradual narrowing of the peripheral visual field."
+      }
+    },
+    {
+      "term": {
+        "ca": "Sensibilitat al contrast",
+        "es": "Sensibilidad al contraste",
+        "en": "Contrast sensitivity"
+      },
+      "def": {
+        "ca": "Capacitat de distingir un objecte del seu fons quan la diferència de lluminositat és petita. És clau per a la vida diària: veure esglaons, rostres o text en paper gris.",
+        "es": "Capacidad de distinguir un objeto de su fondo cuando la diferencia de luminosidad es pequeña. Es clave en la vida diaria: ver escalones, caras o texto en papel gris.",
+        "en": "The ability to tell an object from its background when the difference in brightness is small. It matters a great deal in daily life: seeing steps, faces or text on grey paper."
+      }
+    },
+    {
+      "term": {
+        "ca": "Síndrome de Charles Bonnet",
+        "es": "Síndrome de Charles Bonnet",
+        "en": "Charles Bonnet syndrome"
+      },
+      "def": {
+        "ca": "Percepció d'imatges que no hi són (formes, patrons, persones o paisatges) en persones amb una pèrdua visual important. No és una malaltia mental: és una resposta del cervell a la manca d'informació visual. Convé comentar-ho amb el professional de referència.",
+        "es": "Percepción de imágenes que no existen (formas, patrones, personas o paisajes) en personas con una pérdida visual importante. No es una enfermedad mental: es una respuesta del cerebro a la falta de información visual. Conviene comentarlo con el profesional de referencia.",
+        "en": "Seeing things that are not there (shapes, patterns, people or landscapes) in people with significant sight loss. It is not a mental illness: it is the brain's response to missing visual input. It is worth mentioning to the eye-care professional."
+      }
+    },
+    {
+      "term": {
+        "ca": "Tècnica de guia vident",
+        "es": "Técnica guía",
+        "en": "Sighted guide technique"
+      },
+      "def": {
+        "ca": "Manera segura d'acompanyar una persona amb discapacitat visual: la persona s'agafa just per sobre del colze de qui la guia, que camina mig pas per davant i avisa dels obstacles.",
+        "es": "Forma segura de acompañar a una persona con discapacidad visual: la persona se coge justo por encima del codo de quien la guía, que camina medio paso por delante y avisa de los obstáculos.",
+        "en": "A safe way of guiding a person with sight loss: they hold your arm just above the elbow while you walk half a step ahead and point out obstacles."
+      }
+    },
+    {
+      "term": {
+        "ca": "Tiflotecnologia",
+        "es": "Tiflotecnología",
+        "en": "Assistive technology for sight loss"
+      },
+      "def": {
+        "ca": "Conjunt de tècniques, dispositius i programes adaptats perquè les persones amb discapacitat visual puguin fer servir la tecnologia: lectors i magnificadors de pantalla, línies braille, lupes electròniques, etc.",
+        "es": "Conjunto de técnicas, dispositivos y programas adaptados para que las personas con discapacidad visual puedan usar la tecnología: lectores y magnificadores de pantalla, líneas braille, lupas electrónicas, etc.",
+        "en": "Techniques, devices and software that make technology usable for people with sight loss: screen readers and magnifiers, braille displays, electronic magnifiers and so on (known in Spanish and Catalan as 'tiflotecnología')."
+      }
+    },
+    {
+      "term": {
+        "ca": "Visió excèntrica",
+        "es": "Visión excéntrica",
+        "en": "Eccentric viewing"
+      },
+      "def": {
+        "ca": "Tècnica que consisteix a mirar lleugerament de costat per fer servir una zona sana de la retina, fora de la part central danyada. S'aprèn en rehabilitació visual.",
+        "es": "Técnica que consiste en mirar ligeramente de lado para usar una zona sana de la retina, fuera de la parte central dañada. Se aprende en rehabilitación visual.",
+        "en": "A technique of looking slightly to one side so that a healthy area of the retina, outside the damaged centre, is used. It is learned in visual rehabilitation."
+      }
+    },
+    {
+      "term": {
+        "ca": "WCAG",
+        "es": "WCAG",
+        "en": "WCAG"
+      },
+      "def": {
+        "ca": "Pautes d'accessibilitat per al contingut web del W3C. Defineixen com fer webs que puguin utilitzar totes les persones, incloses les que tenen discapacitat visual o auditiva.",
+        "es": "Pautas de accesibilidad para el contenido web del W3C. Definen cómo hacer webs que puedan usar todas las personas, incluidas las que tienen discapacidad visual o auditiva.",
+        "en": "The W3C Web Content Accessibility Guidelines. They define how to make websites usable by everyone, including people with visual or hearing impairments."
+      }
+    },
+    {
+      "term": {
+        "ca": "Ceguesa legal",
+        "es": "Ceguera legal",
+        "en": "Legal blindness"
+      },
+      "def": {
+        "ca": "Situació en què la visió està per sota d'uns límits fixats per la llei o per una entitat (a l'ONCE, agudesa visual igual o inferior a 0,1 o camp visual igual o inferior a 10 graus en el millor ull i amb correcció). Moltes persones amb ceguesa legal conserven una mica de visió.",
+        "es": "Situación en la que la visión está por debajo de unos límites fijados por la ley o por una entidad (en la ONCE, agudeza visual igual o inferior a 0,1 o campo visual igual o inferior a 10 grados en el mejor ojo y con corrección). Muchas personas con ceguera legal conservan algo de visión.",
+        "en": "When vision is below limits set by law or by an organisation (for ONCE membership in Spain, visual acuity of 0.1 or less, or a visual field of 10 degrees or less, in the better eye with correction). Many legally blind people still have some sight."
+      }
+    },
+    {
+      "term": {
+        "ca": "Línia braille",
+        "es": "Línea braille",
+        "en": "Braille display"
+      },
+      "def": {
+        "ca": "Aparell que es connecta a l'ordinador o al mòbil i mostra el text de la pantalla en braille, amb punts que pugen i baixen. El fan servir sobretot persones amb ceguesa o molt poca visió.",
+        "es": "Aparato que se conecta al ordenador o al móvil y muestra el texto de la pantalla en braille, con puntos que suben y bajan. Lo usan sobre todo personas con ceguera o muy poca visión.",
+        "en": "A device connected to a computer or phone that shows on-screen text in braille, using pins that move up and down. Used mainly by people who are blind or have very little sight."
+      }
+    },
+    {
+      "term": {
+        "ca": "Fotofòbia",
+        "es": "Fotofobia",
+        "en": "Photophobia (light sensitivity)"
+      },
+      "def": {
+        "ca": "Molèstia o dolor davant la llum, que fa difícil veure-hi amb llum intensa. Els filtres selectius, les viseres i el mode fosc de les pantalles poden ajudar.",
+        "es": "Molestia o dolor ante la luz, que dificulta ver con luz intensa. Los filtros selectivos, las viseras y el modo oscuro de las pantallas pueden ayudar.",
+        "en": "Discomfort or pain caused by light, making it hard to see in bright conditions. Selective filters, peaked caps and dark mode on screens can help."
+      }
+    },
+    {
+      "term": {
+        "ca": "Bastó blanc",
+        "es": "Bastón blanco",
+        "en": "White cane"
+      },
+      "def": {
+        "ca": "Bastó que fan servir les persones amb discapacitat visual per detectar obstacles i perquè els altres sàpiguen que hi veuen poc. Moltes persones amb baixa visió el fan servir només en alguns moments, per exemple de nit.",
+        "es": "Bastón que usan las personas con discapacidad visual para detectar obstáculos y para que los demás sepan que ven poco. Muchas personas con baja visión lo usan solo en algunos momentos, por ejemplo de noche.",
+        "en": "A cane used by people with visual impairment to detect obstacles and to let others know they see poorly. Many people with low vision use it only at certain times, for example at night."
+      }
+    },
+    {
+      "term": {
+        "ca": "Malaltia minoritària",
+        "es": "Enfermedad minoritaria",
+        "en": "Rare disease"
+      },
+      "def": {
+        "ca": "Malaltia que afecta poques persones (a Europa, menys de 5 de cada 10.000). Moltes malalties hereditàries de la retina i del nervi òptic ho són.",
+        "es": "Enfermedad que afecta a pocas personas (en Europa, menos de 5 de cada 10.000). Muchas enfermedades hereditarias de la retina y del nervio óptico lo son.",
+        "en": "A disease that affects few people (in Europe, fewer than 5 in 10,000). Many inherited diseases of the retina and optic nerve are rare diseases."
+      }
+    },
+    {
+      "term": {
+        "ca": "Neuropatia òptica hereditària de Leber",
+        "es": "Neuropatía óptica hereditaria de Leber",
+        "en": "Leber hereditary optic neuropathy (LHON)"
+      },
+      "def": {
+        "ca": "Malaltia hereditària minoritària que danya el nervi òptic i provoca una pèrdua ràpida de la visió central, sovint en persones joves. La visió perifèrica sol conservar-se en part.",
+        "es": "Enfermedad hereditaria minoritaria que daña el nervio óptico y provoca una pérdida rápida de la visión central, a menudo en personas jóvenes. La visión periférica suele conservarse en parte.",
+        "en": "A rare inherited disease that damages the optic nerve and causes rapid loss of central vision, often in young people. Side vision is usually partly preserved."
+      }
+    },
+    {
+      "term": {
+        "ca": "Miopia magna",
+        "es": "Miopía magna",
+        "en": "High (pathological) myopia"
+      },
+      "def": {
+        "ca": "Miopia molt alta (normalment de més de 6 diòptries) que pot anar acompanyada de lesions a la retina i a la màcula, despreniment de retina o glaucoma.",
+        "es": "Miopía muy alta (normalmente de más de 6 dioptrías) que puede ir acompañada de lesiones en la retina y la mácula, desprendimiento de retina o glaucoma.",
+        "en": "Very high short-sightedness (usually over 6 dioptres) that may be accompanied by damage to the retina and macula, retinal detachment or glaucoma."
+      }
+    },
+    {
+      "term": {
+        "ca": "Lent intraocular",
+        "es": "Lente intraocular",
+        "en": "Intraocular lens"
+      },
+      "def": {
+        "ca": "Lent artificial que es col·loca dins de l'ull, normalment en l'operació de cataracta, per substituir el cristal·lí.",
+        "es": "Lente artificial que se coloca dentro del ojo, normalmente en la operación de catarata, para sustituir el cristalino.",
+        "en": "An artificial lens placed inside the eye, usually during cataract surgery, to replace the natural lens."
+      }
+    },
+    {
+      "term": {
+        "ca": "Visió perifèrica",
+        "es": "Visión periférica",
+        "en": "Peripheral vision"
+      },
+      "def": {
+        "ca": "La part de la visió que veu els costats, a dalt i a baix mentre mirem al davant. És clau per moure's sense ensopegar. Es perd, per exemple, en el glaucoma avançat i la retinosi pigmentària.",
+        "es": "La parte de la visión que ve los lados, arriba y abajo mientras miramos al frente. Es clave para moverse sin tropezar. Se pierde, por ejemplo, en el glaucoma avanzado y la retinosis pigmentaria.",
+        "en": "The part of vision that sees to the sides, above and below while looking straight ahead. It is key to moving around without tripping. It is lost, for example, in advanced glaucoma and retinitis pigmentosa."
+      }
+    }
+  ]
+}

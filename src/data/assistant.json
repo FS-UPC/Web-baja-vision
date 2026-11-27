@@ -1,0 +1,1603 @@
+{
+ "_nota": "Regles de l'assistent de recursos (informe V2, 4.2). Totes les frases de resposta estan redactades per l'equip; l'assistent no genera text. route = enllaços per defecte (clau de pàgina#ancoratge) quan la cerca no troba prou resultats.",
+ "ca": {
+  "title": "Assistent de recursos",
+  "intro": "Escriu o dicta què et passa o què busques. Et portem als continguts validats d'aquesta web que et poden ajudar.",
+  "profile_legend": "Soc…",
+  "label": "La teva pregunta",
+  "mic": "Dicta",
+  "mic_listening": "T'escolto… (prem per aturar)",
+  "submit": "Cerca",
+  "hint": "Per exemple: «M'han posat una vàlvula de glaucoma i veig amb poc contrast». No escriguis dades personals.",
+  "examples_label": "També pots provar:",
+  "examples": [
+   "Acabo de saber que tinc retinosi pigmentària",
+   "Em molesta molt la llum",
+   "El meu pare té DMAE, com el puc ajudar?",
+   "Quines apps llegeixen textos?",
+   "Com derivo un pacient a baixa visió?"
+  ],
+  "noscript": "L'assistent necessita JavaScript. Pots navegar pels tres espais des del menú principal.",
+  "empty": "Escriu una pregunta o tria un dels exemples.",
+  "answer_title": "Et pot ajudar",
+  "route_label": "Entenem que:",
+  "route_change": "Si no és així, canvia l'opció «Soc…».",
+  "no_results": "No hem trobat cap contingut que encaixi prou bé. No volem donar-te una resposta inventada: prova d'explicar-ho amb altres paraules o mira on demanar ajuda.",
+  "closing": "Totes les respostes surten de continguts revisats d'aquesta web. No substitueixen la consulta amb un professional.",
+  "urgent_keywords": [
+   "de cop",
+   "sobtada",
+   "sobtadament",
+   "de sobte",
+   "de cop i volta",
+   "llampecs",
+   "cortina",
+   "dolor fort",
+   "molt de dolor",
+   "ull vermell",
+   "nàusees"
+  ],
+  "urgent_title": "Atenció:",
+  "urgent_text": "si la pèrdua de visió és sobtada, veus llampecs o una ombra com una cortina, o tens dolor fort a l'ull, ves a urgències o truca al 112.",
+  "urgent_link": "Signes d'alerta",
+  "urgent_target": "pat_diagnosis#urgencies",
+  "stopwords": [
+   "el",
+   "la",
+   "els",
+   "les",
+   "un",
+   "una",
+   "uns",
+   "unes",
+   "de",
+   "del",
+   "dels",
+   "i",
+   "o",
+   "a",
+   "al",
+   "als",
+   "en",
+   "amb",
+   "per",
+   "que",
+   "què",
+   "com",
+   "on",
+   "em",
+   "et",
+   "es",
+   "se",
+   "ens",
+   "us",
+   "hi",
+   "ho",
+   "li",
+   "ja",
+   "no",
+   "sí",
+   "molt",
+   "més",
+   "meu",
+   "meva",
+   "teu",
+   "teva",
+   "seu",
+   "seva",
+   "tinc",
+   "tens",
+   "té",
+   "fer",
+   "puc",
+   "pot",
+   "estic",
+   "sé",
+   "saber",
+   "hola",
+   "voldria",
+   "vull",
+   "sobre",
+   "quan",
+   "quin",
+   "quina",
+   "quins",
+   "quines",
+   "mica",
+   "poc",
+   "aquest",
+   "aquesta",
+   "sóc",
+   "soc",
+   "acabo",
+   "m'han",
+   "han"
+  ],
+  "synonyms": {
+   "glaucoma": [
+    "vàlvula",
+    "tensió ocular",
+    "pressió ocular",
+    "nervi òptic"
+   ],
+   "contrast": [
+    "filtre",
+    "enlluernament",
+    "llum"
+   ],
+   "llum": [
+    "il·luminació",
+    "fotofòbia",
+    "enlluernament",
+    "filtres"
+   ],
+   "dmae": [
+    "màcula",
+    "macular",
+    "degeneració macular"
+   ],
+   "llegir": [
+    "lupa",
+    "lectura",
+    "lletra",
+    "text"
+   ],
+   "app": [
+    "aplicació",
+    "mòbil",
+    "intel·ligència artificial",
+    "tecnologia"
+   ],
+   "psicòleg": [
+    "psicologia",
+    "emocional",
+    "tristesa",
+    "ansietat",
+    "suport"
+   ],
+   "bastó": [
+    "bastó blanc",
+    "mobilitat"
+   ],
+   "escola": [
+    "institut",
+    "alumne",
+    "docent",
+    "educació"
+   ],
+   "derivar": [
+    "derivació",
+    "mapa",
+    "protocol"
+   ],
+   "pdf": [
+    "generador",
+    "qr",
+    "caselles"
+   ],
+   "retinosi": [
+    "retinosi pigmentària",
+    "distròfia",
+    "hereditària",
+    "genètica"
+   ],
+   "leber": [
+    "nervi òptic",
+    "neuropatia",
+    "minoritària"
+   ],
+   "trasplantament": [
+    "còrnia",
+    "cirurgia"
+   ],
+   "casa": [
+    "llar",
+    "il·luminació",
+    "ordre",
+    "cuina"
+   ]
+  },
+  "profiles": {
+   "auto": {
+    "label": "Detecta-ho automàticament"
+   },
+   "patient": {
+    "label": "Pacient",
+    "area": "pat",
+    "intro": "Aquests continguts et poden orientar. Pots anar al teu ritme: no cal llegir-ho tot avui.",
+    "keywords": [
+     "tinc",
+     "em passa",
+     "veig",
+     "hi veig",
+     "m'han diagnosticat",
+     "el meu ull"
+    ],
+    "route": [
+     "pat_diagnosis#primers-passos",
+     "pat_aids#principis",
+     "pat_support#directori"
+    ],
+    "needs": {
+     "new": {
+      "label": "Acabes de rebre el diagnòstic",
+      "keywords": [
+       "acabo",
+       "diagnòstic",
+       "m'han dit",
+       "m'han diagnosticat",
+       "acabo de saber",
+       "nou",
+       "recent",
+       "primer",
+       "primers passos",
+       "què faig",
+       "ara què"
+      ],
+      "intro": "Rebre un diagnòstic així és dur, i és normal tenir moltes preguntes. Comença pels primers passos; no estàs sol ni sola.",
+      "pages": [
+       "pat_diagnosis",
+       "glossary",
+       "pat_support"
+      ],
+      "route": [
+       "pat_diagnosis#primers-passos",
+       "pat_support#psicologia",
+       "glossary"
+      ]
+     },
+     "condition": {
+      "label": "Vols entendre una patologia o un símptoma",
+      "keywords": [
+       "glaucoma",
+       "dmae",
+       "retinosi",
+       "retinopatia",
+       "miopia",
+       "leber",
+       "stargardt",
+       "còrnia",
+       "trasplantament",
+       "cataracta",
+       "vàlvula",
+       "macular",
+       "nervi",
+       "no veig el centre",
+       "els costats",
+       "borrós",
+       "taques",
+       "contrast",
+       "patologia",
+       "malaltia",
+       "símptoma"
+      ],
+      "intro": "Entendre què et passa ajuda a explicar-ho i a triar les ajudes adequades. Aquí tens el més rellevant per al teu cas.",
+      "pages": [
+       "pat_conditions",
+       "pat_stories"
+      ],
+      "route": [
+       "pat_conditions#per-tipus",
+       "pat_stories#testimonis",
+       "pat_support#professionals-baixa-visio"
+      ]
+     },
+     "practical": {
+      "label": "Busques solucions pràctiques",
+      "keywords": [
+       "lupa",
+       "filtre",
+       "filtres",
+       "ajuda",
+       "ajudes",
+       "app",
+       "apps",
+       "aplicació",
+       "mòbil",
+       "llegir",
+       "ordinador",
+       "lector de pantalla",
+       "braille",
+       "on anar",
+       "centre",
+       "psicòleg",
+       "associació",
+       "llum",
+       "enlluerna",
+       "fotofòbia"
+      ],
+      "intro": "Hi ha solucions que poden fer el dia a dia més fàcil. La millor és la que s'adapta a la teva visió i al que vols fer.",
+      "pages": [
+       "pat_aids",
+       "pat_support",
+       "fam_home"
+      ],
+      "route": [
+       "pat_aids#filtres",
+       "pat_aids#apps",
+       "pat_support#directori"
+      ]
+     }
+    }
+   },
+   "family": {
+    "label": "Familiar o persona interessada",
+    "area": "fam",
+    "intro": "Gràcies per voler entendre i acompanyar. Aquests continguts són un bon punt de partida.",
+    "keywords": [
+     "el meu pare",
+     "la meva mare",
+     "el meu fill",
+     "la meva filla",
+     "la meva parella",
+     "el meu avi",
+     "la meva àvia",
+     "familiar",
+     "família",
+     "el meu germà",
+     "la meva germana",
+     "amic",
+     "amiga",
+     "alumne",
+     "alumna",
+     "acompanyar",
+     "ajudar-lo",
+     "ajudar-la",
+     "cuidar"
+    ],
+    "route": [
+     "fam_understand#simulador",
+     "fam_guide#principis",
+     "fam_home#llum"
+    ],
+    "needs": {
+     "understand": {
+      "label": "Vols entendre com hi veu",
+      "keywords": [
+       "com hi veu",
+       "entendre",
+       "comprendre",
+       "simulació",
+       "simulador",
+       "no em reconeix",
+       "bastó",
+       "despistat",
+       "despistada"
+      ],
+      "intro": "Entendre com hi veu l'altra persona evita malentesos. El simulador i aquestes explicacions t'ajudaran.",
+      "pages": [
+       "fam_understand"
+      ],
+      "route": [
+       "fam_understand#simulador",
+       "fam_understand#visio-mixta",
+       "fam_guide#principis"
+      ]
+     },
+     "guide": {
+      "label": "Vols acompanyar i guiar",
+      "keywords": [
+       "guiar",
+       "acompanyar",
+       "carrer",
+       "braç",
+       "escales",
+       "esglaons",
+       "ajudar",
+       "sobreprotegir",
+       "cuidar"
+      ],
+      "intro": "Ajudar bé vol dir preguntar i respectar l'autonomia. Aquestes guies breus també es poden escoltar.",
+      "pages": [
+       "fam_guide"
+      ],
+      "route": [
+       "fam_guide#guia-vident",
+       "fam_guide#sobreproteccio",
+       "fam_guide#cuidar-se"
+      ]
+     },
+     "home": {
+      "label": "Vols adaptar la casa",
+      "keywords": [
+       "casa",
+       "llar",
+       "llum",
+       "il·luminació",
+       "cuina",
+       "bany",
+       "caigudes",
+       "ordre",
+       "contrast"
+      ],
+      "intro": "Petits canvis a casa poden fer una gran diferència. Fes-los junts amb la persona.",
+      "pages": [
+       "fam_home"
+      ],
+      "route": [
+       "fam_home#llum",
+       "fam_home#consells",
+       "fam_home#ordre"
+      ]
+     },
+     "school": {
+      "label": "Escola i societat",
+      "keywords": [
+       "escola",
+       "institut",
+       "alumne",
+       "alumna",
+       "docent",
+       "professor",
+       "classe",
+       "feina",
+       "sensibilització"
+      ],
+      "intro": "La inclusió també depèn de l'entorn. Aquí trobaràs recursos per a escoles i per a la societat.",
+      "pages": [
+       "fam_society"
+      ],
+      "route": [
+       "fam_society#escoles",
+       "fam_society#basto",
+       "fam_society#inclusio"
+      ]
+     }
+    }
+   },
+   "pro": {
+    "label": "Professional",
+    "area": "pro",
+    "intro": "Recursos per a la consulta i per coordinar-se amb altres serveis.",
+    "keywords": [
+     "pacient",
+     "pacients",
+     "consulta",
+     "derivar",
+     "derivació",
+     "oftalmòleg",
+     "oftalmòloga",
+     "optometrista",
+     "metge",
+     "metgessa",
+     "cap",
+     "atenció primària",
+     "treball social",
+     "professional"
+    ],
+    "route": [
+     "pro_referral#mapa",
+     "pro_generator#generador",
+     "pro_training#avaluacio"
+    ],
+    "needs": {
+     "referral": {
+      "label": "Derivació i comunicació",
+      "keywords": [
+       "derivar",
+       "derivació",
+       "protocol",
+       "on envio",
+       "mala notícia",
+       "comunicar",
+       "urgència",
+       "criteris"
+      ],
+      "intro": "Una derivació a temps escurça el buit després del diagnòstic. Aquí tens el mapa i els criteris.",
+      "pages": [
+       "pro_referral"
+      ],
+      "route": [
+       "pro_referral#mapa",
+       "pro_referral#mala-noticia",
+       "pro_generator#generador"
+      ]
+     },
+     "generator": {
+      "label": "Recursos per lliurar al pacient",
+      "keywords": [
+       "pdf",
+       "qr",
+       "imprimir",
+       "lliurar",
+       "fitxa",
+       "material",
+       "recursos",
+       "caselles"
+      ],
+      "intro": "Amb el generador prepares en un minut un PDF accessible amb codi QR per al pacient.",
+      "pages": [
+       "pro_generator"
+      ],
+      "route": [
+       "pro_generator#generador",
+       "pro_referral#mapa",
+       "pro_training#comunicacio"
+      ]
+     },
+     "training": {
+      "label": "Formació",
+      "keywords": [
+       "formació",
+       "curs",
+       "bibliografia",
+       "avaluació",
+       "classificació",
+       "kestenbaum",
+       "pelli",
+       "expert"
+      ],
+      "intro": "Aquí tens coneixement de base i recursos per continuar formant-te.",
+      "pages": [
+       "pro_training"
+      ],
+      "route": [
+       "pro_training#avaluacio",
+       "pro_training#bibliografia",
+       "pro_training#experts"
+      ]
+     }
+    }
+   }
+  }
+ },
+ "es": {
+  "title": "Asistente de recursos",
+  "intro": "Escribe o dicta qué te pasa o qué buscas. Te llevamos a los contenidos validados de esta web que te pueden ayudar.",
+  "profile_legend": "Soy…",
+  "label": "Tu pregunta",
+  "mic": "Dictar",
+  "mic_listening": "Te escucho… (pulsa para detener)",
+  "submit": "Buscar",
+  "hint": "Por ejemplo: «Me han puesto una válvula de glaucoma y veo con poco contraste». No escribas datos personales.",
+  "examples_label": "También puedes probar:",
+  "examples": [
+   "Acabo de saber que tengo retinosis pigmentaria",
+   "Me molesta mucho la luz",
+   "Mi padre tiene DMAE, ¿cómo le puedo ayudar?",
+   "¿Qué apps leen textos?",
+   "¿Cómo derivo a un paciente a baja visión?"
+  ],
+  "noscript": "El asistente necesita JavaScript. Puedes navegar por los tres espacios desde el menú principal.",
+  "empty": "Escribe una pregunta o elige uno de los ejemplos.",
+  "answer_title": "Te puede ayudar",
+  "route_label": "Entendemos que:",
+  "route_change": "Si no es así, cambia la opción «Soy…».",
+  "no_results": "No hemos encontrado ningún contenido que encaje lo suficiente. No queremos darte una respuesta inventada: prueba a explicarlo con otras palabras o mira dónde pedir ayuda.",
+  "closing": "Todas las respuestas salen de contenidos revisados de esta web. No sustituyen la consulta con un profesional.",
+  "urgent_keywords": [
+   "de golpe",
+   "repentina",
+   "repentinamente",
+   "de repente",
+   "destellos",
+   "cortina",
+   "dolor fuerte",
+   "mucho dolor",
+   "ojo rojo",
+   "náuseas"
+  ],
+  "urgent_title": "Atención:",
+  "urgent_text": "si la pérdida de visión es repentina, ves destellos o una sombra como una cortina, o tienes dolor fuerte en el ojo, ve a urgencias o llama al 112.",
+  "urgent_link": "Señales de alerta",
+  "urgent_target": "pat_diagnosis#urgencies",
+  "stopwords": [
+   "el",
+   "la",
+   "los",
+   "las",
+   "un",
+   "una",
+   "unos",
+   "unas",
+   "de",
+   "del",
+   "y",
+   "o",
+   "a",
+   "al",
+   "en",
+   "con",
+   "por",
+   "para",
+   "que",
+   "qué",
+   "como",
+   "cómo",
+   "donde",
+   "dónde",
+   "me",
+   "te",
+   "se",
+   "nos",
+   "os",
+   "le",
+   "lo",
+   "ya",
+   "no",
+   "sí",
+   "muy",
+   "más",
+   "mi",
+   "mis",
+   "tu",
+   "tus",
+   "su",
+   "sus",
+   "tengo",
+   "tienes",
+   "tiene",
+   "hacer",
+   "puedo",
+   "puede",
+   "estoy",
+   "sé",
+   "saber",
+   "hola",
+   "quisiera",
+   "quiero",
+   "sobre",
+   "cuando",
+   "cuál",
+   "cuáles",
+   "poco",
+   "este",
+   "esta",
+   "soy",
+   "acabo",
+   "han"
+  ],
+  "synonyms": {
+   "glaucoma": [
+    "válvula",
+    "tensión ocular",
+    "presión ocular",
+    "nervio óptico"
+   ],
+   "contraste": [
+    "filtro",
+    "deslumbramiento",
+    "luz"
+   ],
+   "luz": [
+    "iluminación",
+    "fotofobia",
+    "deslumbramiento",
+    "filtros"
+   ],
+   "dmae": [
+    "mácula",
+    "macular",
+    "degeneración macular"
+   ],
+   "leer": [
+    "lupa",
+    "lectura",
+    "letra",
+    "texto"
+   ],
+   "app": [
+    "aplicación",
+    "móvil",
+    "inteligencia artificial",
+    "tecnología"
+   ],
+   "psicólogo": [
+    "psicología",
+    "emocional",
+    "tristeza",
+    "ansiedad",
+    "apoyo"
+   ],
+   "bastón": [
+    "bastón blanco",
+    "movilidad"
+   ],
+   "escuela": [
+    "instituto",
+    "alumno",
+    "docente",
+    "educación",
+    "colegio"
+   ],
+   "derivar": [
+    "derivación",
+    "mapa",
+    "protocolo"
+   ],
+   "pdf": [
+    "generador",
+    "qr",
+    "casillas"
+   ],
+   "retinosis": [
+    "retinosis pigmentaria",
+    "distrofia",
+    "hereditaria",
+    "genética"
+   ],
+   "leber": [
+    "nervio óptico",
+    "neuropatía",
+    "minoritaria"
+   ],
+   "trasplante": [
+    "córnea",
+    "cirugía"
+   ],
+   "casa": [
+    "hogar",
+    "iluminación",
+    "orden",
+    "cocina"
+   ]
+  },
+  "profiles": {
+   "auto": {
+    "label": "Detectarlo automáticamente"
+   },
+   "patient": {
+    "label": "Paciente",
+    "area": "pat",
+    "intro": "Estos contenidos te pueden orientar. Puedes ir a tu ritmo: no hace falta leerlo todo hoy.",
+    "keywords": [
+     "tengo",
+     "me pasa",
+     "veo",
+     "me han diagnosticado",
+     "mi ojo"
+    ],
+    "route": [
+     "pat_diagnosis#primers-passos",
+     "pat_aids#principis",
+     "pat_support#directori"
+    ],
+    "needs": {
+     "new": {
+      "label": "Acabas de recibir el diagnóstico",
+      "keywords": [
+       "acabo",
+       "diagnóstico",
+       "me han dicho",
+       "me han diagnosticado",
+       "acabo de saber",
+       "nuevo",
+       "reciente",
+       "primeros pasos",
+       "qué hago",
+       "y ahora"
+      ],
+      "intro": "Recibir un diagnóstico así es duro, y es normal tener muchas preguntas. Empieza por los primeros pasos; no estás solo ni sola.",
+      "pages": [
+       "pat_diagnosis",
+       "glossary",
+       "pat_support"
+      ],
+      "route": [
+       "pat_diagnosis#primers-passos",
+       "pat_support#psicologia",
+       "glossary"
+      ]
+     },
+     "condition": {
+      "label": "Quieres entender una patología o un síntoma",
+      "keywords": [
+       "glaucoma",
+       "dmae",
+       "retinosis",
+       "retinopatía",
+       "miopía",
+       "leber",
+       "stargardt",
+       "córnea",
+       "trasplante",
+       "catarata",
+       "válvula",
+       "macular",
+       "nervio",
+       "no veo el centro",
+       "los lados",
+       "borroso",
+       "manchas",
+       "contraste",
+       "patología",
+       "enfermedad",
+       "síntoma"
+      ],
+      "intro": "Entender qué te pasa ayuda a explicarlo y a elegir las ayudas adecuadas. Aquí tienes lo más relevante para tu caso.",
+      "pages": [
+       "pat_conditions",
+       "pat_stories"
+      ],
+      "route": [
+       "pat_conditions#per-tipus",
+       "pat_stories#testimonis",
+       "pat_support#professionals-baixa-visio"
+      ]
+     },
+     "practical": {
+      "label": "Buscas soluciones prácticas",
+      "keywords": [
+       "lupa",
+       "filtro",
+       "filtros",
+       "ayuda",
+       "ayudas",
+       "app",
+       "apps",
+       "aplicación",
+       "móvil",
+       "leer",
+       "ordenador",
+       "lector de pantalla",
+       "braille",
+       "dónde ir",
+       "centro",
+       "psicólogo",
+       "asociación",
+       "luz",
+       "deslumbra",
+       "fotofobia"
+      ],
+      "intro": "Hay soluciones que pueden hacer el día a día más fácil. La mejor es la que se adapta a tu visión y a lo que quieres hacer.",
+      "pages": [
+       "pat_aids",
+       "pat_support",
+       "fam_home"
+      ],
+      "route": [
+       "pat_aids#filtres",
+       "pat_aids#apps",
+       "pat_support#directori"
+      ]
+     }
+    }
+   },
+   "family": {
+    "label": "Familiar o persona interesada",
+    "area": "fam",
+    "intro": "Gracias por querer entender y acompañar. Estos contenidos son un buen punto de partida.",
+    "keywords": [
+     "mi padre",
+     "mi madre",
+     "mi hijo",
+     "mi hija",
+     "mi pareja",
+     "mi abuelo",
+     "mi abuela",
+     "familiar",
+     "familia",
+     "mi hermano",
+     "mi hermana",
+     "amigo",
+     "amiga",
+     "alumno",
+     "alumna",
+     "acompañar",
+     "ayudarle",
+     "cuidar"
+    ],
+    "route": [
+     "fam_understand#simulador",
+     "fam_guide#principis",
+     "fam_home#llum"
+    ],
+    "needs": {
+     "understand": {
+      "label": "Quieres entender cómo ve",
+      "keywords": [
+       "cómo ve",
+       "entender",
+       "comprender",
+       "simulación",
+       "simulador",
+       "no me reconoce",
+       "bastón",
+       "despistado",
+       "despistada"
+      ],
+      "intro": "Entender cómo ve la otra persona evita malentendidos. El simulador y estas explicaciones te ayudarán.",
+      "pages": [
+       "fam_understand"
+      ],
+      "route": [
+       "fam_understand#simulador",
+       "fam_understand#visio-mixta",
+       "fam_guide#principis"
+      ]
+     },
+     "guide": {
+      "label": "Quieres acompañar y guiar",
+      "keywords": [
+       "guiar",
+       "acompañar",
+       "calle",
+       "brazo",
+       "escaleras",
+       "escalones",
+       "ayudar",
+       "sobreproteger",
+       "cuidar"
+      ],
+      "intro": "Ayudar bien significa preguntar y respetar la autonomía. Estas guías breves también se pueden escuchar.",
+      "pages": [
+       "fam_guide"
+      ],
+      "route": [
+       "fam_guide#guia-vident",
+       "fam_guide#sobreproteccio",
+       "fam_guide#cuidar-se"
+      ]
+     },
+     "home": {
+      "label": "Quieres adaptar la casa",
+      "keywords": [
+       "casa",
+       "hogar",
+       "luz",
+       "iluminación",
+       "cocina",
+       "baño",
+       "caídas",
+       "orden",
+       "contraste"
+      ],
+      "intro": "Pequeños cambios en casa pueden marcar una gran diferencia. Hazlos junto con la persona.",
+      "pages": [
+       "fam_home"
+      ],
+      "route": [
+       "fam_home#llum",
+       "fam_home#consells",
+       "fam_home#ordre"
+      ]
+     },
+     "school": {
+      "label": "Escuela y sociedad",
+      "keywords": [
+       "escuela",
+       "colegio",
+       "instituto",
+       "alumno",
+       "alumna",
+       "docente",
+       "profesor",
+       "clase",
+       "trabajo",
+       "sensibilización"
+      ],
+      "intro": "La inclusión también depende del entorno. Aquí encontrarás recursos para escuelas y para la sociedad.",
+      "pages": [
+       "fam_society"
+      ],
+      "route": [
+       "fam_society#escoles",
+       "fam_society#basto",
+       "fam_society#inclusio"
+      ]
+     }
+    }
+   },
+   "pro": {
+    "label": "Profesional",
+    "area": "pro",
+    "intro": "Recursos para la consulta y para coordinarse con otros servicios.",
+    "keywords": [
+     "paciente",
+     "pacientes",
+     "consulta",
+     "derivar",
+     "derivación",
+     "oftalmólogo",
+     "oftalmóloga",
+     "optometrista",
+     "médico",
+     "médica",
+     "cap",
+     "atención primaria",
+     "trabajo social",
+     "profesional"
+    ],
+    "route": [
+     "pro_referral#mapa",
+     "pro_generator#generador",
+     "pro_training#avaluacio"
+    ],
+    "needs": {
+     "referral": {
+      "label": "Derivación y comunicación",
+      "keywords": [
+       "derivar",
+       "derivación",
+       "protocolo",
+       "dónde envío",
+       "mala noticia",
+       "comunicar",
+       "urgencia",
+       "criterios"
+      ],
+      "intro": "Una derivación a tiempo acorta el vacío tras el diagnóstico. Aquí tienes el mapa y los criterios.",
+      "pages": [
+       "pro_referral"
+      ],
+      "route": [
+       "pro_referral#mapa",
+       "pro_referral#mala-noticia",
+       "pro_generator#generador"
+      ]
+     },
+     "generator": {
+      "label": "Recursos para entregar al paciente",
+      "keywords": [
+       "pdf",
+       "qr",
+       "imprimir",
+       "entregar",
+       "ficha",
+       "material",
+       "recursos",
+       "casillas"
+      ],
+      "intro": "Con el generador preparas en un minuto un PDF accesible con código QR para el paciente.",
+      "pages": [
+       "pro_generator"
+      ],
+      "route": [
+       "pro_generator#generador",
+       "pro_referral#mapa",
+       "pro_training#comunicacio"
+      ]
+     },
+     "training": {
+      "label": "Formación",
+      "keywords": [
+       "formación",
+       "curso",
+       "bibliografía",
+       "evaluación",
+       "clasificación",
+       "kestenbaum",
+       "pelli",
+       "experto"
+      ],
+      "intro": "Aquí tienes conocimiento de base y recursos para seguir formándote.",
+      "pages": [
+       "pro_training"
+      ],
+      "route": [
+       "pro_training#avaluacio",
+       "pro_training#bibliografia",
+       "pro_training#experts"
+      ]
+     }
+    }
+   }
+  }
+ },
+ "en": {
+  "title": "Resource assistant",
+  "intro": "Type or dictate what is happening or what you are looking for. We will take you to the validated content on this website that can help.",
+  "profile_legend": "I am…",
+  "label": "Your question",
+  "mic": "Dictate",
+  "mic_listening": "Listening… (press to stop)",
+  "submit": "Search",
+  "hint": "For example: “I have had a glaucoma drainage valve fitted and I see poor contrast”. Do not type personal details.",
+  "examples_label": "You can also try:",
+  "examples": [
+   "I have just found out I have retinitis pigmentosa",
+   "Light really bothers me",
+   "My father has AMD, how can I help him?",
+   "Which apps read text aloud?",
+   "How do I refer a patient to low vision services?"
+  ],
+  "noscript": "The assistant needs JavaScript. You can browse the three areas from the main menu.",
+  "empty": "Type a question or choose one of the examples.",
+  "answer_title": "This may help",
+  "route_label": "We understand that you are:",
+  "route_change": "If not, change the “I am…” option.",
+  "no_results": "We have not found any content that fits well enough. We do not want to give you an invented answer: try putting it in other words, or see where to get help.",
+  "closing": "All answers come from reviewed content on this website. They do not replace seeing a professional.",
+  "urgent_keywords": [
+   "suddenly",
+   "sudden",
+   "all of a sudden",
+   "flashes",
+   "curtain",
+   "severe pain",
+   "a lot of pain",
+   "red eye",
+   "nausea"
+  ],
+  "urgent_title": "Important:",
+  "urgent_text": "if vision loss is sudden, you see flashes or a curtain-like shadow, or you have severe eye pain, go to A&E or call 112.",
+  "urgent_link": "Warning signs",
+  "urgent_target": "pat_diagnosis#urgencies",
+  "stopwords": [
+   "the",
+   "a",
+   "an",
+   "of",
+   "and",
+   "or",
+   "to",
+   "in",
+   "on",
+   "with",
+   "for",
+   "that",
+   "what",
+   "how",
+   "where",
+   "me",
+   "my",
+   "you",
+   "your",
+   "his",
+   "her",
+   "their",
+   "is",
+   "are",
+   "am",
+   "be",
+   "have",
+   "has",
+   "had",
+   "do",
+   "does",
+   "can",
+   "could",
+   "i",
+   "it",
+   "this",
+   "these",
+   "there",
+   "not",
+   "yes",
+   "very",
+   "more",
+   "about",
+   "when",
+   "which",
+   "just",
+   "some",
+   "want",
+   "would",
+   "like",
+   "hello",
+   "been"
+  ],
+  "synonyms": {
+   "glaucoma": [
+    "valve",
+    "eye pressure",
+    "optic nerve"
+   ],
+   "contrast": [
+    "filter",
+    "glare",
+    "light"
+   ],
+   "light": [
+    "lighting",
+    "photophobia",
+    "glare",
+    "filters"
+   ],
+   "amd": [
+    "macula",
+    "macular",
+    "macular degeneration"
+   ],
+   "read": [
+    "magnifier",
+    "reading",
+    "print",
+    "text"
+   ],
+   "app": [
+    "application",
+    "phone",
+    "artificial intelligence",
+    "technology"
+   ],
+   "psychologist": [
+    "psychology",
+    "emotional",
+    "sadness",
+    "anxiety",
+    "support"
+   ],
+   "cane": [
+    "white cane",
+    "mobility"
+   ],
+   "school": [
+    "pupil",
+    "student",
+    "teacher",
+    "education"
+   ],
+   "refer": [
+    "referral",
+    "map",
+    "protocol"
+   ],
+   "pdf": [
+    "generator",
+    "qr",
+    "checkboxes"
+   ],
+   "retinitis": [
+    "retinitis pigmentosa",
+    "dystrophy",
+    "inherited",
+    "genetic"
+   ],
+   "leber": [
+    "optic nerve",
+    "neuropathy",
+    "rare"
+   ],
+   "transplant": [
+    "cornea",
+    "surgery"
+   ],
+   "home": [
+    "house",
+    "lighting",
+    "order",
+    "kitchen"
+   ]
+  },
+  "profiles": {
+   "auto": {
+    "label": "Detect automatically"
+   },
+   "patient": {
+    "label": "a patient",
+    "area": "pat",
+    "intro": "This content can guide you. Take your time: there is no need to read it all today.",
+    "keywords": [
+     "i have",
+     "i see",
+     "i can't see",
+     "diagnosed",
+     "my eye",
+     "my eyes"
+    ],
+    "route": [
+     "pat_diagnosis#primers-passos",
+     "pat_aids#principis",
+     "pat_support#directori"
+    ],
+    "needs": {
+     "new": {
+      "label": "you have just been diagnosed",
+      "keywords": [
+       "just",
+       "diagnosis",
+       "diagnosed",
+       "told me",
+       "found out",
+       "new",
+       "recent",
+       "first steps",
+       "what now",
+       "what do i do"
+      ],
+      "intro": "Receiving a diagnosis like this is hard, and it is normal to have many questions. Start with the first steps; you are not alone.",
+      "pages": [
+       "pat_diagnosis",
+       "glossary",
+       "pat_support"
+      ],
+      "route": [
+       "pat_diagnosis#primers-passos",
+       "pat_support#psicologia",
+       "glossary"
+      ]
+     },
+     "condition": {
+      "label": "you want to understand a condition or symptom",
+      "keywords": [
+       "glaucoma",
+       "amd",
+       "retinitis",
+       "retinopathy",
+       "myopia",
+       "leber",
+       "stargardt",
+       "cornea",
+       "transplant",
+       "cataract",
+       "valve",
+       "macular",
+       "nerve",
+       "centre",
+       "sides",
+       "blurred",
+       "patches",
+       "contrast",
+       "condition",
+       "disease",
+       "symptom"
+      ],
+      "intro": "Understanding what is happening helps you explain it and choose the right aids. Here is what is most relevant to your situation.",
+      "pages": [
+       "pat_conditions",
+       "pat_stories"
+      ],
+      "route": [
+       "pat_conditions#per-tipus",
+       "pat_stories#testimonis",
+       "pat_support#professionals-baixa-visio"
+      ]
+     },
+     "practical": {
+      "label": "you are looking for practical solutions",
+      "keywords": [
+       "magnifier",
+       "filter",
+       "filters",
+       "aid",
+       "aids",
+       "app",
+       "apps",
+       "phone",
+       "read",
+       "reading",
+       "computer",
+       "screen reader",
+       "braille",
+       "where to go",
+       "centre",
+       "psychologist",
+       "association",
+       "light",
+       "glare",
+       "photophobia"
+      ],
+      "intro": "There are solutions that can make daily life easier. The best one is the one that suits your vision and what you want to do.",
+      "pages": [
+       "pat_aids",
+       "pat_support",
+       "fam_home"
+      ],
+      "route": [
+       "pat_aids#filtres",
+       "pat_aids#apps",
+       "pat_support#directori"
+      ]
+     }
+    }
+   },
+   "family": {
+    "label": "family or someone interested",
+    "area": "fam",
+    "intro": "Thank you for wanting to understand and support. This content is a good place to start.",
+    "keywords": [
+     "my father",
+     "my mother",
+     "my dad",
+     "my mum",
+     "my son",
+     "my daughter",
+     "my partner",
+     "my husband",
+     "my wife",
+     "my grandfather",
+     "my grandmother",
+     "relative",
+     "family",
+     "my brother",
+     "my sister",
+     "friend",
+     "pupil",
+     "student",
+     "support him",
+     "support her",
+     "help him",
+     "help her",
+     "carer",
+     "caring"
+    ],
+    "route": [
+     "fam_understand#simulador",
+     "fam_guide#principis",
+     "fam_home#llum"
+    ],
+    "needs": {
+     "understand": {
+      "label": "you want to understand how they see",
+      "keywords": [
+       "how they see",
+       "how he sees",
+       "how she sees",
+       "understand",
+       "simulation",
+       "simulator",
+       "doesn't recognise",
+       "cane",
+       "clumsy"
+      ],
+      "intro": "Understanding how the other person sees avoids misunderstandings. The simulator and these explanations will help.",
+      "pages": [
+       "fam_understand"
+      ],
+      "route": [
+       "fam_understand#simulador",
+       "fam_understand#visio-mixta",
+       "fam_guide#principis"
+      ]
+     },
+     "guide": {
+      "label": "you want to support and guide them",
+      "keywords": [
+       "guide",
+       "guiding",
+       "street",
+       "arm",
+       "stairs",
+       "steps",
+       "help",
+       "overprotect",
+       "care"
+      ],
+      "intro": "Helping well means asking and respecting independence. These short guides can also be listened to.",
+      "pages": [
+       "fam_guide"
+      ],
+      "route": [
+       "fam_guide#guia-vident",
+       "fam_guide#sobreproteccio",
+       "fam_guide#cuidar-se"
+      ]
+     },
+     "home": {
+      "label": "you want to adapt the home",
+      "keywords": [
+       "home",
+       "house",
+       "light",
+       "lighting",
+       "kitchen",
+       "bathroom",
+       "falls",
+       "tidy",
+       "contrast"
+      ],
+      "intro": "Small changes at home can make a big difference. Make them together with the person.",
+      "pages": [
+       "fam_home"
+      ],
+      "route": [
+       "fam_home#llum",
+       "fam_home#consells",
+       "fam_home#ordre"
+      ]
+     },
+     "school": {
+      "label": "school and society",
+      "keywords": [
+       "school",
+       "pupil",
+       "student",
+       "teacher",
+       "class",
+       "work",
+       "workplace",
+       "awareness"
+      ],
+      "intro": "Inclusion also depends on the environment. Here you will find resources for schools and society.",
+      "pages": [
+       "fam_society"
+      ],
+      "route": [
+       "fam_society#escoles",
+       "fam_society#basto",
+       "fam_society#inclusio"
+      ]
+     }
+    }
+   },
+   "pro": {
+    "label": "a professional",
+    "area": "pro",
+    "intro": "Resources for consultations and for coordinating with other services.",
+    "keywords": [
+     "patient",
+     "patients",
+     "consultation",
+     "clinic",
+     "refer",
+     "referral",
+     "ophthalmologist",
+     "optometrist",
+     "gp",
+     "doctor",
+     "primary care",
+     "social work",
+     "social worker",
+     "professional"
+    ],
+    "route": [
+     "pro_referral#mapa",
+     "pro_generator#generador",
+     "pro_training#avaluacio"
+    ],
+    "needs": {
+     "referral": {
+      "label": "referral and communication",
+      "keywords": [
+       "refer",
+       "referral",
+       "protocol",
+       "where do i send",
+       "bad news",
+       "breaking",
+       "communicate",
+       "urgent",
+       "criteria"
+      ],
+      "intro": "A timely referral shortens the gap after diagnosis. Here are the map and the criteria.",
+      "pages": [
+       "pro_referral"
+      ],
+      "route": [
+       "pro_referral#mapa",
+       "pro_referral#mala-noticia",
+       "pro_generator#generador"
+      ]
+     },
+     "generator": {
+      "label": "resources to give to patients",
+      "keywords": [
+       "pdf",
+       "qr",
+       "print",
+       "hand out",
+       "leaflet",
+       "sheet",
+       "material",
+       "resources",
+       "checkboxes"
+      ],
+      "intro": "With the generator you can prepare an accessible PDF with a QR code for your patient in a minute.",
+      "pages": [
+       "pro_generator"
+      ],
+      "route": [
+       "pro_generator#generador",
+       "pro_referral#mapa",
+       "pro_training#comunicacio"
+      ]
+     },
+     "training": {
+      "label": "training",
+      "keywords": [
+       "training",
+       "course",
+       "bibliography",
+       "reading list",
+       "assessment",
+       "classification",
+       "kestenbaum",
+       "pelli",
+       "expert"
+      ],
+      "intro": "Here you have core knowledge and resources to keep learning.",
+      "pages": [
+       "pro_training"
+      ],
+      "route": [
+       "pro_training#avaluacio",
+       "pro_training#bibliografia",
+       "pro_training#experts"
+      ]
+     }
+    }
+   }
+  }
+ }
+}

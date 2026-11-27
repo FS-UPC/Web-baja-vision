@@ -1,0 +1,55 @@
+<!-- meta {"title": "Generador de recursos per a la consulta", "description": "Marca les caselles dels recursos que vols lliurar al pacient i genera al moment un PDF accessible unificat amb un codi QR que obre els mateixos continguts a la web.", "keywords": "generador recursos caselles checkbox PDF QR codi imprimir lliurar pacient consulta fitxa paquet kit", "main_class": "page-generator"} -->
+<header class="page-hero" data-zone="pro">
+  <div class="container">
+    <p class="page-hero__label">{{icon:check}} Professionals · 3.2</p>
+    <h1>Generador de recursos per a la consulta</h1>
+    <p class="lead">En un minut: marca els recursos que vols donar al pacient i obtén un PDF accessible amb un codi QR. El pacient podrà llegir-lo en paper o obrir-lo al mòbil amb lletra gran, contrast i lectura en veu alta.</p>
+  </div>
+</header>
+
+<div class="container">
+  <section aria-labelledby="generador" class="no-print">
+    <h2 id="generador">1. Tria els recursos</h2>
+    <form class="generator" data-generator>
+      <div class="btn-row">
+        <button type="button" class="btn btn--ghost btn--sm" data-select="all">Selecciona-ho tot</button>
+        <button type="button" class="btn btn--ghost btn--sm" data-select="none">Desmarca-ho tot</button>
+      </div>
+      {{resource_picker}}
+      <p>
+        <label for="gen-note">Nota personal per al pacient (opcional)</label>
+        <textarea id="gen-note" rows="3" aria-describedby="gen-note-hint"></textarea>
+        <span class="note" id="gen-note-hint">Només s'imprimeix al PDF. No es desa enlloc ni s'inclou al codi QR. No hi escriguis dades identificatives si no cal.</span>
+      </p>
+      <div class="generator__actions">
+        <p class="generator__count" aria-live="polite"><strong data-count>0</strong> recursos seleccionats</p>
+        <button type="submit" class="btn" data-print disabled>{{icon:print}}<span>2. Crea el PDF</span></button>
+        <p class="note" data-empty>Marca almenys un recurs per crear el PDF.</p>
+      </div>
+    </form>
+  </section>
+
+  <section aria-labelledby="preview" class="pack-preview">
+    <h2 id="preview" class="no-print">Vista prèvia del paquet</h2>
+    <div class="pack-sheet-head">
+      <p class="pack-sheet-head__brand">Baixa visió en xarxa · Centre Universitari de la Visió (CUV-UPC)</p>
+      <p class="pack-sheet-head__title">Recursos que t'ha preparat el teu professional</p>
+      <p>Data: <span data-date></span></p>
+      <div class="pack-note" data-note-wrap hidden><p><strong>Nota del professional:</strong> <span data-note-out></span></p></div>
+    </div>
+    {{qr_box}}
+    {{resource_sheets}}
+    <p class="pack-footer">Aquesta informació és orientativa i no substitueix la consulta amb un professional. Si notes una pèrdua de visió sobtada, ves a urgències o truca al 112.</p>
+  </section>
+
+  <section aria-labelledby="com-funciona" class="prose no-print">
+    <h2 id="com-funciona">Com funciona</h2>
+    <ol>
+      <li>Marca els recursos. La vista prèvia s'actualitza al moment.</li>
+      <li>Prem <strong>Crea el PDF</strong>. S'obrirà la finestra d'impressió del navegador: tria <strong>Desa com a PDF</strong> per obtenir el fitxer, o imprimeix-lo directament.</li>
+      <li>Lliura'l al pacient o envia-li el fitxer. El codi QR obre els mateixos recursos a la web, on pot ampliar el text, canviar el contrast o escoltar-los.</li>
+    </ol>
+    <p><strong>Accessibilitat:</strong> el PDF conserva l'estructura d'encapçalaments i llistes (els navegadors actuals generen PDF etiquetats), amb tipografia Atkinson Hyperlegible i mida gran.</p>
+    <p><strong>Privacitat:</strong> el generador funciona al teu navegador. No s'envia ni es desa cap dada del pacient.</p>
+  </section>
+</div>

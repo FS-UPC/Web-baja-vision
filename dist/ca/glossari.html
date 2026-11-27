@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ca" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossari · Baixa visió en xarxa</title>
+<meta name="description" content="Glossari de termes clau sobre baixa visió explicats amb llenguatge planer: agudesa visual, camp visual, DMAE, glaucoma, rehabilitació visual, ajudes i tecnologia.">
+<meta name="theme-color" content="#0a3a6b">
+<meta property="og:title" content="Glossari · Baixa visió en xarxa">
+<meta property="og:description" content="Glossari de termes clau sobre baixa visió explicats amb llenguatge planer: agudesa visual, camp visual, DMAE, glaucoma, rehabilitació visual, ajudes i tecnologia.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ca_ES">
+<link rel="alternate" hreflang="es" href="../es/glosario.html">
+<link rel="alternate" hreflang="en" href="../en/glossary.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/atkinson-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>
+/* Aplica les preferències d'accessibilitat abans de mostrar la pàgina (evita parpellejos).
+   Si la web s'obre des del disc (file://), el navegador aïlla l'emmagatzematge de cada fitxer;
+   per això les preferències també viatgen als enllaços interns amb el paràmetre ?bvx=. */
+(function(){var d=document.documentElement,p=null,q=location.search.match(/[?&]bvx=([^&#]*)/);d.classList.add("js");
+if(q){try{p=JSON.parse(decodeURIComponent(q[1]));if(!p||typeof p!=="object")p=null;else localStorage.setItem("bvx-prefs",JSON.stringify(p))}catch(e){}try{var r=location.search.replace(/[?&]bvx=[^&#]*/,"").replace(/^&/,"?");history.replaceState(null,"",location.pathname+r+location.hash)}catch(e){}}
+if(!p){try{p=JSON.parse(localStorage.getItem("bvx-prefs"))}catch(e){}}
+p=(p&&typeof p==="object")?p:{};if(p.spacing&&p.lh==null){p.lh=1;p.sp=1}window.__bvxPrefs=p;
+if([100,125,150,175,200,250,300].indexOf(p.size)>=0)d.style.fontSize=(112.5*p.size/100)+"%";
+if(/^[a-z-]+$/.test(p.theme||""))d.setAttribute("data-theme",p.theme);
+if(p.lh===1||p.lh===2)d.classList.add("lh-"+p.lh);if(p.sp===1||p.sp===2)d.classList.add("sp-"+p.sp);
+["grayscale","links","cursor","motion"].forEach(function(t){if(p[t])d.classList.add("opt-"+t)})})();
+</script>
+<script src="../assets/js/a11y.js" defer></script>
+<script src="../assets/js/features.js" defer></script>
+
+<script type="application/json" id="ui-strings">{"sizeNow": "Mida del text", "themeNow": "Colors", "on": "activat", "off": "desactivat", "resetDone": "S'ha restablert la configuració original", "ttsReading": "Llegint en veu alta", "ttsPaused": "Lectura en pausa", "ttsStopped": "Lectura aturada", "ttsDone": "Lectura acabada", "ttsNoVoice": "No s'ha trobat cap veu en català en aquest dispositiu; s'utilitzarà la veu per defecte", "listen": "Escolta aquesta guia", "stopListen": "Atura la guia"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Salta al contingut principal</a>
+
+
+<header class="site-header">
+  <section class="a11y-bar" id="a11y-bar" aria-label="Barra d'accessibilitat">
+    <div class="container a11y-bar__inner">
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-size-l">
+        <span class="a11y-bar__label" id="bar-size-l"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7V5h11v2M9.5 5v14M7 19h5"/><path d="M14 13v-1.5h7V13M17.5 11.5V19M16 19h3"/></svg><span>Text</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="-1" aria-label="Redueix la mida del text">A−</button>
+        <output class="size-value" data-size-value aria-live="off">100%</output>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="1" aria-label="Augmenta la mida del text">A+</button>
+      </div>
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-contrast-l">
+        <span class="a11y-bar__label" id="bar-contrast-l"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span>Contrast</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-theme-quick="auto" aria-pressed="false">Estàndard</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-light" data-theme-quick="black-on-white" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>Clar</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-dark" data-theme-quick="white-on-black" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>Fosc</button>
+      </div>
+      <div class="a11y-bar__group">
+        <button type="button" class="btn btn--sm" id="bar-tts-play" data-tts><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg><span>Escolta la pàgina</span></button>
+        <button type="button" class="btn btn--sm" id="bar-tts-stop" data-tts hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg><span>Atura la lectura</span></button>
+        <button type="button" class="btn btn--ghost btn--sm a11y-toggle" id="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg><span>Més opcions</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="a11y-panel" id="a11y-panel" aria-labelledby="a11y-title" hidden>
+    <div class="container a11y-panel__inner">
+      <h2 id="a11y-title">Adapta la web a la teva manera de veure-hi</h2>
+      <p class="a11y-panel__intro">Els canvis s'apliquen a totes les pàgines i es desen en aquest navegador. Prem Esc per tancar el panell.</p>
+      <div class="a11y-grid">
+        <div class="a11y-group" role="group" aria-labelledby="g-size">
+          <p class="a11y-group__title" id="g-size">Mida del text</p>
+          <div class="btn-row">
+            <button type="button" class="btn btn--ghost" id="size-dec" data-size-step="-1" aria-label="Redueix la mida del text">A−</button>
+            <output class="size-value" id="size-value" data-size-value aria-live="off">100%</output>
+            <button type="button" class="btn btn--ghost" id="size-inc" data-size-step="1" aria-label="Augmenta la mida del text">A+</button>
+            <button type="button" class="btn btn--ghost" id="size-reset">Mida original</button>
+          </div>
+          <p class="note" style="margin-top:.75rem">Pots ampliar el text fins al 300 %. Les icones creixen amb el text sense deformar-se.</p>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>Colors i contrast</legend>
+          <label class="choice"><input type="radio" name="theme" value="auto"> <span class="swatch" style="background:linear-gradient(90deg,#fff 50%,#121417 50%);color:#777" aria-hidden="true"></span> <span class="choice__text">Automàtic (com el sistema)</span></label>
+          <p class="choice-group__title">Fons clar</p>
+          <label class="choice"><input type="radio" name="theme" value="light"> <span class="swatch" style="background:#fff;color:#14171c" aria-hidden="true">Aa</span> <span class="choice__text">Clar</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-white"> <span class="swatch" style="background:#fff;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">Contrast alt: negre sobre blanc</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-yellow"> <span class="swatch" style="background:#ffeb00;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">Contrast alt: negre sobre groc</span></label>
+          <p class="choice-group__title">Fons fosc (fotofòbia)</p>
+          <label class="choice"><input type="radio" name="theme" value="dark"> <span class="swatch" style="background:#121417;color:#f1f3f5" aria-hidden="true">Aa</span> <span class="choice__text">Fosc</span></label>
+          <label class="choice"><input type="radio" name="theme" value="white-on-black"> <span class="swatch" style="background:#000;color:#fff" aria-hidden="true">Aa</span> <span class="choice__text">Contrast alt: blanc sobre negre</span></label>
+          <label class="choice"><input type="radio" name="theme" value="yellow"> <span class="swatch" style="background:#000;color:#ffeb00" aria-hidden="true">Aa</span> <span class="choice__text">Contrast alt: groc sobre negre</span></label>
+        </fieldset>
+
+        <div class="a11y-group">
+          <fieldset class="subgroup">
+            <legend>Espai entre línies</legend>
+            <label class="choice"><input type="radio" name="lh" value="0"> Normal</label>
+            <label class="choice"><input type="radio" name="lh" value="1"> Ampli</label>
+            <label class="choice"><input type="radio" name="lh" value="2"> Molt ampli</label>
+          </fieldset>
+          <fieldset class="subgroup">
+            <legend>Espai entre lletres i paraules</legend>
+            <label class="choice"><input type="radio" name="sp" value="0"> Normal</label>
+            <label class="choice"><input type="radio" name="sp" value="1"> Ampli</label>
+            <label class="choice"><input type="radio" name="sp" value="2"> Molt ampli</label>
+          </fieldset>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>Lectura i navegació</legend>
+          <label class="choice"><input type="checkbox" id="opt-links"> Destaca els enllaços</label>
+          <label class="choice"><input type="checkbox" id="opt-guide"> Guia de lectura (franja que segueix el ratolí)</label>
+          <label class="choice"><input type="checkbox" id="opt-grayscale"> Escala de grisos</label>
+          <label class="choice"><input type="checkbox" id="opt-cursor"> Cursor gran</label>
+          <label class="choice"><input type="checkbox" id="opt-motion"> Atura animacions i moviments</label>
+        </fieldset>
+
+        <div class="a11y-group" role="group" aria-labelledby="g-tts">
+          <p class="a11y-group__title" id="g-tts"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg> Lectura en veu alta</p>
+          <p>Llegeix el contingut de la pàgina, o només el text que hagis seleccionat.</p>
+          <div class="tts-bar" data-tts>
+            <button type="button" class="btn" id="tts-play"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor"/></svg><span>Llegeix</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-pause" aria-pressed="false" disabled><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 5v14M16 5v14"/></svg><span>Pausa</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-stop" disabled><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg><span>Atura</span></button>
+          </div>
+          <p data-tts style="margin-top:.75rem"><label for="tts-rate">Velocitat:</label>
+            <select id="tts-rate">
+              <option value="0.75">Lenta</option>
+              <option value="1" selected>Normal</option>
+              <option value="1.25">Ràpida</option>
+            </select>
+          </p>
+          <p class="tts-status" id="tts-status" data-tts></p>
+          <p id="tts-unsupported" hidden>Aquest navegador no permet la lectura en veu alta. Pots fer servir el lector de pantalla del teu dispositiu.</p>
+        </div>
+      </div>
+      <div class="a11y-footer">
+        <div class="btn-row">
+          <button type="button" class="btn btn--ghost" id="a11y-reset">Restableix tota la configuració</button>
+          <a href="accessibilitat.html">Més informació sobre l'accessibilitat d'aquesta web</a>
+        </div>
+        <button type="button" class="btn" id="a11y-close"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Tanca</span></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container topbar">
+    <a class="brand" href="index.html">
+      <svg class="brand__logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M5 32C12 19.5 21.5 13 32 13s20 6.5 27 19c-7 12.5-16.5 19-27 19S12 44.5 5 32z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="32" r="10.5" fill="currentColor"/><circle cx="32" cy="32" r="4" fill="none" stroke="var(--bg)" stroke-width="2.5"/><circle cx="5" cy="32" r="4.5" fill="currentColor"/><circle cx="59" cy="32" r="4.5" fill="currentColor"/><circle cx="32" cy="13" r="4.5" fill="currentColor"/><circle cx="32" cy="51" r="4.5" fill="currentColor"/></svg>
+      <span>
+        <span class="brand__name">Baixa visió en xarxa</span>
+        <span class="brand__tag">Coneixement accessible sobre baixa visió</span>
+      </span>
+    </a>
+    <div class="header-tools">
+      <nav class="tool-links" aria-label="Accessos directes">
+        <ul>
+<li><a class="tool-link" href="assistent.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9.5h8M8 12.5h5"/></svg><span>Assistent de recursos</span></a></li>
+<li><a class="tool-link" href="qui-som.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 19c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5M13.5 13.6a5.5 5.5 0 0 1 8 5.4"/></svg><span>Qui som</span></a></li>
+        </ul>
+      </nav>
+      <nav class="lang-switch" aria-label="Idioma">
+        <ul>
+          <li><a href="../ca/glossari.html" hreflang="ca" lang="ca" aria-current="true"><span>Català</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#FCDD09"/><g fill="#DA121A"><rect y="2.222" width="30" height="2.222"/><rect y="6.667" width="30" height="2.222"/><rect y="11.111" width="30" height="2.222"/><rect y="15.556" width="30" height="2.222"/></g></svg></a></li>
+          <li><a href="../es/glosario.html" hreflang="es" lang="es"><span>Castellano</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg></a></li>
+          <li><a href="../en/glossary.html" hreflang="en" lang="en"><span>English</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#FFFFFF"/><g fill="#CE1124"><rect x="13" width="4" height="20"/><rect y="8" width="30" height="4"/></g></svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Menú principal">
+    <div class="container main-nav__inner">
+      <button type="button" class="btn btn--ghost menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>Menú</span></button>
+      <ul id="main-menu">
+        <li><a href="index.html"><span>Inici</span></a></li>
+        <li><a href="pacients.html" data-zone="pat"><span class="dot" aria-hidden="true"></span><span>Pacients</span></a></li>
+        <li><a href="familiars.html" data-zone="fam"><span class="dot" aria-hidden="true"></span><span>Familiars i interessats</span></a></li>
+        <li><a href="professionals.html" data-zone="pro"><span class="dot" aria-hidden="true"></span><span>Professionals</span></a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+<nav class="breadcrumbs container" aria-label="Sou aquí"><ol><li><a href="index.html">Inici</a></li><li><span aria-current="page">Glossari</span></li></ol></nav>
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero__label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5v-15"/><path d="M8 7h8"/></svg> Paraules clau</p>
+    <h1>Glossari</h1>
+    <p class="lead">Paraules que potser sentiràs a la consulta o llegiràs en aquesta web, explicades de manera senzilla.</p>
+  </div>
+</header>
+
+<div class="container">
+  <p class="note">Glossari inicial en procés de validació per l'equip clínic i pel Servei de Llengües i Terminologia de la UPC.</p>
+<nav aria-label="Índex alfabètic"><ul class="alpha-index">
+<li><a href="#lletra-A">A</a></li>
+<li><a href="#lletra-B">B</a></li>
+<li><a href="#lletra-C">C</a></li>
+<li><a href="#lletra-D">D</a></li>
+<li><a href="#lletra-E">E</a></li>
+<li><a href="#lletra-F">F</a></li>
+<li><a href="#lletra-G">G</a></li>
+<li><a href="#lletra-L">L</a></li>
+<li><a href="#lletra-M">M</a></li>
+<li><a href="#lletra-N">N</a></li>
+<li><a href="#lletra-R">R</a></li>
+<li><a href="#lletra-S">S</a></li>
+<li><a href="#lletra-T">T</a></li>
+<li><a href="#lletra-V">V</a></li>
+<li><a href="#lletra-W">W</a></li>
+</ul></nav>
+<div class="glossary">
+<h2 class="letter" id="lletra-A">A</h2><dl>
+<dt id="agudesa-visual">Agudesa visual</dt><dd>Capacitat de l&#x27;ull per distingir detalls petits. Es mesura amb optotips (lletres o símbols de mida decreixent) i s&#x27;expressa, per exemple, en escala decimal (1,0 és la referència habitual) o en logMAR.</dd>
+<dt id="ajuda-optica">Ajuda òptica</dt><dd>Dispositiu amb lents que augmenta la mida de la imatge: lupes de mà o amb peu, lupes amb llum, ulleres d&#x27;alta addició o telescopis. Cal triar-la i aprendre a fer-la servir amb un professional.</dd>
+</dl>
+<h2 class="letter" id="lletra-B">B</h2><dl>
+<dt id="baixa-visio">Baixa visió</dt><dd>Pèrdua de visió que no es pot corregir del tot amb ulleres, lents de contacte, medicació o cirurgia i que dificulta activitats quotidianes, però en què es conserva una resta visual aprofitable.</dd>
+<dt id="basto-blanc">Bastó blanc</dt><dd>Bastó que fan servir les persones amb discapacitat visual per detectar obstacles i perquè els altres sàpiguen que hi veuen poc. Moltes persones amb baixa visió el fan servir només en alguns moments, per exemple de nit.</dd>
+</dl>
+<h2 class="letter" id="lletra-C">C</h2><dl>
+<dt id="camp-visual">Camp visual</dt><dd>Tota l&#x27;àrea que es veu quan l&#x27;ull mira fixament un punt, incloent-hi la visió perifèrica (la que hi ha als costats, a dalt i a baix).</dd>
+<dt id="ceguesa-legal">Ceguesa legal</dt><dd>Situació en què la visió està per sota d&#x27;uns límits fixats per la llei o per una entitat (a l&#x27;ONCE, agudesa visual igual o inferior a 0,1 o camp visual igual o inferior a 10 graus en el millor ull i amb correcció). Moltes persones amb ceguesa legal conserven una mica de visió.</dd>
+<dt id="cocreacio">Cocreació</dt><dd>Manera de dissenyar un recurs o un servei amb la participació activa de les persones que l&#x27;utilitzaran. En aquest projecte hi participen persones amb baixa visió, professionals i entitats.</dd>
+</dl>
+<h2 class="letter" id="lletra-D">D</h2><dl>
+<dt id="dmae-degeneracio-macular-associada-a-l-edat">DMAE (degeneració macular associada a l&#x27;edat)</dt><dd>Malaltia de la màcula, la zona central de la retina, relacionada amb l&#x27;edat. Afecta la visió central (llegir, reconèixer cares), mentre que la visió perifèrica sol mantenir-se.</dd>
+</dl>
+<h2 class="letter" id="lletra-E">E</h2><dl>
+<dt id="enlluernament">Enlluernament</dt><dd>Molèstia o pèrdua de visió causada per un excés de llum o per reflexos. És molt freqüent en persones amb baixa visió i es pot reduir amb filtres, visera i una bona il·luminació.</dd>
+<dt id="escotoma">Escotoma</dt><dd>Zona del camp visual on no es veu o es veu malament, envoltada de zones on la visió es conserva. Pot ser central (per exemple, en la DMAE) o perifèric.</dd>
+</dl>
+<h2 class="letter" id="lletra-F">F</h2><dl>
+<dt id="filtre-selectiu">Filtre selectiu</dt><dd>Lent tintada que bloqueja una part de la llum (sovint la de longitud d&#x27;ona curta) per reduir l&#x27;enlluernament i millorar la sensació de contrast.</dd>
+<dt id="fotofobia">Fotofòbia</dt><dd>Molèstia o dolor davant la llum, que fa difícil veure-hi amb llum intensa. Els filtres selectius, les viseres i el mode fosc de les pantalles poden ajudar.</dd>
+</dl>
+<h2 class="letter" id="lletra-G">G</h2><dl>
+<dt id="glaucoma">Glaucoma</dt><dd>Grup de malalties que danyen el nervi òptic, sovint associades a una pressió intraocular elevada. Sol afectar primer la visió perifèrica i, al principi, no fa símptomes; per això són importants les revisions.</dd>
+</dl>
+<h2 class="letter" id="lletra-L">L</h2><dl>
+<dt id="lector-de-pantalla">Lector de pantalla</dt><dd>Programa que llegeix en veu alta (o mostra en braille) el contingut de la pantalla. Alguns exemples són NVDA, JAWS, VoiceOver o TalkBack.</dd>
+<dt id="lectura-facil">Lectura fàcil</dt><dd>Manera d&#x27;escriure i de presentar textos perquè els entengui més gent: frases curtes, paraules d&#x27;ús comú i idees ordenades.</dd>
+<dt id="lent-intraocular">Lent intraocular</dt><dd>Lent artificial que es col·loca dins de l&#x27;ull, normalment en l&#x27;operació de cataracta, per substituir el cristal·lí.</dd>
+<dt id="linia-braille">Línia braille</dt><dd>Aparell que es connecta a l&#x27;ordinador o al mòbil i mostra el text de la pantalla en braille, amb punts que pugen i baixen. El fan servir sobretot persones amb ceguesa o molt poca visió.</dd>
+<dt id="lupa-electronica">Lupa electrònica</dt><dd>Dispositiu amb càmera i pantalla que amplia textos i objectes i permet canviar colors i contrast. N&#x27;hi ha de portàtils i de sobretaula (telelupes).</dd>
+</dl>
+<h2 class="letter" id="lletra-M">M</h2><dl>
+<dt id="macula">Màcula</dt><dd>Zona central de la retina, responsable de la visió detallada i de bona part de la visió dels colors.</dd>
+<dt id="magnificador-de-pantalla">Magnificador de pantalla</dt><dd>Programa que amplia una part de la pantalla de l&#x27;ordinador o del mòbil. Els sistemes operatius n&#x27;inclouen un (Lupa de Windows, Zoom d&#x27;Apple, Ampliació d&#x27;Android) i també n&#x27;hi ha d&#x27;específics, com ZoomText.</dd>
+<dt id="malaltia-minoritaria">Malaltia minoritària</dt><dd>Malaltia que afecta poques persones (a Europa, menys de 5 de cada 10.000). Moltes malalties hereditàries de la retina i del nervi òptic ho són.</dd>
+<dt id="miopia-magna">Miopia magna</dt><dd>Miopia molt alta (normalment de més de 6 diòptries) que pot anar acompanyada de lesions a la retina i a la màcula, despreniment de retina o glaucoma.</dd>
+</dl>
+<h2 class="letter" id="lletra-N">N</h2><dl>
+<dt id="neuropatia-optica-hereditaria-de-leber">Neuropatia òptica hereditària de Leber</dt><dd>Malaltia hereditària minoritària que danya el nervi òptic i provoca una pèrdua ràpida de la visió central, sovint en persones joves. La visió perifèrica sol conservar-se en part.</dd>
+</dl>
+<h2 class="letter" id="lletra-R">R</h2><dl>
+<dt id="rehabilitacio-visual">Rehabilitació visual</dt><dd>Procés d&#x27;entrenament, guiat per professionals, per aprendre a aprofitar millor la resta visual: tècniques de lectura, visió excèntrica, ús d&#x27;ajudes i estratègies per a la vida diària.</dd>
+<dt id="resta-visual">Resta visual</dt><dd>La visió que es conserva. Amb ajudes, bona il·luminació i entrenament es pot aprofitar molt millor.</dd>
+<dt id="retinopatia-diabetica">Retinopatia diabètica</dt><dd>Lesió dels vasos sanguinis de la retina causada per la diabetis. Les revisions oculars periòdiques i un bon control de la diabetis ajuden a prevenir-ne la progressió.</dd>
+<dt id="retinosi-pigmentaria">Retinosi pigmentària</dt><dd>Grup de malalties hereditàries de la retina. Sovint comença amb dificultat per veure-hi de nit i una reducció progressiva del camp visual perifèric.</dd>
+</dl>
+<h2 class="letter" id="lletra-S">S</h2><dl>
+<dt id="sensibilitat-al-contrast">Sensibilitat al contrast</dt><dd>Capacitat de distingir un objecte del seu fons quan la diferència de lluminositat és petita. És clau per a la vida diària: veure esglaons, rostres o text en paper gris.</dd>
+<dt id="sindrome-de-charles-bonnet">Síndrome de Charles Bonnet</dt><dd>Percepció d&#x27;imatges que no hi són (formes, patrons, persones o paisatges) en persones amb una pèrdua visual important. No és una malaltia mental: és una resposta del cervell a la manca d&#x27;informació visual. Convé comentar-ho amb el professional de referència.</dd>
+</dl>
+<h2 class="letter" id="lletra-T">T</h2><dl>
+<dt id="tecnica-de-guia-vident">Tècnica de guia vident</dt><dd>Manera segura d&#x27;acompanyar una persona amb discapacitat visual: la persona s&#x27;agafa just per sobre del colze de qui la guia, que camina mig pas per davant i avisa dels obstacles.</dd>
+<dt id="tiflotecnologia">Tiflotecnologia</dt><dd>Conjunt de tècniques, dispositius i programes adaptats perquè les persones amb discapacitat visual puguin fer servir la tecnologia: lectors i magnificadors de pantalla, línies braille, lupes electròniques, etc.</dd>
+</dl>
+<h2 class="letter" id="lletra-V">V</h2><dl>
+<dt id="visio-excentrica">Visió excèntrica</dt><dd>Tècnica que consisteix a mirar lleugerament de costat per fer servir una zona sana de la retina, fora de la part central danyada. S&#x27;aprèn en rehabilitació visual.</dd>
+<dt id="visio-periferica">Visió perifèrica</dt><dd>La part de la visió que veu els costats, a dalt i a baix mentre mirem al davant. És clau per moure&#x27;s sense ensopegar. Es perd, per exemple, en el glaucoma avançat i la retinosi pigmentària.</dd>
+</dl>
+<h2 class="letter" id="lletra-W">W</h2><dl>
+<dt id="wcag">WCAG</dt><dd>Pautes d&#x27;accessibilitat per al contingut web del W3C. Defineixen com fer webs que puguin utilitzar totes les persones, incloses les que tenen discapacitat visual o auditiva.</dd>
+</dl>
+</div>
+</div>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>Baixa visió en xarxa</h2>
+        <p>Plataforma digital accessible i cocreada que reuneix, valida i humanitza la informació sobre baixa visió i ceguesa per a pacients, familiars i persones interessades, i professionals.</p>
+      </div>
+      <nav aria-labelledby="f-zones">
+        <h2 id="f-zones">Zones</h2>
+        <ul>
+<li><a href="pacients.html">Pacients</a></li>
+<li><a href="familiars.html">Familiars i interessats</a></li>
+<li><a href="professionals.html">Professionals</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-project">
+        <h2 id="f-project">Més informació</h2>
+        <ul>
+<li><a href="assistent.html">Assistent de recursos</a></li>
+<li><a href="qui-som.html">Qui som</a></li>
+<li><a href="projecte.html">El projecte</a></li>
+<li><a href="equip.html">Equip</a></li>
+<li><a href="glossari.html">Glossari</a></li>
+<li><a href="accessibilitat.html">Accessibilitat</a></li>
+<li><a href="validacio.html">Participa en la validació</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contacte</h2>
+        <ul>
+          <li><a href="https://cuv.upc.edu/ca/contact">Centre Universitari de la Visió (CUV-UPC)</a></li>
+          <li><a href="https://b1b2b3.org/">Associació Discapacitat Visual Catalunya: B1+B2+B3</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="logo-band" aria-labelledby="f-logos">
+<h2 id="f-logos" class="visually-hidden">Institucions del projecte</h2>
+<div class="logo-groups">
+<div class="logo-group"><p class="logo-group__label">Coordina</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://www.upc.edu/ca"><img class="logo--upc" src="../assets/img/logos/upc.svg" alt="Universitat Politècnica de Catalunya · BarcelonaTech" width="279" height="61" loading="lazy" decoding="async"></a></li>
+</ul>
+<p class="logo-group__note">Centre Universitari de la Visió · Facultat d'Òptica i Optometria de Terrassa</p>
+</div>
+<div class="logo-group"><p class="logo-group__label">Hi col·laboren</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://b1b2b3.org/"><img class="logo--b1b2b3" src="../assets/img/logos/b1b2b3.jpg" alt="Associació Discapacitat Visual Catalunya: B1+B2+B3" width="469" height="66" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://pdvista.org/"><img class="logo--puntdevista" src="../assets/img/logos/puntdevista.jpg" alt="Fundació Punt de Vista" width="118" height="90" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://coooc.cat/"><img class="logo--coooc" src="../assets/img/logos/coooc.png" alt="Col·legi Oficial d&#x27;Òptics Optometristes de Catalunya (COOOC)" width="600" height="192" loading="lazy" decoding="async"></a></li>
+</ul>
+</div>
+<div class="logo-group"><p class="logo-group__label">Convocatòria IMPACTE 2025</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://agaur.gencat.cat/ca/inici/"><img class="logo--agaur" src="../assets/img/logos/agaur.png" alt="Agència de Gestió d&#x27;Ajuts Universitaris i de Recerca (AGAUR)" width="600" height="160" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://web.gencat.cat/ca/inici"><img class="logo--generalitat" src="../assets/img/logos/generalitat.png" alt="Generalitat de Catalunya" width="600" height="151" loading="lazy" decoding="async"></a></li>
+</ul>
+</div>
+</div></section>
+    <div class="footer-bottom">
+      <p>Projecte coordinat pel Centre Universitari de la Visió de la Facultat d'Òptica i Optometria de Terrassa (UPC), presentat a la convocatòria d'Ajuts per desenvolupar projectes amb impacte del coneixement a la societat (IMPACTE 2025) de l'AGAUR.</p>
+      <p>El català és la llengua font d'aquest projecte. Les versions en castellà i anglès en són traduccions.</p>
+      <p>© 2026 Universitat Politècnica de Catalunya · Centre Universitari de la Visió (CUV)</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="presentation" hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r=".8" fill="currentColor"/></svg><span data-toast-text></span></div>
+<div class="visually-hidden" id="live-region" aria-live="polite" aria-atomic="true"></div>
+<div class="reading-guide" id="reading-guide" aria-hidden="true" hidden></div>
+</body>
+</html>

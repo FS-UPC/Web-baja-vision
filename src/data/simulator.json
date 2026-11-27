@@ -1,0 +1,125 @@
+{
+  "_nota": "Textos del simulador de visió (Familiars i interessats, 2.1). Cada descripció està redactada a mà (REQ-03) i és el text alternatiu de la imatge en cada mode.",
+  "ui": {
+    "ca": {
+      "legend": "Tria com vols veure l'escena",
+      "caption": "Simulació",
+      "note": "Simulació aproximada i orientativa. Cada persona hi veu de manera diferent, i la mateixa persona pot veure-hi diferent segons la llum o el cansament.",
+      "scene": {
+        "sign": "PARADA",
+        "label": "Sal"
+      }
+    },
+    "es": {
+      "legend": "Elige cómo quieres ver la escena",
+      "caption": "Simulación",
+      "note": "Simulación aproximada y orientativa. Cada persona ve de manera diferente, y la misma persona puede ver distinto según la luz o el cansancio.",
+      "scene": {
+        "sign": "PARADA",
+        "label": "Sal"
+      }
+    },
+    "en": {
+      "legend": "Choose how to see the scene",
+      "caption": "Simulation",
+      "note": "An approximate simulation for guidance only. Everyone sees differently, and the same person may see differently depending on light or tiredness.",
+      "scene": {
+        "sign": "STOP",
+        "label": "Salt"
+      }
+    }
+  },
+  "modes": [
+    {
+      "id": "normal",
+      "label": {
+        "ca": "Visió sense alteracions",
+        "es": "Visión sin alteraciones",
+        "en": "Typical vision"
+      },
+      "desc": {
+        "ca": "Escena d'una sala: a l'esquerra una finestra i una persona amb jersei verd; al centre un rètol blau amb la paraula «PARADA»; a la dreta un rellotge de paret que marca les tres. A sota, una taula amb un bol vermell i un pot amb l'etiqueta «Sal», i a l'esquerra un esglaó marcat amb una línia groga.",
+        "es": "Escena de una sala: a la izquierda una ventana y una persona con jersey verde; en el centro un rótulo azul con la palabra «PARADA»; a la derecha un reloj de pared que marca las tres. Abajo, una mesa con un cuenco rojo y un bote con la etiqueta «Sal», y a la izquierda un escalón marcado con una línea amarilla.",
+        "en": "A room: on the left a window and a person in a green jumper; in the centre a blue sign with the word “STOP”; on the right a wall clock showing three o'clock. Below, a table with a red bowl and a jar labelled “Salt”, and on the left a step marked with a yellow line."
+      }
+    },
+    {
+      "id": "central",
+      "label": {
+        "ca": "Pèrdua de visió central (per exemple, DMAE o Stargardt)",
+        "es": "Pérdida de visión central (por ejemplo, DMAE o Stargardt)",
+        "en": "Central vision loss (for example, AMD or Stargardt disease)"
+      },
+      "desc": {
+        "ca": "Una taca fosca i borrosa tapa el centre de l'escena: no es pot llegir el rètol ni veure la cara de la persona. Els costats es veuen: la finestra, el rellotge i l'esglaó. Per això algú pot caminar sense ensopegar però no reconèixer-te.",
+        "es": "Una mancha oscura y borrosa tapa el centro de la escena: no se puede leer el rótulo ni ver la cara de la persona. Los lados se ven: la ventana, el reloj y el escalón. Por eso alguien puede caminar sin tropezar pero no reconocerte.",
+        "en": "A dark, blurred patch covers the centre of the scene: the sign cannot be read and the person's face cannot be seen. The edges remain visible: the window, the clock and the step. This is why someone may walk without tripping yet not recognise you."
+      }
+    },
+    {
+      "id": "tunnel",
+      "label": {
+        "ca": "Pèrdua de visió perifèrica o «visió de túnel» (per exemple, glaucoma avançat o retinosi pigmentària)",
+        "es": "Pérdida de visión periférica o «visión en túnel» (por ejemplo, glaucoma avanzado o retinosis pigmentaria)",
+        "en": "Peripheral vision loss or “tunnel vision” (for example, advanced glaucoma or retinitis pigmentosa)"
+      },
+      "desc": {
+        "ca": "Només es veu un cercle petit al centre, on hi ha el rètol «PARADA», que es pot llegir. Tota la resta és negre: no es veuen la persona, el rellotge, la taula ni l'esglaó. Algú amb aquesta visió pot llegir lletra petita i, alhora, xocar amb portes o ensopegar.",
+        "es": "Solo se ve un círculo pequeño en el centro, donde está el rótulo «PARADA», que se puede leer. Todo lo demás es negro: no se ven la persona, el reloj, la mesa ni el escalón. Alguien con esta visión puede leer letra pequeña y, a la vez, chocar con puertas o tropezar.",
+        "en": "Only a small circle in the centre is visible, where the “STOP” sign can be read. Everything else is black: the person, the clock, the table and the step cannot be seen. Someone with this kind of vision may read small print and still bump into doors or trip."
+      }
+    },
+    {
+      "id": "blur",
+      "label": {
+        "ca": "Visió borrosa (per exemple, cataracta o còrnia danyada)",
+        "es": "Visión borrosa (por ejemplo, catarata o córnea dañada)",
+        "en": "Blurred vision (for example, cataract or a damaged cornea)"
+      },
+      "desc": {
+        "ca": "Tota l'escena es veu desenfocada. Es distingeixen les formes grans i els colors (la finestra, el bol vermell, el rètol blau), però no es pot llegir cap text ni veure detalls com les busques del rellotge.",
+        "es": "Toda la escena se ve desenfocada. Se distinguen las formas grandes y los colores (la ventana, el cuenco rojo, el rótulo azul), pero no se puede leer ningún texto ni ver detalles como las agujas del reloj.",
+        "en": "The whole scene is out of focus. Large shapes and colours can be made out (the window, the red bowl, the blue sign), but no text can be read and details such as the clock hands are lost."
+      }
+    },
+    {
+      "id": "contrast",
+      "label": {
+        "ca": "Poca sensibilitat al contrast",
+        "es": "Poca sensibilidad al contraste",
+        "en": "Reduced contrast sensitivity"
+      },
+      "desc": {
+        "ca": "L'escena es veu com rentada, amb colors apagats i grisosos. Costa distingir l'esglaó del terra, el pot de la taula o la persona de la paret, encara que les formes no siguin borroses.",
+        "es": "La escena se ve como lavada, con colores apagados y grisáceos. Cuesta distinguir el escalón del suelo, el bote de la mesa o la persona de la pared, aunque las formas no sean borrosas.",
+        "en": "The scene looks washed out, with faded, greyish colours. It is hard to tell the step from the floor, the jar from the table or the person from the wall, even though shapes are not blurred."
+      }
+    },
+    {
+      "id": "glare",
+      "label": {
+        "ca": "Enlluernament i fotofòbia",
+        "es": "Deslumbramiento y fotofobia",
+        "en": "Glare and light sensitivity"
+      },
+      "desc": {
+        "ca": "Una llum blanca molt intensa inunda l'escena, sobretot al voltant de la finestra. Gairebé tot es veu blanc i esvaït; només s'endevinen les formes més fosques. Per això moltes persones prefereixen el mode fosc i filtres.",
+        "es": "Una luz blanca muy intensa inunda la escena, sobre todo alrededor de la ventana. Casi todo se ve blanco y desvaído; solo se adivinan las formas más oscuras. Por eso muchas personas prefieren el modo oscuro y filtros.",
+        "en": "Very bright white light floods the scene, especially around the window. Almost everything looks white and faded; only the darkest shapes can be guessed. This is why many people prefer dark mode and filters."
+      }
+    },
+    {
+      "id": "patches",
+      "label": {
+        "ca": "Visió a taques (per exemple, retinopatia diabètica)",
+        "es": "Visión a manchas (por ejemplo, retinopatía diabética)",
+        "en": "Patchy vision (for example, diabetic retinopathy)"
+      },
+      "desc": {
+        "ca": "Diverses taques fosques de mides diferents tapen parts de l'escena: una amaga mig rètol, una altra part de la taula i una altra la cara de la persona. La resta es veu una mica borrosa.",
+        "es": "Varias manchas oscuras de distintos tamaños tapan partes de la escena: una oculta medio rótulo, otra parte de la mesa y otra la cara de la persona. El resto se ve algo borroso.",
+        "en": "Several dark patches of different sizes cover parts of the scene: one hides half of the sign, another part of the table and another the person's face. The rest looks slightly blurred."
+      }
+    }
+  ]
+}

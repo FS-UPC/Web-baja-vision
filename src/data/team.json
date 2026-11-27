@@ -1,0 +1,483 @@
+{
+  "_nota": "Fitxes basades en l'apartat 3.4 de la memòria del projecte. Els enllaços s'han verificat a la web del CUV (pàgina de professorat, que enllaça amb els perfils FUTUR de la UPC) i a les webs institucionals corresponents. Per afegir-hi una persona, copieu una fitxa i ompliu els tres idiomes.",
+  "links_label": {
+    "ca": "Enllaços de",
+    "es": "Enlaces de",
+    "en": "Links for"
+  },
+  "groups": [
+    {
+      "id": "direccio",
+      "title": {
+        "ca": "Direcció científica i coordinació",
+        "es": "Dirección científica y coordinación",
+        "en": "Scientific leadership and coordination"
+      },
+      "intro": {
+        "ca": "La coordinació operativa recau en el Centre Universitari de la Visió (CUV), que vetlla per la coherència de les actuacions, el seguiment del pla de treball i la integració de les aportacions de tot l'equip.",
+        "es": "La coordinación operativa corresponde al Centre Universitari de la Visió (CUV), que vela por la coherencia de las actuaciones, el seguimiento del plan de trabajo y la integración de las aportaciones de todo el equipo.",
+        "en": "Day-to-day coordination is led by the University Vision Centre (CUV), which ensures the coherence of all actions, monitors the work plan and integrates the contributions of the whole team."
+      },
+      "members": [
+        {
+          "name": "Dr. Lluís Pérez Mañá",
+          "role": {
+            "ca": "Investigador principal",
+            "es": "Investigador principal",
+            "en": "Principal investigator"
+          },
+          "org": {
+            "ca": "Professor lector · Facultat d'Òptica i Optometria de Terrassa (UPC) · CUV",
+            "es": "Profesor lector · Facultad de Óptica y Optometría de Terrassa (UPC) · CUV",
+            "en": "Lecturer · Faculty of Optics and Optometry of Terrassa (UPC) · CUV"
+          },
+          "bio": {
+            "ca": "Òptic optometrista especialitzat en baixa visió i rehabilitació visual, amb més de quinze anys d'experiència clínica amb persones amb baixa visió i una trajectòria consolidada en recerca i docència universitària. Lidera científicament el projecte i vetlla per l'adequació dels continguts.",
+            "es": "Óptico optometrista especializado en baja visión y rehabilitación visual, con más de quince años de experiencia clínica con personas con baja visión y una trayectoria consolidada en investigación y docencia universitaria. Lidera científicamente el proyecto y vela por la adecuación de los contenidos.",
+            "en": "Optometrist specialising in low vision and visual rehabilitation, with more than fifteen years of clinical experience with people with low vision and an established track record in university research and teaching. He leads the project scientifically and oversees the suitability of its content."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Perfil a FUTUR (UPC)",
+                "es": "Perfil en FUTUR (UPC)",
+                "en": "FUTUR profile (UPC)"
+              },
+              "url": "https://futur.upc.edu/LuisPerezMana"
+            },
+            {
+              "label": {
+                "ca": "Professorat del CUV",
+                "es": "Profesorado del CUV",
+                "en": "CUV staff"
+              },
+              "url": "https://cuv.upc.edu/es/servicios/profesorado-y-profesionales/profesorado-y-profesionales"
+            }
+          ],
+          "photo": "lluis-perez-mana.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tecnic",
+      "title": {
+        "ca": "Equip tècnic i d'accessibilitat digital",
+        "es": "Equipo técnico y de accesibilidad digital",
+        "en": "Technical and digital accessibility team"
+      },
+      "members": [
+        {
+          "name": "Antonio Moisés Funes Martín",
+          "role": {
+            "ca": "Expert en accessibilitat digital i tiflotecnologia",
+            "es": "Experto en accesibilidad digital y tiflotecnología",
+            "en": "Digital accessibility and assistive technology expert"
+          },
+          "org": {
+            "ca": "Associació Discapacitat Visual Catalunya: B1+B2+B3",
+            "es": "Associació Discapacitat Visual Catalunya: B1+B2+B3",
+            "en": "Associació Discapacitat Visual Catalunya: B1+B2+B3"
+          },
+          "bio": {
+            "ca": "Coneix a fons els estàndards WCAG i les bones pràctiques de creació de continguts accessibles. És orientador laboral, especialista en tiflotecnologia i responsable de l'atenció a les demandes d'accessibilitat de l'associació. La seva aportació és clau per garantir la usabilitat real de la plataforma.",
+            "es": "Conoce a fondo los estándares WCAG y las buenas prácticas de creación de contenidos accesibles. Es orientador laboral, especialista en tiflotecnología y responsable de la atención a las demandas de accesibilidad de la asociación. Su aportación es clave para garantizar la usabilidad real de la plataforma.",
+            "en": "He has in-depth knowledge of the WCAG standards and of good practice in accessible content. He works as an employment counsellor and assistive technology specialist, and handles accessibility requests at the association. His input is key to making the platform genuinely usable."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Web de l'associació B1+B2+B3",
+                "es": "Web de la asociación B1+B2+B3",
+                "en": "B1+B2+B3 association website"
+              },
+              "url": "https://b1b2b3.org/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinic",
+      "title": {
+        "ca": "Equip clínic i expert en salut visual",
+        "es": "Equipo clínico y experto en salud visual",
+        "en": "Clinical and eye-health experts"
+      },
+      "intro": {
+        "ca": "Professionals amb experiència contrastada en baixa visió, rehabilitació visual i teràpia visual, que participen en la creació i la validació dels continguts.",
+        "es": "Profesionales con experiencia contrastada en baja visión, rehabilitación visual y terapia visual, que participan en la creación y la validación de los contenidos.",
+        "en": "Professionals with proven experience in low vision, visual rehabilitation and vision therapy, who help create and validate the content."
+      },
+      "members": [
+        {
+          "name": "Carolina Ortiz Herrera",
+          "role": {
+            "ca": "Especialista en baixa visió",
+            "es": "Especialista en baja visión",
+            "en": "Low vision specialist"
+          },
+          "org": {
+            "ca": "Òptica optometrista · Universidad de Granada",
+            "es": "Óptica optometrista · Universidad de Granada",
+            "en": "Optometrist · University of Granada"
+          },
+          "bio": {
+            "ca": "Professora de la Universidad de Granada, especialista en baixa visió.",
+            "es": "Profesora de la Universidad de Granada, especialista en baja visión.",
+            "en": "Lecturer at the University of Granada, specialising in low vision."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Perfil a la Universidad de Granada",
+                "es": "Perfil en la Universidad de Granada",
+                "en": "University of Granada profile"
+              },
+              "url": {
+                "ca": "https://www.ugr.es/personal/6a5b6c382daba13160af0ea31eb7445e",
+                "es": "https://www.ugr.es/personal/6a5b6c382daba13160af0ea31eb7445e",
+                "en": "https://www.ugr.es/en/staff/carolina-ortiz-herrera"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Adrián Pérez Baladrón",
+          "role": {
+            "ca": "Especialista en baixa visió i rehabilitació visual",
+            "es": "Especialista en baja visión y rehabilitación visual",
+            "en": "Low vision and visual rehabilitation specialist"
+          },
+          "org": {
+            "ca": "Òptic optometrista · Universidade de Santiago de Compostela",
+            "es": "Óptico optometrista · Universidade de Santiago de Compostela",
+            "en": "Optometrist · University of Santiago de Compostela"
+          },
+          "bio": {
+            "ca": "Professor associat de la Universidade de Santiago de Compostela, especialista en baixa visió i rehabilitació visual.",
+            "es": "Profesor asociado de la Universidade de Santiago de Compostela, especialista en baja visión y rehabilitación visual.",
+            "en": "Associate lecturer at the University of Santiago de Compostela, specialising in low vision and visual rehabilitation."
+          },
+          "links": [
+            {
+              "label": "Universidade de Santiago de Compostela",
+              "url": {
+                "ca": "https://www.usc.gal/es",
+                "es": "https://www.usc.gal/es",
+                "en": "https://www.usc.gal/en"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Bernat Sunyer Grau",
+          "role": {
+            "ca": "Teràpia visual i rehabilitació visual",
+            "es": "Terapia visual y rehabilitación visual",
+            "en": "Vision therapy and visual rehabilitation"
+          },
+          "org": {
+            "ca": "Òptic optometrista · Professor lector, FOOT (UPC)",
+            "es": "Óptico optometrista · Profesor lector, FOOT (UPC)",
+            "en": "Optometrist · Lecturer, FOOT (UPC)"
+          },
+          "bio": {
+            "ca": "Professor lector de la Facultat d'Òptica i Optometria de Terrassa, especialitzat en teràpia visual i rehabilitació visual.",
+            "es": "Profesor lector de la Facultad de Óptica y Optometría de Terrassa, especializado en terapia visual y rehabilitación visual.",
+            "en": "Lecturer at the Faculty of Optics and Optometry of Terrassa, specialising in vision therapy and visual rehabilitation."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Perfil a FUTUR (UPC)",
+                "es": "Perfil en FUTUR (UPC)",
+                "en": "FUTUR profile (UPC)"
+              },
+              "url": "https://futur.upc.edu/BernatSunyerGrau"
+            }
+          ]
+        },
+        {
+          "name": "Núria Tomàs Corominas",
+          "role": {
+            "ca": "Instruments òptics i accessibilitat",
+            "es": "Instrumentos ópticos y accesibilidad",
+            "en": "Optical instruments and accessibility"
+          },
+          "org": {
+            "ca": "Òptica optometrista · Professora titular, FOOT (UPC)",
+            "es": "Óptica optometrista · Profesora titular, FOOT (UPC)",
+            "en": "Optometrist · Associate professor, FOOT (UPC)"
+          },
+          "bio": {
+            "ca": "Professora titular de la Facultat d'Òptica i Optometria de Terrassa, especialitzada en instruments òptics i accessibilitat.",
+            "es": "Profesora titular de la Facultad de Óptica y Optometría de Terrassa, especializada en instrumentos ópticos y accesibilidad.",
+            "en": "Associate professor at the Faculty of Optics and Optometry of Terrassa, specialising in optical instruments and accessibility."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Fitxa acadèmica (UPC)",
+                "es": "Ficha académica (UPC)",
+                "en": "Academic profile (UPC)"
+              },
+              "url": "https://photonics.masters.upc.edu/en/academic-staff/nuria-tomas"
+            }
+          ],
+          "photo": "nuria-tomas-corominas.jpg"
+        },
+        {
+          "name": "Dr. Marc Argilés Sans",
+          "role": {
+            "ca": "Teràpia visual, rehabilitació visual i anàlisi de dades",
+            "es": "Terapia visual, rehabilitación visual y análisis de datos",
+            "en": "Vision therapy, visual rehabilitation and data analysis"
+          },
+          "org": {
+            "ca": "Òptic optometrista · Professor lector, FOOT (UPC)",
+            "es": "Óptico optometrista · Profesor lector, FOOT (UPC)",
+            "en": "Optometrist · Lecturer, FOOT (UPC)"
+          },
+          "bio": {
+            "ca": "Professor lector de la Facultat d'Òptica i Optometria de Terrassa, especialitzat en teràpia visual, rehabilitació visual i anàlisi de dades.",
+            "es": "Profesor lector de la Facultad de Óptica y Optometría de Terrassa, especializado en terapia visual, rehabilitación visual y análisis de datos.",
+            "en": "Lecturer at the Faculty of Optics and Optometry of Terrassa, specialising in vision therapy, visual rehabilitation and data analysis."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Perfil a FUTUR (UPC)",
+                "es": "Perfil en FUTUR (UPC)",
+                "en": "FUTUR profile (UPC)"
+              },
+              "url": "https://futur.upc.edu/MarcArgilesSans"
+            }
+          ],
+          "photo": "marc-argiles-sans.jpg"
+        },
+        {
+          "name": "Dr. Ignasi Jürgens",
+          "role": {
+            "ca": "Oftalmòleg especialista en retina",
+            "es": "Oftalmólogo especialista en retina",
+            "en": "Ophthalmologist, retina specialist"
+          },
+          "org": {
+            "ca": "Director mèdic · Institut Català de Retina (ICR)",
+            "es": "Director médico · Institut Català de Retina (ICR)",
+            "en": "Medical director · Institut Català de Retina (ICR)"
+          },
+          "bio": {
+            "ca": "Oftalmòleg especialista en retina i en patologia de vitri i retina, director mèdic de l'Institut Català de Retina.",
+            "es": "Oftalmólogo especialista en retina y en patología de vítreo y retina, director médico del Institut Català de Retina.",
+            "en": "Ophthalmologist specialising in the retina and vitreoretinal disease, medical director of the Institut Català de Retina."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Perfil a l'ICR",
+                "es": "Perfil en el ICR",
+                "en": "ICR profile"
+              },
+              "url": {
+                "ca": "https://icrcat.com/doctor/dr-ignasi-jurgens-mestre",
+                "es": "https://icrcat.com/doctor/dr-ignasi-jurgens-mestre",
+                "en": "https://icrcat.com/en/doctor/dr-ignasi-jurgens-mestre"
+              }
+            }
+          ],
+          "photo": "ignasi-jurgens.jpg"
+        }
+      ]
+    },
+    {
+      "id": "educacio",
+      "title": {
+        "ca": "Educació, rehabilitació i adaptació de continguts",
+        "es": "Educación, rehabilitación y adaptación de contenidos",
+        "en": "Education, rehabilitation and content adaptation"
+      },
+      "members": [
+        {
+          "name": "Leonela González Vides",
+          "role": {
+            "ca": "Rehabilitadora visual",
+            "es": "Rehabilitadora visual",
+            "en": "Vision rehabilitation specialist"
+          },
+          "bio": {
+            "ca": "Especialitzada en l'educació d'infants amb discapacitat visual. Contribueix a adaptar els materials a diferents nivells de comprensió i necessitats formatives.",
+            "es": "Especializada en la educación de niños y niñas con discapacidad visual. Contribuye a adaptar los materiales a distintos niveles de comprensión y necesidades formativas.",
+            "en": "Specialises in the education of children with visual impairment. She helps adapt materials to different levels of understanding and learning needs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "comunicacio",
+      "title": {
+        "ca": "Comunicació, difusió i transferència",
+        "es": "Comunicación, difusión y transferencia",
+        "en": "Communication, outreach and knowledge transfer"
+      },
+      "members": [
+        {
+          "name": "Montserrat Lucena",
+          "role": {
+            "ca": "Comunicació i màrqueting digital",
+            "es": "Comunicación y marketing digital",
+            "en": "Communication and digital marketing"
+          },
+          "org": {
+            "ca": "Òptica optometrista · Professora associada, FOOT (UPC)",
+            "es": "Óptica optometrista · Profesora asociada, FOOT (UPC)",
+            "en": "Optometrist · Associate lecturer, FOOT (UPC)"
+          },
+          "bio": {
+            "ca": "Professora associada de la Facultat d'Òptica i Optometria de Terrassa, especialitzada en comunicació i màrqueting digital. Impulsa la difusió dels resultats i la comunicació amb persones usuàries i professionals.",
+            "es": "Profesora asociada de la Facultad de Óptica y Optometría de Terrassa, especializada en comunicación y marketing digital. Impulsa la difusión de los resultados y la comunicación con personas usuarias y profesionales.",
+            "en": "Associate lecturer at the Faculty of Optics and Optometry of Terrassa, specialising in communication and digital marketing. She drives the dissemination of results and communication with users and professionals."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Professorat del CUV",
+                "es": "Profesorado del CUV",
+                "en": "CUV staff"
+              },
+              "url": "https://cuv.upc.edu/es/servicios/profesorado-y-profesionales/profesorado-y-profesionales"
+            }
+          ]
+        },
+        {
+          "name": {
+            "ca": "Servei de Llengües i Terminologia de la UPC",
+            "es": "Servicio de Lenguas y Terminología de la UPC",
+            "en": "UPC Language and Terminology Service"
+          },
+          "avatar": "SLT",
+          "role": {
+            "ca": "Qualitat lingüística",
+            "es": "Calidad lingüística",
+            "en": "Language quality"
+          },
+          "bio": {
+            "ca": "Vetlla per la correcció, l'adequació terminològica i la coherència en l'ús del català a la plataforma i als materials de comunicació i transferència.",
+            "es": "Vela por la corrección, la adecuación terminológica y la coherencia en el uso del catalán en la plataforma y en los materiales de comunicación y transferencia.",
+            "en": "Ensures correct usage, appropriate terminology and consistency in the Catalan used on the platform and in communication and transfer materials."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Web del servei",
+                "es": "Web del servicio",
+                "en": "Service website"
+              },
+              "url": {
+                "ca": "https://www.upc.edu/slt/ca",
+                "es": "https://www.upc.edu/slt/es",
+                "en": "https://www.upc.edu/slt/en"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "institucional",
+      "title": {
+        "ca": "Suport institucional",
+        "es": "Apoyo institucional",
+        "en": "Institutional support"
+      },
+      "members": [
+        {
+          "name": "Dra. Núria Vila Vidal",
+          "role": {
+            "ca": "Directora del CUV",
+            "es": "Directora del CUV",
+            "en": "Director of the CUV"
+          },
+          "org": {
+            "ca": "Òptica optometrista · Professora titular, FOOT (UPC)",
+            "es": "Óptica optometrista · Profesora titular, FOOT (UPC)",
+            "en": "Optometrist · Associate professor, FOOT (UPC)"
+          },
+          "bio": {
+            "ca": "Professora titular de la Facultat d'Òptica i Optometria de Terrassa i directora del Centre Universitari de la Visió.",
+            "es": "Profesora titular de la Facultad de Óptica y Optometría de Terrassa y directora del Centre Universitari de la Visió.",
+            "en": "Associate professor at the Faculty of Optics and Optometry of Terrassa and director of the University Vision Centre."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Perfil a FUTUR (UPC)",
+                "es": "Perfil en FUTUR (UPC)",
+                "en": "FUTUR profile (UPC)"
+              },
+              "url": "https://futur.upc.edu/NuriaVilaVidal"
+            }
+          ],
+          "photo": "nuria-vila-vidal.jpg"
+        },
+        {
+          "name": "Enric González López",
+          "role": {
+            "ca": "Director tècnic del CUV",
+            "es": "Director técnico del CUV",
+            "en": "Technical director of the CUV"
+          },
+          "org": {
+            "ca": "Òptic optometrista · Professor associat, FOOT (UPC)",
+            "es": "Óptico optometrista · Profesor asociado, FOOT (UPC)",
+            "en": "Optometrist · Associate lecturer, FOOT (UPC)"
+          },
+          "bio": {
+            "ca": "Professor associat de la Facultat d'Òptica i Optometria de Terrassa i director tècnic del Centre Universitari de la Visió.",
+            "es": "Profesor asociado de la Facultad de Óptica y Optometría de Terrassa y director técnico del Centre Universitari de la Visió.",
+            "en": "Associate lecturer at the Faculty of Optics and Optometry of Terrassa and technical director of the University Vision Centre."
+          },
+          "links": [
+            {
+              "label": {
+                "ca": "Perfil a FUTUR (UPC)",
+                "es": "Perfil en FUTUR (UPC)",
+                "en": "FUTUR profile (UPC)"
+              },
+              "url": "https://futur.upc.edu/EnriqueGonzalezLopez"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gestio",
+      "title": {
+        "ca": "Gestió i suport al desenvolupament del projecte",
+        "es": "Gestión y apoyo al desarrollo del proyecto",
+        "en": "Project management and support"
+      },
+      "members": [
+        {
+          "name": "Álex García Ortiz",
+          "role": {
+            "ca": "Promotor de projectes",
+            "es": "Promotor de proyectos",
+            "en": "Project developer"
+          },
+          "org": {
+            "ca": "CUV i Facultat d'Òptica i Optometria de Terrassa (UPC)",
+            "es": "CUV y Facultad de Óptica y Optometría de Terrassa (UPC)",
+            "en": "CUV and Faculty of Optics and Optometry of Terrassa (UPC)"
+          },
+          "bio": {
+            "ca": "Més de vint anys d'experiència en gestió de projectes. Contribueix a la planificació, el seguiment i la coordinació de les línies de treball i al compliment del calendari.",
+            "es": "Más de veinte años de experiencia en gestión de proyectos. Contribuye a la planificación, el seguimiento y la coordinación de las líneas de trabajo y al cumplimiento del calendario.",
+            "en": "More than twenty years of project management experience. He contributes to planning, monitoring and coordinating the work streams and keeping the project on schedule."
+          }
+        }
+      ]
+    }
+  ],
+  "_fotos": "Fotografies a src/assets/img/team/ (320×320, sense metadades). Fonts: Lluís Pérez Mañá — notícia del CUV-UPC; Marc Argilés i Núria Vila — pàgina de l'equip directiu de la FOOT-UPC; Núria Tomàs — màster de Fotònica UPC; Ignasi Jürgens — Institut Català de Retina. Cal confirmar el consentiment de cada persona abans de publicar."
+}

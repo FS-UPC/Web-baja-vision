@@ -1,0 +1,55 @@
+<!-- meta {"title": "Resource pack generator for consultations", "description": "Tick the resources you want to give your patient and instantly generate a single accessible PDF with a QR code that opens the same content online.", "keywords": "generator resources checkboxes PDF QR code print hand out patient consultation leaflet pack kit", "main_class": "page-generator"} -->
+<header class="page-hero" data-zone="pro">
+  <div class="container">
+    <p class="page-hero__label">{{icon:check}} Professionals · 3.2</p>
+    <h1>Resource pack generator for consultations</h1>
+    <p class="lead">In one minute: tick the resources you want to give your patient and get an accessible PDF with a QR code. The patient can read it on paper or open it on their phone with large text, high contrast and read-aloud.</p>
+  </div>
+</header>
+
+<div class="container">
+  <section aria-labelledby="generador" class="no-print">
+    <h2 id="generador">1. Choose the resources</h2>
+    <form class="generator" data-generator>
+      <div class="btn-row">
+        <button type="button" class="btn btn--ghost btn--sm" data-select="all">Select all</button>
+        <button type="button" class="btn btn--ghost btn--sm" data-select="none">Clear all</button>
+      </div>
+      {{resource_picker}}
+      <p>
+        <label for="gen-note">Personal note for the patient (optional)</label>
+        <textarea id="gen-note" rows="3" aria-describedby="gen-note-hint"></textarea>
+        <span class="note" id="gen-note-hint">Only printed on the PDF. It is not stored anywhere or included in the QR code. Avoid identifying details unless necessary.</span>
+      </p>
+      <div class="generator__actions">
+        <p class="generator__count" aria-live="polite"><strong data-count>0</strong> resources selected</p>
+        <button type="submit" class="btn" data-print disabled>{{icon:print}}<span>2. Create the PDF</span></button>
+        <p class="note" data-empty>Tick at least one resource to create the PDF.</p>
+      </div>
+    </form>
+  </section>
+
+  <section aria-labelledby="preview" class="pack-preview">
+    <h2 id="preview" class="no-print">Pack preview</h2>
+    <div class="pack-sheet-head">
+      <p class="pack-sheet-head__brand">Baixa visió en xarxa · University Vision Centre (CUV-UPC)</p>
+      <p class="pack-sheet-head__title">Resources prepared for you by your professional</p>
+      <p>Date: <span data-date></span></p>
+      <div class="pack-note" data-note-wrap hidden><p><strong>Note from your professional:</strong> <span data-note-out></span></p></div>
+    </div>
+    {{qr_box}}
+    {{resource_sheets}}
+    <p class="pack-footer">This information is for guidance and does not replace seeing a professional. If you notice sudden vision loss, go to A&amp;E or call 112.</p>
+  </section>
+
+  <section aria-labelledby="com-funciona" class="prose no-print">
+    <h2 id="com-funciona">How it works</h2>
+    <ol>
+      <li>Tick the resources. The preview updates instantly.</li>
+      <li>Press <strong>Create the PDF</strong>. The browser's print window will open: choose <strong>Save as PDF</strong> to get the file, or print it directly.</li>
+      <li>Give it to the patient or send them the file. The QR code opens the same resources online, where they can enlarge text, change contrast or listen.</li>
+    </ol>
+    <p><strong>Accessibility:</strong> the PDF keeps the heading and list structure (current browsers produce tagged PDFs), using the Atkinson Hyperlegible typeface at a large size.</p>
+    <p><strong>Privacy:</strong> the generator runs in your browser. No patient data is sent or stored.</p>
+  </section>
+</div>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resource assistant · Baixa visió en xarxa</title>
+<meta name="description" content="Type or dictate your question and the assistant will take you, in one or two clicks, to the validated content on this website that can help.">
+<meta name="theme-color" content="#0a3a6b">
+<meta property="og:title" content="Resource assistant · Baixa visió en xarxa">
+<meta property="og:description" content="Type or dictate your question and the assistant will take you, in one or two clicks, to the validated content on this website that can help.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<link rel="alternate" hreflang="ca" href="../ca/assistent.html">
+<link rel="alternate" hreflang="es" href="../es/asistente.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/atkinson-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>
+/* Aplica les preferències d'accessibilitat abans de mostrar la pàgina (evita parpellejos).
+   Si la web s'obre des del disc (file://), el navegador aïlla l'emmagatzematge de cada fitxer;
+   per això les preferències també viatgen als enllaços interns amb el paràmetre ?bvx=. */
+(function(){var d=document.documentElement,p=null,q=location.search.match(/[?&]bvx=([^&#]*)/);d.classList.add("js");
+if(q){try{p=JSON.parse(decodeURIComponent(q[1]));if(!p||typeof p!=="object")p=null;else localStorage.setItem("bvx-prefs",JSON.stringify(p))}catch(e){}try{var r=location.search.replace(/[?&]bvx=[^&#]*/,"").replace(/^&/,"?");history.replaceState(null,"",location.pathname+r+location.hash)}catch(e){}}
+if(!p){try{p=JSON.parse(localStorage.getItem("bvx-prefs"))}catch(e){}}
+p=(p&&typeof p==="object")?p:{};if(p.spacing&&p.lh==null){p.lh=1;p.sp=1}window.__bvxPrefs=p;
+if([100,125,150,175,200,250,300].indexOf(p.size)>=0)d.style.fontSize=(112.5*p.size/100)+"%";
+if(/^[a-z-]+$/.test(p.theme||""))d.setAttribute("data-theme",p.theme);
+if(p.lh===1||p.lh===2)d.classList.add("lh-"+p.lh);if(p.sp===1||p.sp===2)d.classList.add("sp-"+p.sp);
+["grayscale","links","cursor","motion"].forEach(function(t){if(p[t])d.classList.add("opt-"+t)})})();
+</script>
+<script src="../assets/js/a11y.js" defer></script>
+<script src="../assets/js/features.js" defer></script>
+<script src="../assets/js/index-en.js" defer></script>
+<script src="../assets/js/assistant.js" defer></script>
+<script type="application/json" id="ui-strings">{"sizeNow": "Text size", "themeNow": "Colours", "on": "on", "off": "off", "resetDone": "Original settings restored", "ttsReading": "Reading aloud", "ttsPaused": "Reading paused", "ttsStopped": "Reading stopped", "ttsDone": "Finished reading", "ttsNoVoice": "No English voice was found on this device; the default voice will be used", "listen": "Listen to this guide", "stopListen": "Stop the guide"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<header class="site-header">
+  <section class="a11y-bar" id="a11y-bar" aria-label="Accessibility bar">
+    <div class="container a11y-bar__inner">
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-size-l">
+        <span class="a11y-bar__label" id="bar-size-l"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7V5h11v2M9.5 5v14M7 19h5"/><path d="M14 13v-1.5h7V13M17.5 11.5V19M16 19h3"/></svg><span>Text</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="-1" aria-label="Make text smaller">A−</button>
+        <output class="size-value" data-size-value aria-live="off">100%</output>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="1" aria-label="Make text larger">A+</button>
+      </div>
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-contrast-l">
+        <span class="a11y-bar__label" id="bar-contrast-l"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span>Contrast</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-theme-quick="auto" aria-pressed="false">Standard</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-light" data-theme-quick="black-on-white" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>Light</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-dark" data-theme-quick="white-on-black" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>Dark</button>
+      </div>
+      <div class="a11y-bar__group">
+        <button type="button" class="btn btn--sm" id="bar-tts-play" data-tts><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg><span>Listen to this page</span></button>
+        <button type="button" class="btn btn--sm" id="bar-tts-stop" data-tts hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg><span>Stop reading</span></button>
+        <button type="button" class="btn btn--ghost btn--sm a11y-toggle" id="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg><span>More options</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="a11y-panel" id="a11y-panel" aria-labelledby="a11y-title" hidden>
+    <div class="container a11y-panel__inner">
+      <h2 id="a11y-title">Adapt this website to the way you see</h2>
+      <p class="a11y-panel__intro">Changes apply to every page and are saved in this browser. Press Esc to close the panel.</p>
+      <div class="a11y-grid">
+        <div class="a11y-group" role="group" aria-labelledby="g-size">
+          <p class="a11y-group__title" id="g-size">Text size</p>
+          <div class="btn-row">
+            <button type="button" class="btn btn--ghost" id="size-dec" data-size-step="-1" aria-label="Make text smaller">A−</button>
+            <output class="size-value" id="size-value" data-size-value aria-live="off">100%</output>
+            <button type="button" class="btn btn--ghost" id="size-inc" data-size-step="1" aria-label="Make text larger">A+</button>
+            <button type="button" class="btn btn--ghost" id="size-reset">Original size</button>
+          </div>
+          <p class="note" style="margin-top:.75rem">You can enlarge text up to 300%. Icons grow with the text without distorting.</p>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>Colours and contrast</legend>
+          <label class="choice"><input type="radio" name="theme" value="auto"> <span class="swatch" style="background:linear-gradient(90deg,#fff 50%,#121417 50%);color:#777" aria-hidden="true"></span> <span class="choice__text">Automatic (same as your system)</span></label>
+          <p class="choice-group__title">Light background</p>
+          <label class="choice"><input type="radio" name="theme" value="light"> <span class="swatch" style="background:#fff;color:#14171c" aria-hidden="true">Aa</span> <span class="choice__text">Light</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-white"> <span class="swatch" style="background:#fff;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">High contrast: black on white</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-yellow"> <span class="swatch" style="background:#ffeb00;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">High contrast: black on yellow</span></label>
+          <p class="choice-group__title">Dark background (light sensitivity)</p>
+          <label class="choice"><input type="radio" name="theme" value="dark"> <span class="swatch" style="background:#121417;color:#f1f3f5" aria-hidden="true">Aa</span> <span class="choice__text">Dark</span></label>
+          <label class="choice"><input type="radio" name="theme" value="white-on-black"> <span class="swatch" style="background:#000;color:#fff" aria-hidden="true">Aa</span> <span class="choice__text">High contrast: white on black</span></label>
+          <label class="choice"><input type="radio" name="theme" value="yellow"> <span class="swatch" style="background:#000;color:#ffeb00" aria-hidden="true">Aa</span> <span class="choice__text">High contrast: yellow on black</span></label>
+        </fieldset>
+
+        <div class="a11y-group">
+          <fieldset class="subgroup">
+            <legend>Line spacing</legend>
+            <label class="choice"><input type="radio" name="lh" value="0"> Normal</label>
+            <label class="choice"><input type="radio" name="lh" value="1"> Wide</label>
+            <label class="choice"><input type="radio" name="lh" value="2"> Extra wide</label>
+          </fieldset>
+          <fieldset class="subgroup">
+            <legend>Letter and word spacing</legend>
+            <label class="choice"><input type="radio" name="sp" value="0"> Normal</label>
+            <label class="choice"><input type="radio" name="sp" value="1"> Wide</label>
+            <label class="choice"><input type="radio" name="sp" value="2"> Extra wide</label>
+          </fieldset>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>Reading and navigation</legend>
+          <label class="choice"><input type="checkbox" id="opt-links"> Highlight links</label>
+          <label class="choice"><input type="checkbox" id="opt-guide"> Reading guide (band that follows the mouse)</label>
+          <label class="choice"><input type="checkbox" id="opt-grayscale"> Greyscale</label>
+          <label class="choice"><input type="checkbox" id="opt-cursor"> Large cursor</label>
+          <label class="choice"><input type="checkbox" id="opt-motion"> Stop animations and motion</label>
+        </fieldset>
+
+        <div class="a11y-group" role="group" aria-labelledby="g-tts">
+          <p class="a11y-group__title" id="g-tts"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg> Read aloud</p>
+          <p>Reads the page content, or only the text you have selected.</p>
+          <div class="tts-bar" data-tts>
+            <button type="button" class="btn" id="tts-play"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor"/></svg><span>Read</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-pause" aria-pressed="false" disabled><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 5v14M16 5v14"/></svg><span>Pause</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-stop" disabled><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg><span>Stop</span></button>
+          </div>
+          <p data-tts style="margin-top:.75rem"><label for="tts-rate">Speed:</label>
+            <select id="tts-rate">
+              <option value="0.75">Slow</option>
+              <option value="1" selected>Normal</option>
+              <option value="1.25">Fast</option>
+            </select>
+          </p>
+          <p class="tts-status" id="tts-status" data-tts></p>
+          <p id="tts-unsupported" hidden>This browser cannot read aloud. You can use your device's screen reader instead.</p>
+        </div>
+      </div>
+      <div class="a11y-footer">
+        <div class="btn-row">
+          <button type="button" class="btn btn--ghost" id="a11y-reset">Reset all settings</button>
+          <a href="accessibility.html">More about the accessibility of this website</a>
+        </div>
+        <button type="button" class="btn" id="a11y-close"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Close</span></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container topbar">
+    <a class="brand" href="index.html">
+      <svg class="brand__logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M5 32C12 19.5 21.5 13 32 13s20 6.5 27 19c-7 12.5-16.5 19-27 19S12 44.5 5 32z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="32" r="10.5" fill="currentColor"/><circle cx="32" cy="32" r="4" fill="none" stroke="var(--bg)" stroke-width="2.5"/><circle cx="5" cy="32" r="4.5" fill="currentColor"/><circle cx="59" cy="32" r="4.5" fill="currentColor"/><circle cx="32" cy="13" r="4.5" fill="currentColor"/><circle cx="32" cy="51" r="4.5" fill="currentColor"/></svg>
+      <span>
+        <span class="brand__name">Baixa visió en xarxa</span>
+        <span class="brand__tag">Accessible knowledge about low vision</span>
+      </span>
+    </a>
+    <div class="header-tools">
+      <nav class="tool-links" aria-label="Shortcuts">
+        <ul>
+<li><a class="tool-link" href="assistant.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9.5h8M8 12.5h5"/></svg><span>Resource assistant</span></a></li>
+<li><a class="tool-link" href="about-us.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 19c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5M13.5 13.6a5.5 5.5 0 0 1 8 5.4"/></svg><span>About us</span></a></li>
+        </ul>
+      </nav>
+      <nav class="lang-switch" aria-label="Language">
+        <ul>
+          <li><a href="../ca/assistent.html" hreflang="ca" lang="ca"><span>Català</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#FCDD09"/><g fill="#DA121A"><rect y="2.222" width="30" height="2.222"/><rect y="6.667" width="30" height="2.222"/><rect y="11.111" width="30" height="2.222"/><rect y="15.556" width="30" height="2.222"/></g></svg></a></li>
+          <li><a href="../es/asistente.html" hreflang="es" lang="es"><span>Castellano</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg></a></li>
+          <li><a href="../en/assistant.html" hreflang="en" lang="en" aria-current="true"><span>English</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#FFFFFF"/><g fill="#CE1124"><rect x="13" width="4" height="20"/><rect y="8" width="30" height="4"/></g></svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Main menu">
+    <div class="container main-nav__inner">
+      <button type="button" class="btn btn--ghost menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>Menu</span></button>
+      <ul id="main-menu">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="patients.html" data-zone="pat"><span class="dot" aria-hidden="true"></span><span>Patients</span></a></li>
+        <li><a href="families.html" data-zone="fam"><span class="dot" aria-hidden="true"></span><span>Family and community</span></a></li>
+        <li><a href="professionals.html" data-zone="pro"><span class="dot" aria-hidden="true"></span><span>Professionals</span></a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+<nav class="breadcrumbs container" aria-label="You are here"><ol><li><a href="index.html">Home</a></li><li><span aria-current="page">Resource assistant</span></li></ol></nav>
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero__label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9.5h8M8 12.5h5"/></svg> Resource assistant</p>
+    <h1>What do you need?</h1>
+    <p class="lead">Explain in your own words what is happening or what you are looking for. The assistant suggests up to three pieces of content from this website, reviewed by the project team.</p>
+  </div>
+</header>
+
+<div class="container">
+  <section class="section" aria-label="Resource assistant">
+    <div class="assistant" data-assistant>
+  <form class="assistant__form" role="search" aria-labelledby="as-title" novalidate>
+    <h2 id="as-title"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9.5h8M8 12.5h5"/></svg> Resource assistant</h2>
+    <p class="assistant__intro">Type or dictate what is happening or what you are looking for. We will take you to the validated content on this website that can help.</p>
+    <fieldset class="segmented"><legend>I am…</legend><label class="seg"><input type="radio" name="as-profile" value="auto" checked><span>Detect automatically</span></label><label class="seg"><input type="radio" name="as-profile" value="patient"><span>a patient</span></label><label class="seg"><input type="radio" name="as-profile" value="family"><span>family or someone interested</span></label><label class="seg"><input type="radio" name="as-profile" value="pro"><span>a professional</span></label></fieldset>
+    <label class="assistant__label" for="as-q">Your question</label>
+    <div class="assistant__row">
+      <input type="search" id="as-q" name="q" autocomplete="off" spellcheck="true" aria-describedby="as-hint">
+      <button type="button" class="btn btn--ghost" id="as-mic" hidden aria-pressed="false"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></svg><span>Dictate</span></button>
+      <button type="submit" class="btn"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><span>Search</span></button>
+    </div>
+    <p class="note" id="as-hint">For example: “I have had a glaucoma drainage valve fitted and I see poor contrast”. Do not type personal details.</p>
+    <p class="assistant__examples-label" id="as-ex">You can also try:</p>
+    <ul class="chips" aria-labelledby="as-ex"><li><button type="button" class="chip" data-example>I have just found out I have retinitis pigmentosa</button></li><li><button type="button" class="chip" data-example>Light really bothers me</button></li><li><button type="button" class="chip" data-example>My father has AMD, how can I help him?</button></li><li><button type="button" class="chip" data-example>Which apps read text aloud?</button></li><li><button type="button" class="chip" data-example>How do I refer a patient to low vision services?</button></li></ul>
+  </form>
+  <div class="assistant__answer" id="as-answer" tabindex="-1" aria-live="polite"></div>
+  <noscript><p class="note">The assistant needs JavaScript. You can browse the three areas from the main menu.</p></noscript>
+</div>
+  </section>
+
+  <section aria-labelledby="com-funciona" class="prose">
+    <h2 id="com-funciona">How it works</h2>
+    <ol>
+      <li><strong>Who you are:</strong> a patient, family or someone interested, or a professional. If you do not say, the assistant works it out from what you type.</li>
+      <li><strong>What you need:</strong> whether you have just been diagnosed, want to understand a condition or symptom, or are looking for practical solutions.</li>
+      <li><strong>Answer:</strong> a short message and at most three links to verified content.</li>
+    </ol>
+    <p>The assistant only uses content from this website. It does not make up answers or give diagnoses. If it finds nothing suitable, it says so and suggests where to get help. What you type does not leave your browser; if you use the microphone, dictation is handled by your browser.</p>
+    <p>You can also browse the three areas directly: <a href="patients.html">Patients</a>, <a href="families.html">Family and community</a> and <a href="professionals.html">Professionals</a>.</p>
+  </section>
+</div>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>Baixa visió en xarxa</h2>
+        <p>An accessible, co-created digital platform that brings together, validates and humanises information on low vision and blindness for patients, families and the wider community, and professionals.</p>
+      </div>
+      <nav aria-labelledby="f-zones">
+        <h2 id="f-zones">Areas</h2>
+        <ul>
+<li><a href="patients.html">Patients</a></li>
+<li><a href="families.html">Family and community</a></li>
+<li><a href="professionals.html">Professionals</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-project">
+        <h2 id="f-project">More information</h2>
+        <ul>
+<li><a href="assistant.html">Resource assistant</a></li>
+<li><a href="about-us.html">About us</a></li>
+<li><a href="project.html">The project</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="glossary.html">Glossary</a></li>
+<li><a href="accessibility.html">Accessibility</a></li>
+<li><a href="user-testing.html">Take part in user testing</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="https://cuv.upc.edu/en/contact">University Vision Centre (CUV-UPC)</a></li>
+          <li><a href="https://b1b2b3.org/">Associació Discapacitat Visual Catalunya: B1+B2+B3</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="logo-band" aria-labelledby="f-logos">
+<h2 id="f-logos" class="visually-hidden">Project institutions</h2>
+<div class="logo-groups">
+<div class="logo-group"><p class="logo-group__label">Coordinated by</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://www.upc.edu/en"><img class="logo--upc" src="../assets/img/logos/upc.svg" alt="Universitat Politècnica de Catalunya · BarcelonaTech" width="279" height="61" loading="lazy" decoding="async"></a></li>
+</ul>
+<p class="logo-group__note">University Vision Centre · Faculty of Optics and Optometry of Terrassa</p>
+</div>
+<div class="logo-group"><p class="logo-group__label">Partners</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://b1b2b3.org/"><img class="logo--b1b2b3" src="../assets/img/logos/b1b2b3.jpg" alt="Associació Discapacitat Visual Catalunya: B1+B2+B3" width="469" height="66" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://pdvista.org/"><img class="logo--puntdevista" src="../assets/img/logos/puntdevista.jpg" alt="Fundació Punt de Vista" width="118" height="90" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://coooc.cat/"><img class="logo--coooc" src="../assets/img/logos/coooc.png" alt="Col·legi Oficial d&#x27;Òptics Optometristes de Catalunya (COOOC)" width="600" height="192" loading="lazy" decoding="async"></a></li>
+</ul>
+</div>
+<div class="logo-group"><p class="logo-group__label">IMPACTE 2025 call</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://agaur.gencat.cat/en/inici/"><img class="logo--agaur" src="../assets/img/logos/agaur.png" alt="Agència de Gestió d&#x27;Ajuts Universitaris i de Recerca (AGAUR)" width="600" height="160" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://web.gencat.cat/en/inici"><img class="logo--generalitat" src="../assets/img/logos/generalitat.png" alt="Generalitat de Catalunya" width="600" height="151" loading="lazy" decoding="async"></a></li>
+</ul>
+</div>
+</div></section>
+    <div class="footer-bottom">
+      <p>Project coordinated by the University Vision Centre (CUV) of the Faculty of Optics and Optometry of Terrassa (UPC), submitted to the AGAUR call for projects with knowledge impact on society (IMPACTE 2025).</p>
+      <p>Catalan is the source language of this project. The Spanish and English versions are translations.</p>
+      <p>© 2026 Universitat Politècnica de Catalunya · Centre Universitari de la Visió (CUV)</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="presentation" hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r=".8" fill="currentColor"/></svg><span data-toast-text></span></div>
+<div class="visually-hidden" id="live-region" aria-live="polite" aria-atomic="true"></div>
+<div class="reading-guide" id="reading-guide" aria-hidden="true" hidden></div>
+</body>
+</html>

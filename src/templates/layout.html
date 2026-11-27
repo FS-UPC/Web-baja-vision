@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{page_title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#0a3a6b">
+<meta property="og:title" content="{{page_title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="{{og_locale}}">
+{{alternates}}
+<link rel="icon" href="{{root}}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="{{root}}assets/fonts/atkinson-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{root}}assets/fonts/fonts.css">
+<link rel="stylesheet" href="{{root}}assets/css/site.css">
+<script>
+/* Aplica les preferències d'accessibilitat abans de mostrar la pàgina (evita parpellejos).
+   Si la web s'obre des del disc (file://), el navegador aïlla l'emmagatzematge de cada fitxer;
+   per això les preferències també viatgen als enllaços interns amb el paràmetre ?bvx=. */
+(function(){var d=document.documentElement,p=null,q=location.search.match(/[?&]bvx=([^&#]*)/);d.classList.add("js");
+if(q){try{p=JSON.parse(decodeURIComponent(q[1]));if(!p||typeof p!=="object")p=null;else localStorage.setItem("bvx-prefs",JSON.stringify(p))}catch(e){}try{var r=location.search.replace(/[?&]bvx=[^&#]*/,"").replace(/^&/,"?");history.replaceState(null,"",location.pathname+r+location.hash)}catch(e){}}
+if(!p){try{p=JSON.parse(localStorage.getItem("bvx-prefs"))}catch(e){}}
+p=(p&&typeof p==="object")?p:{};if(p.spacing&&p.lh==null){p.lh=1;p.sp=1}window.__bvxPrefs=p;
+if([100,125,150,175,200,250,300].indexOf(p.size)>=0)d.style.fontSize=(112.5*p.size/100)+"%";
+if(/^[a-z-]+$/.test(p.theme||""))d.setAttribute("data-theme",p.theme);
+if(p.lh===1||p.lh===2)d.classList.add("lh-"+p.lh);if(p.sp===1||p.sp===2)d.classList.add("sp-"+p.sp);
+["grayscale","links","cursor","motion"].forEach(function(t){if(p[t])d.classList.add("opt-"+t)})})();
+</script>
+<script src="{{root}}assets/js/a11y.js" defer></script>
+<script src="{{root}}assets/js/features.js" defer></script>
+{{page_scripts}}
+<script type="application/json" id="ui-strings">{{js_strings}}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">{{ui:skip}}</a>
+
+{{staging_banner}}
+<header class="site-header">
+  <section class="a11y-bar" id="a11y-bar" aria-label="{{ui:a11y_bar_label}}">
+    <div class="container a11y-bar__inner">
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-size-l">
+        <span class="a11y-bar__label" id="bar-size-l">{{icon:text}}<span>{{ui:bar_text}}</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="-1" aria-label="{{ui:size_dec}}">A−</button>
+        <output class="size-value" data-size-value aria-live="off">100%</output>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="1" aria-label="{{ui:size_inc}}">A+</button>
+      </div>
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-contrast-l">
+        <span class="a11y-bar__label" id="bar-contrast-l">{{icon:contrast}}<span>{{ui:bar_contrast}}</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-theme-quick="auto" aria-pressed="false">{{ui:bar_standard}}</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-light" data-theme-quick="black-on-white" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>{{ui:bar_light}}</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-dark" data-theme-quick="white-on-black" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>{{ui:bar_dark}}</button>
+      </div>
+      <div class="a11y-bar__group">
+        <button type="button" class="btn btn--sm" id="bar-tts-play" data-tts>{{icon:speaker}}<span>{{ui:bar_listen}}</span></button>
+        <button type="button" class="btn btn--sm" id="bar-tts-stop" data-tts hidden>{{icon:stop}}<span>{{ui:bar_stop}}</span></button>
+        <button type="button" class="btn btn--ghost btn--sm a11y-toggle" id="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel">{{icon:settings}}<span>{{ui:bar_more}}</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="a11y-panel" id="a11y-panel" aria-labelledby="a11y-title" hidden>
+    <div class="container a11y-panel__inner">
+      <h2 id="a11y-title">{{ui:a11y_title}}</h2>
+      <p class="a11y-panel__intro">{{ui:a11y_intro}}</p>
+      <div class="a11y-grid">
+        <div class="a11y-group" role="group" aria-labelledby="g-size">
+          <p class="a11y-group__title" id="g-size">{{ui:size_title}}</p>
+          <div class="btn-row">
+            <button type="button" class="btn btn--ghost" id="size-dec" data-size-step="-1" aria-label="{{ui:size_dec}}">A−</button>
+            <output class="size-value" id="size-value" data-size-value aria-live="off">100%</output>
+            <button type="button" class="btn btn--ghost" id="size-inc" data-size-step="1" aria-label="{{ui:size_inc}}">A+</button>
+            <button type="button" class="btn btn--ghost" id="size-reset">{{ui:size_reset}}</button>
+          </div>
+          <p class="note" style="margin-top:.75rem">{{ui:size_hint}}</p>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>{{ui:theme_title}}</legend>
+          <label class="choice"><input type="radio" name="theme" value="auto"> <span class="swatch" style="background:linear-gradient(90deg,#fff 50%,#121417 50%);color:#777" aria-hidden="true"></span> <span class="choice__text">{{ui:theme_auto}}</span></label>
+          <p class="choice-group__title">{{ui:theme_group_light}}</p>
+          <label class="choice"><input type="radio" name="theme" value="light"> <span class="swatch" style="background:#fff;color:#14171c" aria-hidden="true">Aa</span> <span class="choice__text">{{ui:theme_light}}</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-white"> <span class="swatch" style="background:#fff;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">{{ui:theme_bow}}</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-yellow"> <span class="swatch" style="background:#ffeb00;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">{{ui:theme_boy}}</span></label>
+          <p class="choice-group__title">{{ui:theme_group_dark}}</p>
+          <label class="choice"><input type="radio" name="theme" value="dark"> <span class="swatch" style="background:#121417;color:#f1f3f5" aria-hidden="true">Aa</span> <span class="choice__text">{{ui:theme_dark}}</span></label>
+          <label class="choice"><input type="radio" name="theme" value="white-on-black"> <span class="swatch" style="background:#000;color:#fff" aria-hidden="true">Aa</span> <span class="choice__text">{{ui:theme_wob}}</span></label>
+          <label class="choice"><input type="radio" name="theme" value="yellow"> <span class="swatch" style="background:#000;color:#ffeb00" aria-hidden="true">Aa</span> <span class="choice__text">{{ui:theme_yellow}}</span></label>
+        </fieldset>
+
+        <div class="a11y-group">
+          <fieldset class="subgroup">
+            <legend>{{ui:lh_title}}</legend>
+            <label class="choice"><input type="radio" name="lh" value="0"> {{ui:lvl_0}}</label>
+            <label class="choice"><input type="radio" name="lh" value="1"> {{ui:lvl_1}}</label>
+            <label class="choice"><input type="radio" name="lh" value="2"> {{ui:lvl_2}}</label>
+          </fieldset>
+          <fieldset class="subgroup">
+            <legend>{{ui:sp_title}}</legend>
+            <label class="choice"><input type="radio" name="sp" value="0"> {{ui:lvl_0}}</label>
+            <label class="choice"><input type="radio" name="sp" value="1"> {{ui:lvl_1}}</label>
+            <label class="choice"><input type="radio" name="sp" value="2"> {{ui:lvl_2}}</label>
+          </fieldset>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>{{ui:reading_title}}</legend>
+          <label class="choice"><input type="checkbox" id="opt-links"> {{ui:opt_links}}</label>
+          <label class="choice"><input type="checkbox" id="opt-guide"> {{ui:opt_guide}}</label>
+          <label class="choice"><input type="checkbox" id="opt-grayscale"> {{ui:opt_grayscale}}</label>
+          <label class="choice"><input type="checkbox" id="opt-cursor"> {{ui:opt_cursor}}</label>
+          <label class="choice"><input type="checkbox" id="opt-motion"> {{ui:opt_motion}}</label>
+        </fieldset>
+
+        <div class="a11y-group" role="group" aria-labelledby="g-tts">
+          <p class="a11y-group__title" id="g-tts">{{icon:speaker}} {{ui:tts_title}}</p>
+          <p>{{ui:tts_intro}}</p>
+          <div class="tts-bar" data-tts>
+            <button type="button" class="btn" id="tts-play">{{icon:play}}<span>{{ui:tts_play}}</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-pause" aria-pressed="false" disabled>{{icon:pause}}<span>{{ui:tts_pause}}</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-stop" disabled>{{icon:stop}}<span>{{ui:tts_stop}}</span></button>
+          </div>
+          <p data-tts style="margin-top:.75rem"><label for="tts-rate">{{ui:tts_rate}}</label>
+            <select id="tts-rate">
+              <option value="0.75">{{ui:tts_slow}}</option>
+              <option value="1" selected>{{ui:tts_normal}}</option>
+              <option value="1.25">{{ui:tts_fast}}</option>
+            </select>
+          </p>
+          <p class="tts-status" id="tts-status" data-tts></p>
+          <p id="tts-unsupported" hidden>{{ui:tts_unsupported}}</p>
+        </div>
+      </div>
+      <div class="a11y-footer">
+        <div class="btn-row">
+          <button type="button" class="btn btn--ghost" id="a11y-reset">{{ui:reset_all}}</button>
+          <a href="{{href:accessibility}}">{{ui:a11y_more}}</a>
+        </div>
+        <button type="button" class="btn" id="a11y-close">{{icon:close}}<span>{{ui:close}}</span></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container topbar">
+    <a class="brand" href="{{href:home}}"{{home_current}}>
+      {{logo}}
+      <span>
+        <span class="brand__name">Baixa visió en xarxa</span>
+        <span class="brand__tag">{{ui:tagline}}</span>
+      </span>
+    </a>
+    <div class="header-tools">
+      <nav class="tool-links" aria-label="{{ui:header_tools}}">
+        <ul>
+{{header_links}}
+        </ul>
+      </nav>
+      <nav class="lang-switch" aria-label="{{ui:lang_nav}}">
+        <ul>
+{{lang_links}}
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="{{ui:main_nav}}">
+    <div class="container main-nav__inner">
+      <button type="button" class="btn btn--ghost menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-menu">{{icon:menu}}<span>{{ui:menu}}</span></button>
+      <ul id="main-menu">
+{{nav_links}}
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+{{breadcrumbs}}
+{{content}}
+{{local_nav}}
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>Baixa visió en xarxa</h2>
+        <p>{{ui:footer_about}}</p>
+      </div>
+      <nav aria-labelledby="f-zones">
+        <h2 id="f-zones">{{ui:footer_zones}}</h2>
+        <ul>
+{{footer_zones}}
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-project">
+        <h2 id="f-project">{{ui:footer_more}}</h2>
+        <ul>
+{{footer_project}}
+        </ul>
+      </nav>
+      <div>
+        <h2>{{ui:footer_contact}}</h2>
+        <ul>
+          <li><a href="{{ui:cuv_contact_url}}">{{ui:footer_cuv}}</a></li>
+          <li><a href="https://b1b2b3.org/">Associació Discapacitat Visual Catalunya: B1+B2+B3</a></li>
+        </ul>
+      </div>
+    </div>
+    {{logo_band}}
+    <div class="footer-bottom">
+      <p>{{ui:footer_funding}}</p>
+      <p>{{ui:footer_lang}}</p>
+      <p>© {{year}} Universitat Politècnica de Catalunya · Centre Universitari de la Visió (CUV)</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="presentation" hidden>{{icon:info}}<span data-toast-text></span></div>
+<div class="visually-hidden" id="live-region" aria-live="polite" aria-atomic="true"></div>
+<div class="reading-guide" id="reading-guide" aria-hidden="true" hidden></div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!-- meta {"title": "Participa en la validació", "description": "Formulari accessible perquè les persones participants i qualsevol usuari valorin la web abans del llançament: compatibilitat amb tecnologies de suport, llegibilitat i continguts."} -->
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero__label">{{icon:check}} Validació participativa</p>
+    <h1>Participa en la validació</h1>
+    <p class="lead">Abans d'obrir la web a tothom, la proven les persones que van participar a les sessions de cocreació i qualsevol persona que ho vulgui. La teva opinió decideix què cal canviar.</p>
+  </div>
+</header>
+
+<div class="container">
+  <section aria-labelledby="que-provem" class="prose">
+    <h2 id="que-provem">Què volem saber</h2>
+    <ul>
+      <li>Si funciona bé amb el teu lector de pantalla (VoiceOver, TalkBack, NVDA, JAWS) o línia braille.</li>
+      <li>Si es llegeix bé amb la teva resta visual: contrast, mida del text, icones que no es deformen ni desapareixen.</li>
+      <li>Si trobes el que busques en un o dos clics.</li>
+      <li>Si els continguts són clars, útils i realistes.</li>
+    </ul>
+    <p>Totes les preguntes són opcionals excepte les marcades com a obligatòries. No et demanem el nom.</p>
+  </section>
+
+  <section aria-labelledby="formulari">
+    <h2 id="formulari">Formulari de valoració</h2>
+    <form class="feedback" data-feedback action="{{feedback_action}}" method="post" data-email="{{feedback_email}}" data-subject="Validació web Baixa visió en xarxa" novalidate>
+      <div class="callout callout--small" id="fb-errors" data-errors role="alert" tabindex="-1" hidden>
+        <p><strong>Falta completar alguna resposta obligatòria.</strong> Revisa els camps marcats com a obligatoris.</p>
+      </div>
+
+      <fieldset>
+        <legend>Qui ets? (obligatori)</legend>
+        <label class="choice"><input type="radio" name="perfil" value="pacient" required> Persona amb baixa visió o ceguesa</label>
+        <label class="choice"><input type="radio" name="perfil" value="familiar"> Familiar o persona interessada</label>
+        <label class="choice"><input type="radio" name="perfil" value="professional"> Professional</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-code">Codi de participant, si te l'hem donat (opcional)</label>
+        <input type="text" id="fb-code" name="codi" autocomplete="off" size="10">
+      </p>
+
+      <fieldset>
+        <legend>Com fas servir la web? Marca tot el que calgui.</legend>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="lector"> Lector de pantalla (VoiceOver, TalkBack, NVDA, JAWS)</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="braille"> Línia braille</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="ampliacio"> Ampliació de pantalla o lletra gran</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="contrast-so"> Contrast alt del sistema operatiu</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="barra"> La barra d'accessibilitat d'aquesta web</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="cap"> Cap ajuda en especial</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-device">Dispositiu i navegador (opcional)</label>
+        <input type="text" id="fb-device" name="dispositiu" autocomplete="off">
+        <span class="note">Per exemple: iPhone amb Safari, ordinador amb Windows i Chrome.</span>
+      </p>
+
+      <fieldset>
+        <legend>Has trobat el que buscaves? (obligatori)</legend>
+        <label class="choice"><input type="radio" name="trobat" value="si" required> Sí, ràpidament</label>
+        <label class="choice"><input type="radio" name="trobat" value="en-part"> En part, o m'ha costat</label>
+        <label class="choice"><input type="radio" name="trobat" value="no"> No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Com es llegeix amb la teva visió o el teu lector?</legend>
+        <label class="choice"><input type="radio" name="lectura" value="5"> Molt bé</label>
+        <label class="choice"><input type="radio" name="lectura" value="4"> Bé</label>
+        <label class="choice"><input type="radio" name="lectura" value="3"> Regular</label>
+        <label class="choice"><input type="radio" name="lectura" value="2"> Malament</label>
+        <label class="choice"><input type="radio" name="lectura" value="1"> No l'he pogut fer servir</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-page">Quina pàgina o apartat has provat? (opcional)</label>
+        <input type="text" id="fb-page" name="pagina" autocomplete="off">
+      </p>
+
+      <p>
+        <label for="fb-comments">Què t'ha costat o què milloraries? (obligatori)</label>
+        <textarea id="fb-comments" name="comentaris" rows="6" required></textarea>
+      </p>
+
+      <p><button type="submit" class="btn">{{icon:check}}<span>Envia la valoració</span></button></p>
+    </form>
+
+    <div class="box feedback-out" data-feedback-out hidden>
+      <h2>Gràcies! Un últim pas</h2>
+      <p>Aquesta versió de proves encara no té un servidor que rebi els formularis. Copia el resum i envia'l al Centre Universitari de la Visió.</p>
+      <p><label for="fb-summary">Resum de la teva valoració</label>
+        <textarea id="fb-summary" rows="8" readonly></textarea></p>
+      <div class="btn-row">
+        <button type="button" class="btn" data-copy data-done="Copiat">{{icon:check}}<span>Copia el resum</span></button>
+        <a class="btn btn--ghost" data-mail hidden href="{{ui:cuv_contact_url}}">{{icon:chat}}<span>Envia'l per correu</span></a>
+        <a class="btn btn--ghost" href="{{ui:cuv_contact_url}}">{{icon:external}}<span>Formulari de contacte del CUV</span></a>
+      </div>
+    </div>
+  </section>
+</div>

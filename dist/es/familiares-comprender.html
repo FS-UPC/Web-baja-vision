@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="es" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comprender la baja visión · Baixa visió en xarxa</title>
+<meta name="description" content="Simulador de cómo ve una persona con distintas patologías, la visión mixta y el uso intermitente del bastón, y las diferencias con la ceguera total y otras discapacidades.">
+<meta name="theme-color" content="#0a3a6b">
+<meta property="og:title" content="Comprender la baja visión · Baixa visió en xarxa">
+<meta property="og:description" content="Simulador de cómo ve una persona con distintas patologías, la visión mixta y el uso intermitente del bastón, y las diferencias con la ceguera total y otras discapacidades.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<link rel="alternate" hreflang="ca" href="../ca/familiars-comprendre.html">
+<link rel="alternate" hreflang="en" href="../en/families-understanding.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/atkinson-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>
+/* Aplica les preferències d'accessibilitat abans de mostrar la pàgina (evita parpellejos).
+   Si la web s'obre des del disc (file://), el navegador aïlla l'emmagatzematge de cada fitxer;
+   per això les preferències també viatgen als enllaços interns amb el paràmetre ?bvx=. */
+(function(){var d=document.documentElement,p=null,q=location.search.match(/[?&]bvx=([^&#]*)/);d.classList.add("js");
+if(q){try{p=JSON.parse(decodeURIComponent(q[1]));if(!p||typeof p!=="object")p=null;else localStorage.setItem("bvx-prefs",JSON.stringify(p))}catch(e){}try{var r=location.search.replace(/[?&]bvx=[^&#]*/,"").replace(/^&/,"?");history.replaceState(null,"",location.pathname+r+location.hash)}catch(e){}}
+if(!p){try{p=JSON.parse(localStorage.getItem("bvx-prefs"))}catch(e){}}
+p=(p&&typeof p==="object")?p:{};if(p.spacing&&p.lh==null){p.lh=1;p.sp=1}window.__bvxPrefs=p;
+if([100,125,150,175,200,250,300].indexOf(p.size)>=0)d.style.fontSize=(112.5*p.size/100)+"%";
+if(/^[a-z-]+$/.test(p.theme||""))d.setAttribute("data-theme",p.theme);
+if(p.lh===1||p.lh===2)d.classList.add("lh-"+p.lh);if(p.sp===1||p.sp===2)d.classList.add("sp-"+p.sp);
+["grayscale","links","cursor","motion"].forEach(function(t){if(p[t])d.classList.add("opt-"+t)})})();
+</script>
+<script src="../assets/js/a11y.js" defer></script>
+<script src="../assets/js/features.js" defer></script>
+
+<script type="application/json" id="ui-strings">{"sizeNow": "Tamaño del texto", "themeNow": "Colores", "on": "activado", "off": "desactivado", "resetDone": "Se ha restablecido la configuración original", "ttsReading": "Leyendo en voz alta", "ttsPaused": "Lectura en pausa", "ttsStopped": "Lectura detenida", "ttsDone": "Lectura terminada", "ttsNoVoice": "No se ha encontrado ninguna voz en castellano en este dispositivo; se usará la voz por defecto", "listen": "Escuchar esta guía", "stopListen": "Detener la guía"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+
+<header class="site-header">
+  <section class="a11y-bar" id="a11y-bar" aria-label="Barra de accesibilidad">
+    <div class="container a11y-bar__inner">
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-size-l">
+        <span class="a11y-bar__label" id="bar-size-l"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7V5h11v2M9.5 5v14M7 19h5"/><path d="M14 13v-1.5h7V13M17.5 11.5V19M16 19h3"/></svg><span>Texto</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="-1" aria-label="Reducir el tamaño del texto">A−</button>
+        <output class="size-value" data-size-value aria-live="off">100%</output>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="1" aria-label="Aumentar el tamaño del texto">A+</button>
+      </div>
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-contrast-l">
+        <span class="a11y-bar__label" id="bar-contrast-l"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span>Contraste</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-theme-quick="auto" aria-pressed="false">Estándar</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-light" data-theme-quick="black-on-white" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>Claro</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-dark" data-theme-quick="white-on-black" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>Oscuro</button>
+      </div>
+      <div class="a11y-bar__group">
+        <button type="button" class="btn btn--sm" id="bar-tts-play" data-tts><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg><span>Escuchar la página</span></button>
+        <button type="button" class="btn btn--sm" id="bar-tts-stop" data-tts hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg><span>Detener la lectura</span></button>
+        <button type="button" class="btn btn--ghost btn--sm a11y-toggle" id="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg><span>Más opciones</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="a11y-panel" id="a11y-panel" aria-labelledby="a11y-title" hidden>
+    <div class="container a11y-panel__inner">
+      <h2 id="a11y-title">Adapta la web a tu manera de ver</h2>
+      <p class="a11y-panel__intro">Los cambios se aplican a todas las páginas y se guardan en este navegador. Pulsa Esc para cerrar el panel.</p>
+      <div class="a11y-grid">
+        <div class="a11y-group" role="group" aria-labelledby="g-size">
+          <p class="a11y-group__title" id="g-size">Tamaño del texto</p>
+          <div class="btn-row">
+            <button type="button" class="btn btn--ghost" id="size-dec" data-size-step="-1" aria-label="Reducir el tamaño del texto">A−</button>
+            <output class="size-value" id="size-value" data-size-value aria-live="off">100%</output>
+            <button type="button" class="btn btn--ghost" id="size-inc" data-size-step="1" aria-label="Aumentar el tamaño del texto">A+</button>
+            <button type="button" class="btn btn--ghost" id="size-reset">Tamaño original</button>
+          </div>
+          <p class="note" style="margin-top:.75rem">Puedes ampliar el texto hasta el 300 %. Los iconos crecen con el texto sin deformarse.</p>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>Colores y contraste</legend>
+          <label class="choice"><input type="radio" name="theme" value="auto"> <span class="swatch" style="background:linear-gradient(90deg,#fff 50%,#121417 50%);color:#777" aria-hidden="true"></span> <span class="choice__text">Automático (como el sistema)</span></label>
+          <p class="choice-group__title">Fondo claro</p>
+          <label class="choice"><input type="radio" name="theme" value="light"> <span class="swatch" style="background:#fff;color:#14171c" aria-hidden="true">Aa</span> <span class="choice__text">Claro</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-white"> <span class="swatch" style="background:#fff;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">Alto contraste: negro sobre blanco</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-yellow"> <span class="swatch" style="background:#ffeb00;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">Alto contraste: negro sobre amarillo</span></label>
+          <p class="choice-group__title">Fondo oscuro (fotofobia)</p>
+          <label class="choice"><input type="radio" name="theme" value="dark"> <span class="swatch" style="background:#121417;color:#f1f3f5" aria-hidden="true">Aa</span> <span class="choice__text">Oscuro</span></label>
+          <label class="choice"><input type="radio" name="theme" value="white-on-black"> <span class="swatch" style="background:#000;color:#fff" aria-hidden="true">Aa</span> <span class="choice__text">Alto contraste: blanco sobre negro</span></label>
+          <label class="choice"><input type="radio" name="theme" value="yellow"> <span class="swatch" style="background:#000;color:#ffeb00" aria-hidden="true">Aa</span> <span class="choice__text">Alto contraste: amarillo sobre negro</span></label>
+        </fieldset>
+
+        <div class="a11y-group">
+          <fieldset class="subgroup">
+            <legend>Espacio entre líneas</legend>
+            <label class="choice"><input type="radio" name="lh" value="0"> Normal</label>
+            <label class="choice"><input type="radio" name="lh" value="1"> Amplio</label>
+            <label class="choice"><input type="radio" name="lh" value="2"> Muy amplio</label>
+          </fieldset>
+          <fieldset class="subgroup">
+            <legend>Espacio entre letras y palabras</legend>
+            <label class="choice"><input type="radio" name="sp" value="0"> Normal</label>
+            <label class="choice"><input type="radio" name="sp" value="1"> Amplio</label>
+            <label class="choice"><input type="radio" name="sp" value="2"> Muy amplio</label>
+          </fieldset>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>Lectura y navegación</legend>
+          <label class="choice"><input type="checkbox" id="opt-links"> Resaltar los enlaces</label>
+          <label class="choice"><input type="checkbox" id="opt-guide"> Guía de lectura (franja que sigue al ratón)</label>
+          <label class="choice"><input type="checkbox" id="opt-grayscale"> Escala de grises</label>
+          <label class="choice"><input type="checkbox" id="opt-cursor"> Cursor grande</label>
+          <label class="choice"><input type="checkbox" id="opt-motion"> Detener animaciones y movimientos</label>
+        </fieldset>
+
+        <div class="a11y-group" role="group" aria-labelledby="g-tts">
+          <p class="a11y-group__title" id="g-tts"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg> Lectura en voz alta</p>
+          <p>Lee el contenido de la página, o solo el texto que hayas seleccionado.</p>
+          <div class="tts-bar" data-tts>
+            <button type="button" class="btn" id="tts-play"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor"/></svg><span>Leer</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-pause" aria-pressed="false" disabled><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 5v14M16 5v14"/></svg><span>Pausa</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-stop" disabled><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg><span>Detener</span></button>
+          </div>
+          <p data-tts style="margin-top:.75rem"><label for="tts-rate">Velocidad:</label>
+            <select id="tts-rate">
+              <option value="0.75">Lenta</option>
+              <option value="1" selected>Normal</option>
+              <option value="1.25">Rápida</option>
+            </select>
+          </p>
+          <p class="tts-status" id="tts-status" data-tts></p>
+          <p id="tts-unsupported" hidden>Este navegador no permite la lectura en voz alta. Puedes usar el lector de pantalla de tu dispositivo.</p>
+        </div>
+      </div>
+      <div class="a11y-footer">
+        <div class="btn-row">
+          <button type="button" class="btn btn--ghost" id="a11y-reset">Restablecer toda la configuración</button>
+          <a href="accesibilidad.html">Más información sobre la accesibilidad de esta web</a>
+        </div>
+        <button type="button" class="btn" id="a11y-close"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Cerrar</span></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container topbar">
+    <a class="brand" href="index.html">
+      <svg class="brand__logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M5 32C12 19.5 21.5 13 32 13s20 6.5 27 19c-7 12.5-16.5 19-27 19S12 44.5 5 32z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="32" r="10.5" fill="currentColor"/><circle cx="32" cy="32" r="4" fill="none" stroke="var(--bg)" stroke-width="2.5"/><circle cx="5" cy="32" r="4.5" fill="currentColor"/><circle cx="59" cy="32" r="4.5" fill="currentColor"/><circle cx="32" cy="13" r="4.5" fill="currentColor"/><circle cx="32" cy="51" r="4.5" fill="currentColor"/></svg>
+      <span>
+        <span class="brand__name">Baixa visió en xarxa</span>
+        <span class="brand__tag">Conocimiento accesible sobre baja visión</span>
+      </span>
+    </a>
+    <div class="header-tools">
+      <nav class="tool-links" aria-label="Accesos directos">
+        <ul>
+<li><a class="tool-link" href="asistente.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9.5h8M8 12.5h5"/></svg><span>Asistente de recursos</span></a></li>
+<li><a class="tool-link" href="quienes-somos.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 19c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5M13.5 13.6a5.5 5.5 0 0 1 8 5.4"/></svg><span>Quiénes somos</span></a></li>
+        </ul>
+      </nav>
+      <nav class="lang-switch" aria-label="Idioma">
+        <ul>
+          <li><a href="../ca/familiars-comprendre.html" hreflang="ca" lang="ca"><span>Català</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#FCDD09"/><g fill="#DA121A"><rect y="2.222" width="30" height="2.222"/><rect y="6.667" width="30" height="2.222"/><rect y="11.111" width="30" height="2.222"/><rect y="15.556" width="30" height="2.222"/></g></svg></a></li>
+          <li><a href="../es/familiares-comprender.html" hreflang="es" lang="es" aria-current="true"><span>Castellano</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg></a></li>
+          <li><a href="../en/families-understanding.html" hreflang="en" lang="en"><span>English</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#FFFFFF"/><g fill="#CE1124"><rect x="13" width="4" height="20"/><rect y="8" width="30" height="4"/></g></svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Menú principal">
+    <div class="container main-nav__inner">
+      <button type="button" class="btn btn--ghost menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>Menú</span></button>
+      <ul id="main-menu">
+        <li><a href="index.html"><span>Inicio</span></a></li>
+        <li><a href="pacientes.html" data-zone="pat"><span class="dot" aria-hidden="true"></span><span>Pacientes</span></a></li>
+        <li><a href="familiares.html" data-zone="fam" aria-current="true"><span class="dot" aria-hidden="true"></span><span>Familiares e interesados</span></a></li>
+        <li><a href="profesionales.html" data-zone="pro"><span class="dot" aria-hidden="true"></span><span>Profesionales</span></a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1" class="zone-fam">
+<nav class="breadcrumbs container" aria-label="Está aquí"><ol><li><a href="index.html">Inicio</a></li><li><a href="familiares.html">Familiares e interesados</a></li><li><span aria-current="page">Comprender la baja visión</span></li></ol></nav>
+<header class="page-hero" data-zone="fam">
+  <div class="container">
+    <p class="page-hero__label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg> Familiares e interesados · 2.1</p>
+    <h1>Comprender la baja visión</h1>
+    <p class="lead">La baja visión no se ve desde fuera. Entender cómo ve la otra persona evita malentendidos y ayuda a acompañar mejor.</p>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="toc" aria-labelledby="toc-title">
+    <h2 id="toc-title">En esta página</h2>
+    <ol>
+      <li><a href="#simulador">Cómo ve: simulador</a></li>
+      <li><a href="#visio-mixta">Visión mixta y bastón intermitente</a></li>
+      <li><a href="#diferencies">Diferencias con otras discapacidades</a></li>
+      <li><a href="#preguntar">Pregunta, no supongas</a></li>
+    </ol>
+  </nav>
+
+  <section aria-labelledby="simulador">
+    <h2 id="simulador">Cómo ve: simulador</h2>
+    <p class="prose">Elige un tipo de pérdida para ver una aproximación de cómo se ve la misma escena. Cada opción incluye una descripción escrita de lo que se ve.</p>
+    <div class="sim" data-simulator>
+  <fieldset class="sim__controls"><legend>Elige cómo quieres ver la escena</legend><label class="choice"><input type="radio" name="sim-mode" value="normal" checked data-desc="Escena de una sala: a la izquierda una ventana y una persona con jersey verde; en el centro un rótulo azul con la palabra «PARADA»; a la derecha un reloj de pared que marca las tres. Abajo, una mesa con un cuenco rojo y un bote con la etiqueta «Sal», y a la izquierda un escalón marcado con una línea amarilla."> <span class="choice__text">Visión sin alteraciones</span></label><label class="choice"><input type="radio" name="sim-mode" value="central" data-desc="Una mancha oscura y borrosa tapa el centro de la escena: no se puede leer el rótulo ni ver la cara de la persona. Los lados se ven: la ventana, el reloj y el escalón. Por eso alguien puede caminar sin tropezar pero no reconocerte."> <span class="choice__text">Pérdida de visión central (por ejemplo, DMAE o Stargardt)</span></label><label class="choice"><input type="radio" name="sim-mode" value="tunnel" data-desc="Solo se ve un círculo pequeño en el centro, donde está el rótulo «PARADA», que se puede leer. Todo lo demás es negro: no se ven la persona, el reloj, la mesa ni el escalón. Alguien con esta visión puede leer letra pequeña y, a la vez, chocar con puertas o tropezar."> <span class="choice__text">Pérdida de visión periférica o «visión en túnel» (por ejemplo, glaucoma avanzado o retinosis pigmentaria)</span></label><label class="choice"><input type="radio" name="sim-mode" value="blur" data-desc="Toda la escena se ve desenfocada. Se distinguen las formas grandes y los colores (la ventana, el cuenco rojo, el rótulo azul), pero no se puede leer ningún texto ni ver detalles como las agujas del reloj."> <span class="choice__text">Visión borrosa (por ejemplo, catarata o córnea dañada)</span></label><label class="choice"><input type="radio" name="sim-mode" value="contrast" data-desc="La escena se ve como lavada, con colores apagados y grisáceos. Cuesta distinguir el escalón del suelo, el bote de la mesa o la persona de la pared, aunque las formas no sean borrosas."> <span class="choice__text">Poca sensibilidad al contraste</span></label><label class="choice"><input type="radio" name="sim-mode" value="glare" data-desc="Una luz blanca muy intensa inunda la escena, sobre todo alrededor de la ventana. Casi todo se ve blanco y desvaído; solo se adivinan las formas más oscuras. Por eso muchas personas prefieren el modo oscuro y filtros."> <span class="choice__text">Deslumbramiento y fotofobia</span></label><label class="choice"><input type="radio" name="sim-mode" value="patches" data-desc="Varias manchas oscuras de distintos tamaños tapan partes de la escena: una oculta medio rótulo, otra parte de la mesa y otra la cara de la persona. El resto se ve algo borroso."> <span class="choice__text">Visión a manchas (por ejemplo, retinopatía diabética)</span></label></fieldset>
+  <figure class="sim__figure">
+    <div class="sim__view" data-mode="normal" role="img" aria-labelledby="sim-cap sim-desc"><svg class="sim__scene" viewBox="0 0 640 400" aria-hidden="true" focusable="false">
+  <rect width="640" height="400" fill="#dfe8f1"/>
+  <rect x="0" y="250" width="640" height="150" fill="#b98d5f"/>
+  <rect x="40" y="40" width="190" height="200" fill="#ffffff" stroke="#333" stroke-width="6"/>
+  <path d="M135 40v200M40 140h190" stroke="#333" stroke-width="5"/>
+  <circle cx="520" cy="95" r="58" fill="#fff" stroke="#222" stroke-width="7"/>
+  <path d="M520 95V58M520 95l26 16" stroke="#222" stroke-width="7" stroke-linecap="round"/>
+  <rect x="248" y="58" width="190" height="78" rx="8" fill="#0a3a6b"/>
+  <text x="343" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#fff">PARADA</text>
+  <rect x="300" y="300" width="300" height="22" fill="#6b4a2b"/>
+  <path d="M330 322v70M570 322v70" stroke="#6b4a2b" stroke-width="16"/>
+  <path d="M390 300c0-36 18-52 40-52s40 16 40 52z" fill="#d23c3c"/>
+  <rect x="490" y="262" width="60" height="38" rx="4" fill="#f5f5f5" stroke="#333" stroke-width="4"/>
+  <text x="520" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#111">Sal</text>
+  <circle cx="120" cy="300" r="34" fill="#f2c94c"/>
+  <path d="M0 360h260v40H0z" fill="#8c6a45"/><path d="M0 360h260" stroke="#ffd31a" stroke-width="8"/>
+  <circle cx="180" cy="215" r="24" fill="#e8b48f"/><path d="M150 250c0-18 14-28 30-28s30 10 30 28v20h-60z" fill="#2f6f4e"/>
+</svg><div class="sim__overlay" aria-hidden="true"></div></div>
+    <figcaption><span id="sim-cap" class="visually-hidden">Simulación: </span><span id="sim-desc" aria-live="polite">Escena de una sala: a la izquierda una ventana y una persona con jersey verde; en el centro un rótulo azul con la palabra «PARADA»; a la derecha un reloj de pared que marca las tres. Abajo, una mesa con un cuenco rojo y un bote con la etiqueta «Sal», y a la izquierda un escalón marcado con una línea amarilla.</span></figcaption>
+  </figure>
+  <p class="note">Simulación aproximada y orientativa. Cada persona ve de manera diferente, y la misma persona puede ver distinto según la luz o el cansancio.</p>
+</div>
+    <p class="note">Estamos preparando vídeos de simulación por patología, con audiodescripción y transcripción completa.</p>
+  </section>
+
+  <section aria-labelledby="visio-mixta" class="prose" data-listen>
+    <h2 id="visio-mixta">Visión mixta y bastón intermitente</h2>
+    <p>Una de las quejas más repetidas en las sesiones de cocreación fue la incomprensión del entorno. Algunas situaciones que pueden parecer contradictorias y no lo son:</p>
+    <ul>
+      <li><strong>Lee el móvil pero choca con las puertas.</strong> Puede conservar la visión central y haber perdido la de los lados.</li>
+      <li><strong>No te saluda por la calle.</strong> Si no ve el centro, quizá no te reconoce la cara. No es que no quiera saludarte.</li>
+      <li><strong>De día va sin bastón y de noche lo lleva.</strong> Con poca luz, muchas personas ven mucho menos. Usar el bastón solo cuando hace falta es normal.</li>
+      <li><strong>Un día puede hacer algo y otro no.</strong> La visión cambia con la luz, el cansancio y el estado de ánimo. No exagera.</li>
+    </ul>
+    <p>Comentarios como «eres despistada» o «te he visto sin bastón» hacen daño. Si tienes dudas, pregunta.</p>
+  </section>
+
+  <section aria-labelledby="diferencies" data-listen>
+    <h2 id="diferencies">Diferencias con otras discapacidades</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>Baja visión, ceguera y otras discapacidades: qué tener en cuenta</caption>
+        <thead><tr><th scope="col">Situación</th><th scope="col">Qué significa</th><th scope="col">Qué ayuda</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Baja visión</th><td>Ve una parte. Puede leer con ayudas, pero con dificultades según la luz y la distancia.</td><td>Contraste, buena luz, letra grande, paciencia y no cambiar las cosas de sitio.</td></tr>
+          <tr><th scope="row">Ceguera legal</th><td>La visión es muy reducida, pero a menudo queda alguna percepción de luz, formas o un campo muy pequeño.</td><td>Bastón o perro guía, lector de pantalla, braille, descripciones verbales.</td></tr>
+          <tr><th scope="row">Ceguera total</th><td>No hay percepción visual útil.</td><td>Información oral o táctil, braille, entornos previsibles.</td></tr>
+          <tr><th scope="row">Discapacidades visibles (por ejemplo, en silla de ruedas)</th><td>El entorno reconoce la discapacidad enseguida.</td><td>Accesibilidad física.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="prose">La baja visión es a menudo una <strong>discapacidad invisible</strong>: como no se nota, la persona tiene que dar explicaciones constantemente. Facilitárselo es una gran ayuda.</p>
+  </section>
+
+  <section aria-labelledby="preguntar" class="prose" data-listen>
+    <h2 id="preguntar">Pregunta, no supongas</h2>
+    <p>Dos personas con la misma enfermedad pueden ver de maneras muy diferentes. La mejor manera de saberlo es preguntar con naturalidad:</p>
+    <ul>
+      <li>«¿Qué ves bien y qué te cuesta?»</li>
+      <li>«¿Prefieres que te ayude o lo quieres hacer tú?»</li>
+      <li>«¿Cómo te aviso si hay un escalón o un obstáculo?»</li>
+      <li>«¿Con qué luz ves mejor?»</li>
+    </ul>
+    <p>Continúa: <a href="familiares-acompanar.html">Cómo acompañar y guiar con seguridad</a>.</p>
+  </section>
+</div>
+
+<nav class="local-nav container" aria-labelledby="ln-title"><h2 id="ln-title">Secciones de este espacio: Familiares e interesados</h2><ol>
+<li><a href="familiares-comprender.html" aria-current="page">Comprender la baja visión</a></li>
+<li><a href="familiares-acompanar.html">Cómo acompañar y guiar con seguridad</a></li>
+<li><a href="familiares-casa-iluminacion.html">Adaptar la casa y la iluminación</a></li>
+<li><a href="familiares-escuelas-sociedad.html">Escuelas, institutos y sociedad</a></li>
+</ol>
+<div class="btn-row local-nav__pn"><a class="btn btn--ghost" href="familiares-acompanar.html" rel="next"><span>Siguiente: Cómo acompañar y guiar con seguridad</span><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</nav>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>Baixa visió en xarxa</h2>
+        <p>Plataforma digital accesible y cocreada que reúne, valida y humaniza la información sobre baja visión y ceguera para pacientes, familiares e interesados, y profesionales.</p>
+      </div>
+      <nav aria-labelledby="f-zones">
+        <h2 id="f-zones">Zonas</h2>
+        <ul>
+<li><a href="pacientes.html">Pacientes</a></li>
+<li><a href="familiares.html">Familiares e interesados</a></li>
+<li><a href="profesionales.html">Profesionales</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-project">
+        <h2 id="f-project">Más información</h2>
+        <ul>
+<li><a href="asistente.html">Asistente de recursos</a></li>
+<li><a href="quienes-somos.html">Quiénes somos</a></li>
+<li><a href="proyecto.html">El proyecto</a></li>
+<li><a href="equipo.html">Equipo</a></li>
+<li><a href="glosario.html">Glosario</a></li>
+<li><a href="accesibilidad.html">Accesibilidad</a></li>
+<li><a href="validacion.html">Participa en la validación</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contacto</h2>
+        <ul>
+          <li><a href="https://cuv.upc.edu/es/contact">Centre Universitari de la Visió (CUV-UPC)</a></li>
+          <li><a href="https://b1b2b3.org/">Associació Discapacitat Visual Catalunya: B1+B2+B3</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="logo-band" aria-labelledby="f-logos">
+<h2 id="f-logos" class="visually-hidden">Instituciones del proyecto</h2>
+<div class="logo-groups">
+<div class="logo-group"><p class="logo-group__label">Coordina</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://www.upc.edu/es"><img class="logo--upc" src="../assets/img/logos/upc.svg" alt="Universitat Politècnica de Catalunya · BarcelonaTech" width="279" height="61" loading="lazy" decoding="async"></a></li>
+</ul>
+<p class="logo-group__note">Centre Universitari de la Visió · Facultad de Óptica y Optometría de Terrassa</p>
+</div>
+<div class="logo-group"><p class="logo-group__label">Colaboran</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://b1b2b3.org/"><img class="logo--b1b2b3" src="../assets/img/logos/b1b2b3.jpg" alt="Associació Discapacitat Visual Catalunya: B1+B2+B3" width="469" height="66" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://pdvista.org/"><img class="logo--puntdevista" src="../assets/img/logos/puntdevista.jpg" alt="Fundació Punt de Vista" width="118" height="90" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://coooc.cat/"><img class="logo--coooc" src="../assets/img/logos/coooc.png" alt="Col·legi Oficial d&#x27;Òptics Optometristes de Catalunya (COOOC)" width="600" height="192" loading="lazy" decoding="async"></a></li>
+</ul>
+</div>
+<div class="logo-group"><p class="logo-group__label">Convocatoria IMPACTE 2025</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://agaur.gencat.cat/es/inici/"><img class="logo--agaur" src="../assets/img/logos/agaur.png" alt="Agència de Gestió d&#x27;Ajuts Universitaris i de Recerca (AGAUR)" width="600" height="160" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://web.gencat.cat/es/inici"><img class="logo--generalitat" src="../assets/img/logos/generalitat.png" alt="Generalitat de Catalunya" width="600" height="151" loading="lazy" decoding="async"></a></li>
+</ul>
+</div>
+</div></section>
+    <div class="footer-bottom">
+      <p>Proyecto coordinado por el Centre Universitari de la Visió de la Facultad de Óptica y Optometría de Terrassa (UPC), presentado a la convocatoria de Ayudas para desarrollar proyectos con impacto del conocimiento en la sociedad (IMPACTE 2025) de la AGAUR.</p>
+      <p>El catalán es la lengua fuente de este proyecto. Las versiones en castellano e inglés son traducciones.</p>
+      <p>© 2026 Universitat Politècnica de Catalunya · Centre Universitari de la Visió (CUV)</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="presentation" hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r=".8" fill="currentColor"/></svg><span data-toast-text></span></div>
+<div class="visually-hidden" id="live-region" aria-live="polite" aria-atomic="true"></div>
+<div class="reading-guide" id="reading-guide" aria-hidden="true" hidden></div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!-- meta {"title": "Accessibilitat", "description": "Declaració d'accessibilitat de Baixa visió en xarxa: estàndards, eines d'adaptació, compatibilitat amb tecnologies de suport, accessibilitat auditiva i com comunicar incidències."} -->
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero__label">{{icon:a11y}} Declaració d'accessibilitat</p>
+    <h1>Accessibilitat</h1>
+    <p class="lead">Aquesta web s'ha dissenyat perquè la puguin fer servir persones amb diferents graus de visió i d'audició, i amb diferents nivells de competència digital.</p>
+  </div>
+</header>
+
+<div class="container prose">
+  <section aria-labelledby="compromis">
+    <h2 id="compromis">El nostre compromís</h2>
+    <p>L'objectiu és complir el nivell <strong>AA</strong> de les <a href="https://www.w3.org/TR/WCAG22/">Pautes d'accessibilitat per al contingut web (WCAG) 2.2</a> i, sempre que sigui possible, el nivell <strong>AAA</strong>. L'accessibilitat es valida amb persones amb baixa visió i amb l'assessorament de l'Associació Discapacitat Visual Catalunya: B1+B2+B3 i de la Fundació Punt de Vista.</p>
+    <p>Aquesta declaració s'actualitzarà amb els resultats de les validacions amb persones usuàries.</p>
+  </section>
+
+  <section aria-labelledby="eines">
+    <h2 id="eines">Eines per adaptar la web</h2>
+    <p>A dalt de totes les pàgines hi ha una <strong>barra d'accessibilitat</strong> sempre visible amb les opcions més demanades:</p>
+    <ul>
+      <li><strong>Text A− / A+:</strong> mida del text del 100 % al 300 %. Les icones creixen amb el text sense deformar-se i els blocs es reorganitzen sense solapar-se.</li>
+      <li><strong>Contrast:</strong> canvi ràpid entre fons clar (negre sobre blanc) i fons fosc (blanc sobre negre), en tots dos sentits.</li>
+      <li><strong>Escolta la pàgina:</strong> lector integrat que llegeix la pàgina en veu alta, pensat per a ordinadors públics o per a qui no té lector de pantalla instal·lat.</li>
+    </ul>
+    <p>Amb <strong>Més opcions</strong> s'obre el panell complet:</p>
+    <ul>
+      <li>set esquemes de color: automàtic; fons clar (clar, negre sobre blanc, negre sobre groc); fons fosc (fosc, blanc sobre negre, groc sobre negre);</li>
+      <li>espai entre línies i espai entre lletres i paraules, cadascun en tres nivells;</li>
+      <li>enllaços destacats, guia de lectura, cursor gran i escala de grisos;</li>
+      <li>aturar animacions i moviments;</li>
+      <li>lectura en veu alta amb pausa i velocitat ajustable.</li>
+    </ul>
+    <p>Les guies de l'espai de familiars tenen, a més, un botó <strong>Escolta aquesta guia</strong>. Les preferències es desen només en el teu navegador. No es recullen dades personals.</p>
+  </section>
+
+  <section aria-labelledby="disseny">
+    <h2 id="disseny">Com s'ha dissenyat</h2>
+    <ul>
+      <li><strong>Contrast:</strong> totes les combinacions de text i fons tenen una relació de contrast d'almenys 7:1.</li>
+      <li><strong>Modes de contrast del sistema:</strong> la web respecta els modes d'alt contrast de Windows, macOS i el mòbil sense amagar icones, símbols ni separadors.</li>
+      <li><strong>Tipografia:</strong> Atkinson Hyperlegible, creada pel Braille Institute per facilitar la lectura a persones amb baixa visió. La mida base és de 18 píxels.</li>
+      <li><strong>Ampliació:</strong> la web s'adapta a pantalles petites i es pot ampliar fins al 400 % sense perdre contingut ni haver de desplaçar-se horitzontalment.</li>
+      <li><strong>Teclat:</strong> tot es pot fer amb el teclat. El focus és molt visible i hi ha un enllaç per saltar directament al contingut.</li>
+      <li><strong>Lectors de pantalla i braille:</strong> regions (capçalera, navegació, contingut principal, peu) i encapçalaments seqüencials de h1 a h3 sense salts, que el sistema de publicació comprova automàticament. Es valida amb VoiceOver, TalkBack, NVDA i línia braille.</li>
+      <li><strong>Imatges:</strong> totes les imatges informatives tenen un text alternatiu escrit a mà, sense dependre d'eines automàtiques d'intel·ligència artificial.</li>
+      <li><strong>Vídeos:</strong> cap vídeo es publica sense subtítols, audiodescripció i transcripció completa.</li>
+      <li><strong>Dos clics:</strong> des de la portada s'arriba a qualsevol apartat amb un o dos clics, i l'assistent de recursos porta directament al contingut.</li>
+      <li><strong>No només color:</strong> les tres àrees es distingeixen també per nom, número i icona.</li>
+      <li><strong>Llenguatge:</strong> llenguatge planer i resums «En poques paraules».</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="auditiva">
+    <h2 id="auditiva">Accessibilitat auditiva</h2>
+    <ul>
+      <li>Tota la informació de la web està disponible en format text.</li>
+      <li>Els avisos de la web (per exemple, quan canvies una preferència) es mostren visualment i també s'anuncien als lectors de pantalla.</li>
+      <li>Els vídeos i àudios tindran subtítols sincronitzats, audiodescripció i transcripció completa. Es valorarà la interpretació en llengua de signes catalana (LSC) per als continguts principals.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="navegador">
+    <h2 id="navegador">Consells per al teu dispositiu</h2>
+    <ul>
+      <li><strong>Ampliar la pàgina:</strong> <kbd>Ctrl</kbd> i <kbd>+</kbd> (Windows i Linux) o <kbd>Cmd</kbd> i <kbd>+</kbd> (Mac). Per tornar a la mida normal: <kbd>Ctrl</kbd> i <kbd>0</kbd>.</li>
+      <li><strong>Mòbil:</strong> a la configuració d'accessibilitat del telèfon pots augmentar la lletra, activar l'ampliació i el lector de pantalla (VoiceOver a l'iPhone, TalkBack a Android).</li>
+      <li><strong>Mode lectura:</strong> molts navegadors tenen un mode lectura que mostra només el text principal.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="incidencies">
+    <h2 id="incidencies">Has trobat alguna barrera?</h2>
+    <p>Si alguna part de la web no és accessible per a tu, explica-ho al <a href="{{href:validation}}">formulari de validació</a> o al Centre Universitari de la Visió. Ens ajudaràs a millorar-la.</p>
+    <p><a class="btn" href="{{ui:cuv_contact_url}}">{{icon:chat}}<span>Comunica una incidència</span></a></p>
+  </section>
+</div>

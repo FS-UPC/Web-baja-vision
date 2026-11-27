@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The project · Baixa visió en xarxa</title>
+<meta name="description" content="Goals, phases, co-creation methodology, expected impact and partners of the Baixa visió en xarxa project, coordinated by the UPC University Vision Centre.">
+<meta name="theme-color" content="#0a3a6b">
+<meta property="og:title" content="The project · Baixa visió en xarxa">
+<meta property="og:description" content="Goals, phases, co-creation methodology, expected impact and partners of the Baixa visió en xarxa project, coordinated by the UPC University Vision Centre.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<link rel="alternate" hreflang="ca" href="../ca/projecte.html">
+<link rel="alternate" hreflang="es" href="../es/proyecto.html">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/atkinson-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script>
+/* Aplica les preferències d'accessibilitat abans de mostrar la pàgina (evita parpellejos).
+   Si la web s'obre des del disc (file://), el navegador aïlla l'emmagatzematge de cada fitxer;
+   per això les preferències també viatgen als enllaços interns amb el paràmetre ?bvx=. */
+(function(){var d=document.documentElement,p=null,q=location.search.match(/[?&]bvx=([^&#]*)/);d.classList.add("js");
+if(q){try{p=JSON.parse(decodeURIComponent(q[1]));if(!p||typeof p!=="object")p=null;else localStorage.setItem("bvx-prefs",JSON.stringify(p))}catch(e){}try{var r=location.search.replace(/[?&]bvx=[^&#]*/,"").replace(/^&/,"?");history.replaceState(null,"",location.pathname+r+location.hash)}catch(e){}}
+if(!p){try{p=JSON.parse(localStorage.getItem("bvx-prefs"))}catch(e){}}
+p=(p&&typeof p==="object")?p:{};if(p.spacing&&p.lh==null){p.lh=1;p.sp=1}window.__bvxPrefs=p;
+if([100,125,150,175,200,250,300].indexOf(p.size)>=0)d.style.fontSize=(112.5*p.size/100)+"%";
+if(/^[a-z-]+$/.test(p.theme||""))d.setAttribute("data-theme",p.theme);
+if(p.lh===1||p.lh===2)d.classList.add("lh-"+p.lh);if(p.sp===1||p.sp===2)d.classList.add("sp-"+p.sp);
+["grayscale","links","cursor","motion"].forEach(function(t){if(p[t])d.classList.add("opt-"+t)})})();
+</script>
+<script src="../assets/js/a11y.js" defer></script>
+<script src="../assets/js/features.js" defer></script>
+
+<script type="application/json" id="ui-strings">{"sizeNow": "Text size", "themeNow": "Colours", "on": "on", "off": "off", "resetDone": "Original settings restored", "ttsReading": "Reading aloud", "ttsPaused": "Reading paused", "ttsStopped": "Reading stopped", "ttsDone": "Finished reading", "ttsNoVoice": "No English voice was found on this device; the default voice will be used", "listen": "Listen to this guide", "stopListen": "Stop the guide"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+
+<header class="site-header">
+  <section class="a11y-bar" id="a11y-bar" aria-label="Accessibility bar">
+    <div class="container a11y-bar__inner">
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-size-l">
+        <span class="a11y-bar__label" id="bar-size-l"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7V5h11v2M9.5 5v14M7 19h5"/><path d="M14 13v-1.5h7V13M17.5 11.5V19M16 19h3"/></svg><span>Text</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="-1" aria-label="Make text smaller">A−</button>
+        <output class="size-value" data-size-value aria-live="off">100%</output>
+        <button type="button" class="btn btn--ghost btn--sm" data-size-step="1" aria-label="Make text larger">A+</button>
+      </div>
+      <div class="a11y-bar__group" role="group" aria-labelledby="bar-contrast-l">
+        <span class="a11y-bar__label" id="bar-contrast-l"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg><span>Contrast</span></span>
+        <button type="button" class="btn btn--ghost btn--sm" data-theme-quick="auto" aria-pressed="false">Standard</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-light" data-theme-quick="black-on-white" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>Light</button>
+        <button type="button" class="btn btn--ghost btn--sm quick-dark" data-theme-quick="white-on-black" aria-pressed="false"><span class="swatch swatch--sm" aria-hidden="true">Aa</span>Dark</button>
+      </div>
+      <div class="a11y-bar__group">
+        <button type="button" class="btn btn--sm" id="bar-tts-play" data-tts><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg><span>Listen to this page</span></button>
+        <button type="button" class="btn btn--sm" id="bar-tts-stop" data-tts hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg><span>Stop reading</span></button>
+        <button type="button" class="btn btn--ghost btn--sm a11y-toggle" id="a11y-toggle" aria-expanded="false" aria-controls="a11y-panel"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg><span>More options</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="a11y-panel" id="a11y-panel" aria-labelledby="a11y-title" hidden>
+    <div class="container a11y-panel__inner">
+      <h2 id="a11y-title">Adapt this website to the way you see</h2>
+      <p class="a11y-panel__intro">Changes apply to every page and are saved in this browser. Press Esc to close the panel.</p>
+      <div class="a11y-grid">
+        <div class="a11y-group" role="group" aria-labelledby="g-size">
+          <p class="a11y-group__title" id="g-size">Text size</p>
+          <div class="btn-row">
+            <button type="button" class="btn btn--ghost" id="size-dec" data-size-step="-1" aria-label="Make text smaller">A−</button>
+            <output class="size-value" id="size-value" data-size-value aria-live="off">100%</output>
+            <button type="button" class="btn btn--ghost" id="size-inc" data-size-step="1" aria-label="Make text larger">A+</button>
+            <button type="button" class="btn btn--ghost" id="size-reset">Original size</button>
+          </div>
+          <p class="note" style="margin-top:.75rem">You can enlarge text up to 300%. Icons grow with the text without distorting.</p>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>Colours and contrast</legend>
+          <label class="choice"><input type="radio" name="theme" value="auto"> <span class="swatch" style="background:linear-gradient(90deg,#fff 50%,#121417 50%);color:#777" aria-hidden="true"></span> <span class="choice__text">Automatic (same as your system)</span></label>
+          <p class="choice-group__title">Light background</p>
+          <label class="choice"><input type="radio" name="theme" value="light"> <span class="swatch" style="background:#fff;color:#14171c" aria-hidden="true">Aa</span> <span class="choice__text">Light</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-white"> <span class="swatch" style="background:#fff;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">High contrast: black on white</span></label>
+          <label class="choice"><input type="radio" name="theme" value="black-on-yellow"> <span class="swatch" style="background:#ffeb00;color:#000" aria-hidden="true">Aa</span> <span class="choice__text">High contrast: black on yellow</span></label>
+          <p class="choice-group__title">Dark background (light sensitivity)</p>
+          <label class="choice"><input type="radio" name="theme" value="dark"> <span class="swatch" style="background:#121417;color:#f1f3f5" aria-hidden="true">Aa</span> <span class="choice__text">Dark</span></label>
+          <label class="choice"><input type="radio" name="theme" value="white-on-black"> <span class="swatch" style="background:#000;color:#fff" aria-hidden="true">Aa</span> <span class="choice__text">High contrast: white on black</span></label>
+          <label class="choice"><input type="radio" name="theme" value="yellow"> <span class="swatch" style="background:#000;color:#ffeb00" aria-hidden="true">Aa</span> <span class="choice__text">High contrast: yellow on black</span></label>
+        </fieldset>
+
+        <div class="a11y-group">
+          <fieldset class="subgroup">
+            <legend>Line spacing</legend>
+            <label class="choice"><input type="radio" name="lh" value="0"> Normal</label>
+            <label class="choice"><input type="radio" name="lh" value="1"> Wide</label>
+            <label class="choice"><input type="radio" name="lh" value="2"> Extra wide</label>
+          </fieldset>
+          <fieldset class="subgroup">
+            <legend>Letter and word spacing</legend>
+            <label class="choice"><input type="radio" name="sp" value="0"> Normal</label>
+            <label class="choice"><input type="radio" name="sp" value="1"> Wide</label>
+            <label class="choice"><input type="radio" name="sp" value="2"> Extra wide</label>
+          </fieldset>
+        </div>
+
+        <fieldset class="a11y-group">
+          <legend>Reading and navigation</legend>
+          <label class="choice"><input type="checkbox" id="opt-links"> Highlight links</label>
+          <label class="choice"><input type="checkbox" id="opt-guide"> Reading guide (band that follows the mouse)</label>
+          <label class="choice"><input type="checkbox" id="opt-grayscale"> Greyscale</label>
+          <label class="choice"><input type="checkbox" id="opt-cursor"> Large cursor</label>
+          <label class="choice"><input type="checkbox" id="opt-motion"> Stop animations and motion</label>
+        </fieldset>
+
+        <div class="a11y-group" role="group" aria-labelledby="g-tts">
+          <p class="a11y-group__title" id="g-tts"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></svg> Read aloud</p>
+          <p>Reads the page content, or only the text you have selected.</p>
+          <div class="tts-bar" data-tts>
+            <button type="button" class="btn" id="tts-play"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor"/></svg><span>Read</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-pause" aria-pressed="false" disabled><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 5v14M16 5v14"/></svg><span>Pause</span></button>
+            <button type="button" class="btn btn--ghost" id="tts-stop" disabled><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" fill="currentColor"/></svg><span>Stop</span></button>
+          </div>
+          <p data-tts style="margin-top:.75rem"><label for="tts-rate">Speed:</label>
+            <select id="tts-rate">
+              <option value="0.75">Slow</option>
+              <option value="1" selected>Normal</option>
+              <option value="1.25">Fast</option>
+            </select>
+          </p>
+          <p class="tts-status" id="tts-status" data-tts></p>
+          <p id="tts-unsupported" hidden>This browser cannot read aloud. You can use your device's screen reader instead.</p>
+        </div>
+      </div>
+      <div class="a11y-footer">
+        <div class="btn-row">
+          <button type="button" class="btn btn--ghost" id="a11y-reset">Reset all settings</button>
+          <a href="accessibility.html">More about the accessibility of this website</a>
+        </div>
+        <button type="button" class="btn" id="a11y-close"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span>Close</span></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container topbar">
+    <a class="brand" href="index.html">
+      <svg class="brand__logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M5 32C12 19.5 21.5 13 32 13s20 6.5 27 19c-7 12.5-16.5 19-27 19S12 44.5 5 32z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><circle cx="32" cy="32" r="10.5" fill="currentColor"/><circle cx="32" cy="32" r="4" fill="none" stroke="var(--bg)" stroke-width="2.5"/><circle cx="5" cy="32" r="4.5" fill="currentColor"/><circle cx="59" cy="32" r="4.5" fill="currentColor"/><circle cx="32" cy="13" r="4.5" fill="currentColor"/><circle cx="32" cy="51" r="4.5" fill="currentColor"/></svg>
+      <span>
+        <span class="brand__name">Baixa visió en xarxa</span>
+        <span class="brand__tag">Accessible knowledge about low vision</span>
+      </span>
+    </a>
+    <div class="header-tools">
+      <nav class="tool-links" aria-label="Shortcuts">
+        <ul>
+<li><a class="tool-link" href="assistant.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9.5h8M8 12.5h5"/></svg><span>Resource assistant</span></a></li>
+<li><a class="tool-link" href="about-us.html" aria-current="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 19c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5M13.5 13.6a5.5 5.5 0 0 1 8 5.4"/></svg><span>About us</span></a></li>
+        </ul>
+      </nav>
+      <nav class="lang-switch" aria-label="Language">
+        <ul>
+          <li><a href="../ca/projecte.html" hreflang="ca" lang="ca"><span>Català</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#FCDD09"/><g fill="#DA121A"><rect y="2.222" width="30" height="2.222"/><rect y="6.667" width="30" height="2.222"/><rect y="11.111" width="30" height="2.222"/><rect y="15.556" width="30" height="2.222"/></g></svg></a></li>
+          <li><a href="../es/proyecto.html" hreflang="es" lang="es"><span>Castellano</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/></svg></a></li>
+          <li><a href="../en/project.html" hreflang="en" lang="en" aria-current="true"><span>English</span><svg class="flag" viewBox="0 0 30 20" aria-hidden="true" focusable="false"><rect width="30" height="20" fill="#FFFFFF"/><g fill="#CE1124"><rect x="13" width="4" height="20"/><rect y="8" width="30" height="4"/></g></svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="Main menu">
+    <div class="container main-nav__inner">
+      <button type="button" class="btn btn--ghost menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>Menu</span></button>
+      <ul id="main-menu">
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="patients.html" data-zone="pat"><span class="dot" aria-hidden="true"></span><span>Patients</span></a></li>
+        <li><a href="families.html" data-zone="fam"><span class="dot" aria-hidden="true"></span><span>Family and community</span></a></li>
+        <li><a href="professionals.html" data-zone="pro"><span class="dot" aria-hidden="true"></span><span>Professionals</span></a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+<nav class="breadcrumbs container" aria-label="You are here"><ol><li><a href="index.html">Home</a></li><li><a href="about-us.html">About us</a></li><li><span aria-current="page">The project</span></li></ol></nav>
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero__label"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2 6.2 15.8M13.2 7.2l4.6 8.6M7.5 18h9"/></svg> About the project</p>
+    <h1>The <span lang="ca">Baixa visió en xarxa</span> project</h1>
+    <p class="lead">A digital solution for people with low vision and professionals that turns specialist knowledge about low vision into a usable, shared and socially relevant resource.</p>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="toc" aria-labelledby="toc-title">
+    <h2 id="toc-title">On this page</h2>
+    <ol>
+      <li><a href="#repte">The challenge</a></li>
+      <li><a href="#objectiu">Goal</a></li>
+      <li><a href="#fases">Phases and timeline</a></li>
+      <li><a href="#cocreacio">Co-creation sessions (November 2026)</a></li>
+      <li><a href="#metodologia">How we work</a></li>
+      <li><a href="#impacte">Expected impact</a></li>
+      <li><a href="#ods">Sustainable Development Goals</a></li>
+      <li><a href="#entitats">Organisations</a></li>
+      <li><a href="#trajectoria">Track record</a></li>
+    </ol>
+  </nav>
+
+  <section aria-labelledby="repte" class="prose">
+    <h2 id="repte">The challenge</h2>
+    <p>Low vision is a health, inclusion and equity challenge that is growing as the population ages. Beyond the clinical condition, people with low vision struggle to access reliable, accessible information, suitable support resources and ongoing contact with specialist professionals.</p>
+    <p>These difficulties are made worse by <strong>fragmented resources</strong>, a lack of accessible and validated digital solutions, and the gap between academic knowledge, professional practice and society.</p>
+  </section>
+
+  <section aria-labelledby="objectiu">
+    <h2 id="objectiu">Goal</h2>
+    <div class="box">
+      <p style="font-size:1.2rem">To develop, validate and transfer an accessible digital platform that turns specialist knowledge about low vision into a usable, structured and socially relevant resource, able to improve the independence of people with low vision and strengthen professional practice in eye health.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="fases">
+    <h2 id="fases">Phases and timeline</h2>
+    <p class="prose">The project runs for <strong>18 months</strong> in three consecutive phases, plus a cross-cutting management and communication phase.</p>
+    <ol class="timeline">
+      <li>
+        <h3>Phase 0 · Launch and project management</h3>
+        <p class="timeline__when">Months 1 to 18</p>
+        <div class="bar" aria-hidden="true"><span style="left:0;width:100%"></span></div>
+        <p>Management structure, roles, communication channels, dissemination plan and participation mechanisms for partner organisations.</p>
+      </li>
+      <li>
+        <h3>Phase 1 · Needs analysis, co-creation and functional definition</h3>
+        <p class="timeline__when">Months 1 to 6</p>
+        <div class="bar" aria-hidden="true"><span style="left:0;width:33.3%"></span></div>
+        <p>Needs analysis with a diverse range of users and professionals, co-creation sessions and functional definition of the platform.</p>
+        <p><strong>Deliverables:</strong> needs analysis report; functional definition document.</p>
+      </li>
+      <li>
+        <h3>Phase 2 · Design and development of the accessible digital solution</h3>
+        <p class="timeline__when">Months 7 to 14</p>
+        <div class="bar" aria-hidden="true"><span style="left:33.3%;width:44.4%"></span></div>
+        <p>Information architecture, accessible technical development, plain-language content creation and iterative validation.</p>
+        <p><strong>Deliverables:</strong> functional, accessible platform; structured content; functional validation report.</p>
+      </li>
+      <li>
+        <h3>Phase 3 · Validation, use and knowledge transfer</h3>
+        <p class="timeline__when">Months 15 to 18</p>
+        <div class="bar" aria-hidden="true"><span style="left:77.7%;width:22.3%"></span></div>
+        <p>Real-world validation with people with low vision, final adjustments, documentation of lessons learned, and transfer and dissemination activities.</p>
+        <p><strong>Deliverables:</strong> validated platform; transfer and dissemination materials; lessons-learned report; final report.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="cocreacio">
+    <h2 id="cocreacio">Co-creation sessions (November 2026)</h2>
+    <p class="prose">On 19 and 20 November 2026, at the headquarters of the Official College of Opticians and Optometrists of Catalonia (COOOC), two focus group sessions were held with <strong>9 people</strong> with very diverse profiles: from legal blindness with intensive use of screen readers and braille displays to functional low vision, photophobia, central or peripheral field loss and complications after surgery. Their conclusions, together with the principal investigator's strategic priorities, have shaped the current structure of this website.</p>
+    <h3>Four principles</h3>
+    <ol class="prose">
+      <li><strong>Universal, customisable accessibility</strong> (WCAG 2.2 AA/AAA): compatibility with screen readers and braille displays, and two-way contrast (dark mode and light high-contrast mode), because a single mode disadvantages some people.</li>
+      <li><strong>Three main areas and an assistant</strong> (two-click rule): Patients; Family and community; Professionals.</li>
+      <li><strong>Realistic empathy:</strong> neither defeatist messages nor toxic positivity; real testimonials, myths and facts, and what can be done.</li>
+      <li><strong>Active clinical referral:</strong> downloadable tools with checkboxes and QR codes for professionals to hand out in consultations.</li>
+    </ol>
+    <h3>What we learned</h3>
+    <ul class="prose">
+      <li><strong>The post-diagnosis gap:</strong> some people took between 2 and 38 years to learn about optical aids and rehabilitation.</li>
+      <li><strong>Lack of sensitivity in some consultations</strong> and late referrals from primary care.</li>
+      <li><strong>Misunderstanding of mixed vision</strong> and intermittent cane use.</li>
+      <li><strong>Rejection of toxic positivity:</strong> people asked for a warm, hopeful and realistic tone.</li>
+      <li><strong>Opposite visual needs:</strong> some people need a dark background and others a light one, and text must be enlargeable without distorting icons.</li>
+    </ul>
+    <h3>Website roadmap</h3>
+    <ol class="prose">
+      <li><strong>Architecture and accessibility:</strong> semantic structure, built-in reader and testing of the contrast bar in light and dark modes.</li>
+      <li><strong>Content and tools:</strong> content for the three areas, the resource assistant and the PDF and QR generator for consultations.</li>
+      <li><strong>Participatory testing:</strong> testing with the 9 participants (assistive technology compatibility and legibility) before public launch. <a href="user-testing.html">Take part</a>.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="metodologia">
+    <h2 id="metodologia">How we work</h2>
+    <ul class="card-grid">
+      <li class="card">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 19c0-3 2.5-5.5 5.5-5.5s5.5 2.5 5.5 5.5M13.5 13.6a5.5 5.5 0 0 1 8 5.4"/></svg> Co-creation</h3>
+        <p>People with low vision, professionals and organisations take part from the start in defining needs, content and features.</p>
+      </li>
+      <li class="card">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m4 12.5 5 5L20 6.5"/></svg> Iterative validation</h3>
+        <p>Every stage is tested with users to find barriers and fix them early.</p>
+      </li>
+      <li class="card">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 5h10M8 3v2M5 5c.6 3.5 3 6.5 6.5 8M11 5c-.8 4-3.6 7.3-7.5 9"/><path d="m12.5 21 4.5-10 4.5 10M14 17.5h6"/></svg> Catalan as source language</h3>
+        <p>Sessions, documents and content are created in Catalan, in plain and easy-read language, and reviewed by the UPC Language and Terminology Service.</p>
+      </li>
+      <li class="card">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18M7 21h10M4 7h16"/><path d="m4 7-2.5 6a3 3 0 0 0 5 0zM20 7l-2.5 6a3 3 0 0 0 5 0z"/></svg> Gender perspective and inclusion</h3>
+        <p>Participants diverse in gender, age, level of sight and digital skills, with attention to socio-economic and digital inequalities.</p>
+      </li>
+      <li class="card">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19c3-4 6-7 10-9"/></svg> Sustainability</h3>
+        <p>Lightweight digital architecture, open standards, focus on essential features and fewer printed materials.</p>
+      </li>
+      <li class="card">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5v-15"/><path d="M8 7h8"/></svg> Open science</h3>
+        <p>Publicly accessible content and materials, anonymised and aggregated data, and shared lessons learned to encourage reuse.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="impacte">
+    <h2 id="impacte">Expected impact</h2>
+    <div class="card-grid">
+      <div class="card zone-pat">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="7.5" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg> People with low vision</h3>
+        <ul>
+          <li>Greater independence in daily life.</li>
+          <li>Better ability to make informed decisions about eye health.</li>
+          <li>Fewer barriers to specialist information.</li>
+          <li>Better perceived quality of life.</li>
+        </ul>
+      </div>
+      <div class="card zone-pro">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M12 10.5v6M9 13.5h6"/></svg> Professionals</h3>
+        <ul>
+          <li>Access to training resources and structured materials.</li>
+          <li>Better coordination between health and social care.</li>
+          <li>More consistent support for people with low vision.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2 6.2 15.8M13.2 7.2l4.6 8.6M7.5 18h9"/></svg> System and society</h3>
+        <ul>
+          <li>A replicable model of knowledge transfer in eye health.</li>
+          <li>Content that can be reused and adapted to other regions.</li>
+          <li>More awareness and less stigma.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="prose">Impact will be measured with indicators on platform use, satisfaction among users and professionals, perceived independence (before and after), transfer activities carried out and use of content in Catalan.</p>
+  </section>
+
+  <section aria-labelledby="ods">
+    <h2 id="ods">Sustainable Development Goals</h2>
+    <ul class="ods">
+      <li class="card">
+        <span class="ods__num">SDG 3</span>
+        <h3>Good health and well-being</h3>
+        <p>Main contribution, especially to target 3.4: emotional well-being, less uncertainty and stronger links with reference services.</p>
+      </li>
+      <li class="card">
+        <span class="ods__num">SDG 10</span>
+        <h3>Reduced inequalities</h3>
+        <p>Tackling barriers linked to visual impairment, the digital divide and other forms of inequality.</p>
+      </li>
+      <li class="card">
+        <span class="ods__num">SDG 4</span>
+        <h3>Quality education</h3>
+        <p>Access to adapted knowledge and lifelong learning for users and professionals.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="entitats">
+    <h2 id="entitats">Organisations</h2>
+    <ul class="partners">
+      <li class="card">
+      <div class="logo-tile logo-tile--card"><img class="logo--upc" src="../assets/img/logos/upc.svg" alt="" width="279" height="61" loading="lazy" decoding="async"></div>
+      <h3>University Vision Centre (CUV-UPC)</h3>
+        <p><strong>Coordinating organisation.</strong> A university eye-care centre providing clinical care, teaching and research, with a specialist low vision unit.</p>
+        <p><a href="https://cuv.upc.edu/en">CUV website</a></p>
+      </li>
+      <li class="card">
+      <div class="logo-tile logo-tile--card"><img class="logo--b1b2b3" src="../assets/img/logos/b1b2b3.jpg" alt="" width="469" height="66" loading="lazy" decoding="async"></div>
+      <h3 lang="ca">Associació Discapacitat Visual Catalunya: B1+B2+B3</h3>
+        <p><strong>Partner organisation.</strong> Works for the rights, social inclusion and quality of life of people with visual impairment. Brings the lived experience of people with low vision.</p>
+        <p><a href="https://b1b2b3.org/">Association website</a></p>
+      </li>
+      <li class="card">
+      <div class="logo-tile logo-tile--card"><img class="logo--puntdevista" src="../assets/img/logos/puntdevista.jpg" alt="" width="118" height="90" loading="lazy" decoding="async"></div>
+      <h3 lang="ca">Fundació Punt de Vista</h3>
+        <p><strong>Partner organisation.</strong> Specialises in accessibility, inclusive design and content adaptation. Helps define criteria, validate the platform's accessibility and disseminate results.</p>
+        <p><a href="https://pdvista.org/">Foundation website</a></p>
+      </li>
+      <li class="card">
+        <div class="logo-tile logo-tile--card"><img class="logo--coooc" src="../assets/img/logos/coooc.png" alt="" width="600" height="192" loading="lazy" decoding="async"></div>
+        <h3>Official College of Opticians and Optometrists of Catalonia (COOOC)</h3>
+        <p><strong>Collaborator.</strong> The professional body for optics and optometry in Catalonia. It hosted the November 2026 co-creation sessions at its headquarters.</p>
+        <p><a href="https://coooc.cat/">COOOC website</a></p>
+      </li>
+      <li class="card">
+      <div class="logo-tile logo-tile--card"><img class="logo--agaur" src="../assets/img/logos/agaur.png" alt="" width="600" height="160" loading="lazy" decoding="async"></div>
+      <h3>AGAUR</h3>
+        <p>Project submitted to the call for projects with knowledge impact on society (IMPACTE 2025) of the Catalan Agency for Management of University and Research Grants.</p>
+        <p><a href="https://agaur.gencat.cat/en/inici/">AGAUR website</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="trajectoria" class="prose">
+    <h2 id="trajectoria">Track record</h2>
+    <p>The project builds on the service-learning work in eye health of the Faculty of Optics and Optometry of Terrassa (FOOT) through the CUV. Since 2007, the <strong lang="ca">Mirades Solidàries</strong> programme has provided eye care to more than 40,000 people across Catalonia, over 30,000 of them in vulnerable situations, working with around 70 local authorities and third-sector organisations.</p>
+    <p>The CUV also coordinated the project “<span lang="ca">Aprenentatge i servei en gestió de la miopia</span>” (service-learning in myopia management), funded under the AGAUR IMPACTE 2023 call.</p>
+  </section>
+</div>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>Baixa visió en xarxa</h2>
+        <p>An accessible, co-created digital platform that brings together, validates and humanises information on low vision and blindness for patients, families and the wider community, and professionals.</p>
+      </div>
+      <nav aria-labelledby="f-zones">
+        <h2 id="f-zones">Areas</h2>
+        <ul>
+<li><a href="patients.html">Patients</a></li>
+<li><a href="families.html">Family and community</a></li>
+<li><a href="professionals.html">Professionals</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-project">
+        <h2 id="f-project">More information</h2>
+        <ul>
+<li><a href="assistant.html">Resource assistant</a></li>
+<li><a href="about-us.html">About us</a></li>
+<li><a href="project.html">The project</a></li>
+<li><a href="team.html">Team</a></li>
+<li><a href="glossary.html">Glossary</a></li>
+<li><a href="accessibility.html">Accessibility</a></li>
+<li><a href="user-testing.html">Take part in user testing</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="https://cuv.upc.edu/en/contact">University Vision Centre (CUV-UPC)</a></li>
+          <li><a href="https://b1b2b3.org/">Associació Discapacitat Visual Catalunya: B1+B2+B3</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="logo-band" aria-labelledby="f-logos">
+<h2 id="f-logos" class="visually-hidden">Project institutions</h2>
+<div class="logo-groups">
+<div class="logo-group"><p class="logo-group__label">Coordinated by</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://www.upc.edu/en"><img class="logo--upc" src="../assets/img/logos/upc.svg" alt="Universitat Politècnica de Catalunya · BarcelonaTech" width="279" height="61" loading="lazy" decoding="async"></a></li>
+</ul>
+<p class="logo-group__note">University Vision Centre · Faculty of Optics and Optometry of Terrassa</p>
+</div>
+<div class="logo-group"><p class="logo-group__label">Partners</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://b1b2b3.org/"><img class="logo--b1b2b3" src="../assets/img/logos/b1b2b3.jpg" alt="Associació Discapacitat Visual Catalunya: B1+B2+B3" width="469" height="66" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://pdvista.org/"><img class="logo--puntdevista" src="../assets/img/logos/puntdevista.jpg" alt="Fundació Punt de Vista" width="118" height="90" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://coooc.cat/"><img class="logo--coooc" src="../assets/img/logos/coooc.png" alt="Col·legi Oficial d&#x27;Òptics Optometristes de Catalunya (COOOC)" width="600" height="192" loading="lazy" decoding="async"></a></li>
+</ul>
+</div>
+<div class="logo-group"><p class="logo-group__label">IMPACTE 2025 call</p><ul class="logo-list">
+<li><a class="logo-tile" href="https://agaur.gencat.cat/en/inici/"><img class="logo--agaur" src="../assets/img/logos/agaur.png" alt="Agència de Gestió d&#x27;Ajuts Universitaris i de Recerca (AGAUR)" width="600" height="160" loading="lazy" decoding="async"></a></li>
+<li><a class="logo-tile" href="https://web.gencat.cat/en/inici"><img class="logo--generalitat" src="../assets/img/logos/generalitat.png" alt="Generalitat de Catalunya" width="600" height="151" loading="lazy" decoding="async"></a></li>
+</ul>
+</div>
+</div></section>
+    <div class="footer-bottom">
+      <p>Project coordinated by the University Vision Centre (CUV) of the Faculty of Optics and Optometry of Terrassa (UPC), submitted to the AGAUR call for projects with knowledge impact on society (IMPACTE 2025).</p>
+      <p>Catalan is the source language of this project. The Spanish and English versions are translations.</p>
+      <p>© 2026 Universitat Politècnica de Catalunya · Centre Universitari de la Visió (CUV)</p>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="presentation" hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r=".8" fill="currentColor"/></svg><span data-toast-text></span></div>
+<div class="visually-hidden" id="live-region" aria-live="polite" aria-atomic="true"></div>
+<div class="reading-guide" id="reading-guide" aria-hidden="true" hidden></div>
+</body>
+</html>

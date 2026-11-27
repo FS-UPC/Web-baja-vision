@@ -1,0 +1,36 @@
+{
+  "_nota": "Repositori de testimonis en vídeo (REQ-07). Cada element necessita: id, title, pathology, age (trilingües), video (fitxer a src/assets/media/), captions i descriptions (fitxers WebVTT per idioma) i transcript (HTML per idioma). build.py comprova que cap vídeo es publiqui sense subtítols ni transcripció. Només s'hi han d'afegir testimonis enregistrats amb consentiment informat.",
+  "ui": {
+    "ca": {
+      "empty_title": "Els primers vídeos s'estan preparant.",
+      "empty": "Les persones que hi participen els enregistren amb el seu consentiment informat. Cada vídeo es publicarà amb subtítols, audiodescripció i transcripció completa, i el podràs filtrar per patologia i per edat.",
+      "by_pathology": "Patologia",
+      "by_age": "Edat",
+      "all": "Totes",
+      "captions": "Subtítols",
+      "descriptions": "Audiodescripció",
+      "transcript": "Transcripció completa"
+    },
+    "es": {
+      "empty_title": "Los primeros vídeos se están preparando.",
+      "empty": "Las personas participantes los graban con su consentimiento informado. Cada vídeo se publicará con subtítulos, audiodescripción y transcripción completa, y podrás filtrarlo por patología y por edad.",
+      "by_pathology": "Patología",
+      "by_age": "Edad",
+      "all": "Todas",
+      "captions": "Subtítulos",
+      "descriptions": "Audiodescripción",
+      "transcript": "Transcripción completa"
+    },
+    "en": {
+      "empty_title": "The first videos are being prepared.",
+      "empty": "Participants are recording them with their informed consent. Each video will be published with captions, audio description and a full transcript, and you will be able to filter them by condition and by age.",
+      "by_pathology": "Condition",
+      "by_age": "Age",
+      "all": "All",
+      "captions": "Captions",
+      "descriptions": "Audio description",
+      "transcript": "Full transcript"
+    }
+  },
+  "items": []
+}

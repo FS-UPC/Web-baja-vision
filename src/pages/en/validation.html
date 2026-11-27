@@ -1,0 +1,98 @@
+<!-- meta {"title": "Take part in user testing", "description": "An accessible form for participants and any user to evaluate the website before launch: compatibility with assistive technology, legibility and content."} -->
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero__label">{{icon:check}} Participatory testing</p>
+    <h1>Take part in user testing</h1>
+    <p class="lead">Before the website opens to everyone, it is being tested by the people who took part in the co-creation sessions and anyone else who wishes. Your feedback decides what needs to change.</p>
+  </div>
+</header>
+
+<div class="container">
+  <section aria-labelledby="que-provem" class="prose">
+    <h2 id="que-provem">What we want to know</h2>
+    <ul>
+      <li>Whether it works well with your screen reader (VoiceOver, TalkBack, NVDA, JAWS) or braille display.</li>
+      <li>Whether it is easy to read with your remaining sight: contrast, text size, icons that do not distort or disappear.</li>
+      <li>Whether you find what you are looking for in one or two clicks.</li>
+      <li>Whether the content is clear, useful and realistic.</li>
+    </ul>
+    <p>All questions are optional except those marked as required. We do not ask for your name.</p>
+  </section>
+
+  <section aria-labelledby="formulari">
+    <h2 id="formulari">Feedback form</h2>
+    <form class="feedback" data-feedback action="{{feedback_action}}" method="post" data-email="{{feedback_email}}" data-subject="Baixa visió en xarxa website testing" novalidate>
+      <div class="callout callout--small" id="fb-errors" data-errors role="alert" tabindex="-1" hidden>
+        <p><strong>Some required answers are missing.</strong> Please check the fields marked as required.</p>
+      </div>
+
+      <fieldset>
+        <legend>Who are you? (required)</legend>
+        <label class="choice"><input type="radio" name="profile" value="patient" required> Person with low vision or blindness</label>
+        <label class="choice"><input type="radio" name="profile" value="family"> Family member or someone interested</label>
+        <label class="choice"><input type="radio" name="profile" value="professional"> Professional</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-code">Participant code, if we gave you one (optional)</label>
+        <input type="text" id="fb-code" name="code" autocomplete="off" size="10">
+      </p>
+
+      <fieldset>
+        <legend>How do you use the website? Tick all that apply.</legend>
+        <label class="choice"><input type="checkbox" name="technology" value="screen-reader"> Screen reader (VoiceOver, TalkBack, NVDA, JAWS)</label>
+        <label class="choice"><input type="checkbox" name="technology" value="braille"> Braille display</label>
+        <label class="choice"><input type="checkbox" name="technology" value="magnification"> Screen magnification or large text</label>
+        <label class="choice"><input type="checkbox" name="technology" value="os-contrast"> Operating system high-contrast mode</label>
+        <label class="choice"><input type="checkbox" name="technology" value="bar"> This website's accessibility bar</label>
+        <label class="choice"><input type="checkbox" name="technology" value="none"> No particular aid</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-device">Device and browser (optional)</label>
+        <input type="text" id="fb-device" name="device" autocomplete="off">
+        <span class="note">For example: iPhone with Safari, Windows computer with Chrome.</span>
+      </p>
+
+      <fieldset>
+        <legend>Did you find what you were looking for? (required)</legend>
+        <label class="choice"><input type="radio" name="found" value="yes" required> Yes, quickly</label>
+        <label class="choice"><input type="radio" name="found" value="partly"> Partly, or it was hard</label>
+        <label class="choice"><input type="radio" name="found" value="no"> No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>How easy is it to read with your sight or screen reader?</legend>
+        <label class="choice"><input type="radio" name="reading" value="5"> Very easy</label>
+        <label class="choice"><input type="radio" name="reading" value="4"> Easy</label>
+        <label class="choice"><input type="radio" name="reading" value="3"> So-so</label>
+        <label class="choice"><input type="radio" name="reading" value="2"> Difficult</label>
+        <label class="choice"><input type="radio" name="reading" value="1"> I could not use it</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-page">Which page or section did you try? (optional)</label>
+        <input type="text" id="fb-page" name="page" autocomplete="off">
+      </p>
+
+      <p>
+        <label for="fb-comments">What was difficult, or what would you improve? (required)</label>
+        <textarea id="fb-comments" name="comments" rows="6" required></textarea>
+      </p>
+
+      <p><button type="submit" class="btn">{{icon:check}}<span>Send feedback</span></button></p>
+    </form>
+
+    <div class="box feedback-out" data-feedback-out hidden>
+      <h2>Thank you! One last step</h2>
+      <p>This test version does not yet have a server to receive forms. Please copy the summary and send it to the University Vision Centre.</p>
+      <p><label for="fb-summary">Summary of your feedback</label>
+        <textarea id="fb-summary" rows="8" readonly></textarea></p>
+      <div class="btn-row">
+        <button type="button" class="btn" data-copy data-done="Copied">{{icon:check}}<span>Copy the summary</span></button>
+        <a class="btn btn--ghost" data-mail hidden href="{{ui:cuv_contact_url}}">{{icon:chat}}<span>Send by email</span></a>
+        <a class="btn btn--ghost" href="{{ui:cuv_contact_url}}">{{icon:external}}<span>CUV contact form</span></a>
+      </div>
+    </div>
+  </section>
+</div>

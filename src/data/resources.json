@@ -1,0 +1,419 @@
+{
+ "_nota": "Fitxes del generador de recursos per a la consulta (3.2, REQ-11). Contingut en llenguatge planer, pendent de validació clínica. L'id curt viatja a l'URL del codi QR (?r=bv.dx.li).",
+ "ui": {
+  "ca": {
+   "more": "Més informació a la web",
+   "qr_title": "Escaneja aquest codi amb el mòbil per obrir aquests recursos amb lletra gran, contrast i lectura en veu alta",
+   "qr_alt": "Codi QR que obre aquest paquet de recursos a la web Baixa visió en xarxa",
+   "qr_local": "El codi QR només funcionarà quan la web estigui publicada en un domini (ara s'està obrint des d'aquest ordinador)."
+  },
+  "es": {
+   "more": "Más información en la web",
+   "qr_title": "Escanea este código con el móvil para abrir estos recursos con letra grande, contraste y lectura en voz alta",
+   "qr_alt": "Código QR que abre este paquete de recursos en la web Baixa visió en xarxa",
+   "qr_local": "El código QR solo funcionará cuando la web esté publicada en un dominio (ahora se está abriendo desde este ordenador)."
+  },
+  "en": {
+   "more": "More information on the website",
+   "qr_title": "Scan this code with your phone to open these resources with large text, high contrast and read-aloud",
+   "qr_alt": "QR code that opens this resource pack on the Baixa visió en xarxa website",
+   "qr_local": "The QR code will only work once the website is published on a domain (it is currently being opened from this computer)."
+  }
+ },
+ "categories": [
+  {
+   "id": "und",
+   "title": {
+    "ca": "Entendre la baixa visió",
+    "es": "Entender la baja visión",
+    "en": "Understanding low vision"
+   }
+  },
+  {
+   "id": "cond",
+   "title": {
+    "ca": "Explicació de la patologia",
+    "es": "Explicación de la patología",
+    "en": "Explaining the condition"
+   }
+  },
+  {
+   "id": "prac",
+   "title": {
+    "ca": "Consells pràctics",
+    "es": "Consejos prácticos",
+    "en": "Practical advice"
+   }
+  },
+  {
+   "id": "con",
+   "title": {
+    "ca": "Contactes, suport i drets",
+    "es": "Contactos, apoyo y derechos",
+    "en": "Contacts, support and rights"
+   }
+  }
+ ],
+ "items": [
+  {
+   "id": "bv",
+   "cat": "und",
+   "more": "pat_diagnosis#que-es",
+   "title": {
+    "ca": "Què és la baixa visió",
+    "es": "Qué es la baja visión",
+    "en": "What low vision is"
+   },
+   "summary": {
+    "ca": "Explicació senzilla per entendre el diagnòstic.",
+    "es": "Explicación sencilla para entender el diagnóstico.",
+    "en": "A simple explanation to help understand the diagnosis."
+   },
+   "body": {
+    "ca": "<p>Tens <strong>baixa visió</strong> quan hi veus poc i les ulleres, les lents de contacte, els medicaments o una operació no ho poden arreglar del tot.</p><ul><li>No vol dir ceguesa: gairebé sempre queda una part de visió útil (la <em>resta visual</em>).</li><li>Amb ajudes i entrenament, aquesta visió es pot aprofitar molt més.</li><li>Cada persona hi veu diferent: hi ha qui no veu el centre, qui no veu els costats i qui ho veu tot borrós o amb molta molèstia per la llum.</li></ul>",
+    "es": "<p>Tienes <strong>baja visión</strong> cuando ves poco y las gafas, las lentes de contacto, los medicamentos o una operación no lo pueden arreglar del todo.</p><ul><li>No significa ceguera: casi siempre queda una parte de visión útil (el <em>resto visual</em>).</li><li>Con ayudas y entrenamiento, esta visión se puede aprovechar mucho más.</li><li>Cada persona ve distinto: hay quien no ve el centro, quien no ve los lados y quien lo ve todo borroso o con mucha molestia por la luz.</li></ul>",
+    "en": "<p>You have <strong>low vision</strong> when you see poorly and glasses, contact lenses, medicines or surgery cannot fully fix it.</p><ul><li>It does not mean blindness: there is almost always some useful sight left (your <em>residual vision</em>).</li><li>With aids and training, you can make much better use of it.</li><li>Everyone sees differently: some people lose the centre, others the sides, and others see everything blurred or are very sensitive to light.</li></ul>"
+   }
+  },
+  {
+   "id": "dx",
+   "cat": "und",
+   "more": "pat_diagnosis#primers-passos",
+   "title": {
+    "ca": "Primers passos després del diagnòstic",
+    "es": "Primeros pasos tras el diagnóstico",
+    "en": "First steps after diagnosis"
+   },
+   "summary": {
+    "ca": "Què fer les primeres setmanes, pas a pas.",
+    "es": "Qué hacer las primeras semanas, paso a paso.",
+    "en": "What to do in the first weeks, step by step."
+   },
+   "body": {
+    "ca": "<ol><li><strong>Entén el teu cas.</strong> Pregunta a l'oftalmòleg quina malaltia tens, si té tractament i cada quan cal revisar-la.</li><li><strong>Demana una valoració de baixa visió.</strong> Un òptic optometrista especialitzat mesura com hi veus en la vida real i et proposa ajudes.</li><li><strong>Aprèn a fer servir les ajudes</strong> amb rehabilitació visual.</li><li><strong>Parla amb altres persones</strong> que viuen el mateix: les associacions t'hi poden posar en contacte.</li><li><strong>Cuida com et sents.</strong> Si et costa, demana suport psicològic: no cal esperar.</li></ol>",
+    "es": "<ol><li><strong>Entiende tu caso.</strong> Pregunta al oftalmólogo qué enfermedad tienes, si tiene tratamiento y cada cuánto hay que revisarla.</li><li><strong>Pide una valoración de baja visión.</strong> Un óptico optometrista especializado mide cómo ves en la vida real y te propone ayudas.</li><li><strong>Aprende a usar las ayudas</strong> con rehabilitación visual.</li><li><strong>Habla con otras personas</strong> que viven lo mismo: las asociaciones te pueden poner en contacto.</li><li><strong>Cuida cómo te sientes.</strong> Si te cuesta, pide apoyo psicológico: no hace falta esperar.</li></ol>",
+    "en": "<ol><li><strong>Understand your condition.</strong> Ask your ophthalmologist what you have, whether there is treatment and how often it should be checked.</li><li><strong>Ask for a low vision assessment.</strong> A specialist optometrist measures how you see in real life and suggests aids.</li><li><strong>Learn to use the aids</strong> through vision rehabilitation.</li><li><strong>Talk to others</strong> in the same situation: associations can put you in touch.</li><li><strong>Look after how you feel.</strong> If it is hard, ask for psychological support: there is no need to wait.</li></ol>"
+   }
+  },
+  {
+   "id": "my",
+   "cat": "und",
+   "more": "pat_diagnosis#mites",
+   "title": {
+    "ca": "Mites i realitats",
+    "es": "Mitos y realidades",
+    "en": "Myths and facts"
+   },
+   "summary": {
+    "ca": "Idees equivocades freqüents i què és cert.",
+    "es": "Ideas equivocadas frecuentes y qué es cierto.",
+    "en": "Common misconceptions and what is actually true."
+   },
+   "body": {
+    "ca": "<ul><li><strong>«Si faig servir la vista, la gastaré.»</strong> No. Llegir de prop o amb lupa no empitjora la malaltia.</li><li><strong>«Ja no es pot fer res més.»</strong> No és cert: encara que la malaltia no es curi, les ajudes, la rehabilitació i el suport milloren molt el dia a dia.</li><li><strong>«Si porta bastó, és cega del tot.»</strong> No. Moltes persones amb baixa visió hi veuen una part i fan servir el bastó només de nit o en llocs desconeguts.</li><li><strong>«Amb actitud positiva, ho podràs fer tot.»</strong> Tampoc. Hi ha coses que costaran o que caldrà fer d'una altra manera, i està bé dir-ho.</li></ul>",
+    "es": "<ul><li><strong>«Si uso la vista, la gastaré.»</strong> No. Leer de cerca o con lupa no empeora la enfermedad.</li><li><strong>«Ya no se puede hacer nada más.»</strong> No es cierto: aunque la enfermedad no se cure, las ayudas, la rehabilitación y el apoyo mejoran mucho el día a día.</li><li><strong>«Si lleva bastón, es ciega del todo.»</strong> No. Muchas personas con baja visión ven una parte y usan el bastón solo de noche o en lugares desconocidos.</li><li><strong>«Con actitud positiva, podrás hacerlo todo.»</strong> Tampoco. Hay cosas que costarán o que habrá que hacer de otra manera, y está bien decirlo.</li></ul>",
+    "en": "<ul><li><strong>“Using my eyes will wear them out.”</strong> No. Reading close up or with a magnifier does not make the condition worse.</li><li><strong>“Nothing more can be done.”</strong> Not true: even when the condition cannot be cured, aids, rehabilitation and support make daily life much better.</li><li><strong>“If she uses a cane, she must be totally blind.”</strong> No. Many people with low vision see partly and use a cane only at night or in unfamiliar places.</li><li><strong>“With a positive attitude you can do everything.”</strong> Not that either. Some things will be harder or need doing differently, and it is fine to say so.</li></ul>"
+   }
+  },
+  {
+   "id": "amd",
+   "cat": "cond",
+   "more": "pat_conditions#dmae",
+   "title": {
+    "ca": "DMAE (degeneració macular associada a l'edat)",
+    "es": "DMAE (degeneración macular asociada a la edad)",
+    "en": "AMD (age-related macular degeneration)"
+   },
+   "summary": {
+    "ca": "Afecta el centre de la visió.",
+    "es": "Afecta el centro de la visión.",
+    "en": "Affects central vision."
+   },
+   "body": {
+    "ca": "<p>La DMAE afecta la <strong>màcula</strong>, la part de la retina que fem servir per llegir i veure cares. Els costats de la visió es conserven, per això es pot caminar sense ensopegar.</p><ul><li>Hi ha una forma <strong>humida</strong>, que pot tenir tractament amb injeccions si es detecta aviat, i una forma <strong>seca</strong>, d'evolució lenta.</li><li>Si de cop veus les línies rectes tortes, ves a urgències.</li><li>Lupes, llum focal i el mòbil ajuden molt a llegir.</li></ul>",
+    "es": "<p>La DMAE afecta la <strong>mácula</strong>, la parte de la retina que usamos para leer y ver caras. Los lados de la visión se conservan, por eso se puede caminar sin tropezar.</p><ul><li>Hay una forma <strong>húmeda</strong>, que puede tener tratamiento con inyecciones si se detecta pronto, y una forma <strong>seca</strong>, de evolución lenta.</li><li>Si de repente ves las líneas rectas torcidas, ve a urgencias.</li><li>Lupas, luz focal y el móvil ayudan mucho a leer.</li></ul>",
+    "en": "<p>AMD affects the <strong>macula</strong>, the part of the retina we use to read and see faces. Side vision is kept, so people can usually walk around without tripping.</p><ul><li>There is a <strong>wet</strong> form, which may be treated with injections if caught early, and a <strong>dry</strong> form, which progresses slowly.</li><li>If straight lines suddenly look wavy, go to A&amp;E.</li><li>Magnifiers, a task lamp and your phone help a lot with reading.</li></ul>"
+   }
+  },
+  {
+   "id": "gl",
+   "cat": "cond",
+   "more": "pat_conditions#glaucoma",
+   "title": {
+    "ca": "Glaucoma",
+    "es": "Glaucoma",
+    "en": "Glaucoma"
+   },
+   "summary": {
+    "ca": "Afecta el nervi òptic i la visió dels costats.",
+    "es": "Afecta el nervio óptico y la visión de los lados.",
+    "en": "Affects the optic nerve and side vision."
+   },
+   "body": {
+    "ca": "<p>El glaucoma danya el <strong>nervi òptic</strong>. Sol començar pels costats de la visió i al principi no es nota.</p><ul><li>El tractament (gotes, làser, cirurgia o vàlvules) serveix per <strong>frenar</strong> la pèrdua: no deixis mai el tractament sense parlar-ne amb l'oftalmòleg.</li><li>Pots llegir bé i, en canvi, xocar amb objectes o portes.</li><li>Un dolor fort a l'ull amb ull vermell, mal de cap o nàusees és una <strong>urgència</strong>: no esperis.</li></ul>",
+    "es": "<p>El glaucoma daña el <strong>nervio óptico</strong>. Suele empezar por los lados de la visión y al principio no se nota.</p><ul><li>El tratamiento (gotas, láser, cirugía o válvulas) sirve para <strong>frenar</strong> la pérdida: no dejes nunca el tratamiento sin hablarlo con el oftalmólogo.</li><li>Puedes leer bien y, en cambio, chocar con objetos o puertas.</li><li>Un dolor fuerte en el ojo con ojo rojo, dolor de cabeza o náuseas es una <strong>urgencia</strong>: no esperes.</li></ul>",
+    "en": "<p>Glaucoma damages the <strong>optic nerve</strong>. It usually starts at the edges of vision and is not noticed at first.</p><ul><li>Treatment (drops, laser, surgery or drainage valves) <strong>slows down</strong> the loss: never stop treatment without talking to your ophthalmologist.</li><li>You may read well and still bump into objects or doors.</li><li>Severe eye pain with a red eye, headache or nausea is an <strong>emergency</strong>: do not wait.</li></ul>"
+   }
+  },
+  {
+   "id": "dr",
+   "cat": "cond",
+   "more": "pat_conditions#retinopatia",
+   "title": {
+    "ca": "Retinopatia diabètica i trombosi de la retina",
+    "es": "Retinopatía diabética y trombosis de la retina",
+    "en": "Diabetic retinopathy and retinal vein occlusion"
+   },
+   "summary": {
+    "ca": "Vasos de la retina afectats.",
+    "es": "Vasos de la retina afectados.",
+    "en": "Damage to the blood vessels of the retina."
+   },
+   "body": {
+    "ca": "<p>La diabetis i la tensió alta poden fer malbé els vasos de la retina. Es pot veure borrós, a taques o amb poc detall.</p><ul><li>Controlar bé la diabetis i la tensió i fer les revisions és la millor protecció.</li><li>Hi ha tractaments (làser, injeccions) que poden frenar-la.</li><li>Si un ull hi veu d'una manera i l'altre d'una altra («visió mixta»), un professional de baixa visió t'ajuda a aprofitar el millor de cadascun.</li></ul>",
+    "es": "<p>La diabetes y la tensión alta pueden dañar los vasos de la retina. Se puede ver borroso, a manchas o con poco detalle.</p><ul><li>Controlar bien la diabetes y la tensión y hacer las revisiones es la mejor protección.</li><li>Hay tratamientos (láser, inyecciones) que pueden frenarla.</li><li>Si un ojo ve de una manera y el otro de otra («visión mixta»), un profesional de baja visión te ayuda a aprovechar lo mejor de cada uno.</li></ul>",
+    "en": "<p>Diabetes and high blood pressure can damage the blood vessels of the retina. Vision may become blurred, patchy or lacking in detail.</p><ul><li>Good control of diabetes and blood pressure and regular check-ups are the best protection.</li><li>Treatments (laser, injections) can slow it down.</li><li>If each eye sees differently (“mixed vision”), a low vision professional can help you make the most of both.</li></ul>"
+   }
+  },
+  {
+   "id": "rp",
+   "cat": "cond",
+   "more": "pat_conditions#retinosi",
+   "title": {
+    "ca": "Retinosi pigmentària i altres distròfies de retina",
+    "es": "Retinosis pigmentaria y otras distrofias de retina",
+    "en": "Retinitis pigmentosa and other inherited retinal diseases"
+   },
+   "summary": {
+    "ca": "Malalties hereditàries, sovint minoritàries.",
+    "es": "Enfermedades hereditarias, a menudo minoritarias.",
+    "en": "Inherited, often rare, conditions."
+   },
+   "body": {
+    "ca": "<p>Són malalties <strong>hereditàries</strong>. Sovint comencen amb dificultat per veure-hi de nit i després es redueix la visió dels costats, com si miressis per un tub.</p><ul><li>Una prova genètica pot confirmar el diagnòstic i obrir la porta a assajos clínics.</li><li>El bastó blanc a la nit, la bona il·luminació i els filtres ajuden molt.</li><li>Hi ha associacions de pacients amb informació sobre recerca.</li></ul>",
+    "es": "<p>Son enfermedades <strong>hereditarias</strong>. A menudo empiezan con dificultad para ver de noche y después se reduce la visión de los lados, como si mirases por un tubo.</p><ul><li>Una prueba genética puede confirmar el diagnóstico y abrir la puerta a ensayos clínicos.</li><li>El bastón blanco por la noche, la buena iluminación y los filtros ayudan mucho.</li><li>Hay asociaciones de pacientes con información sobre investigación.</li></ul>",
+    "en": "<p>These are <strong>inherited</strong> conditions. They often start with poor night vision, followed by narrowing of side vision, like looking through a tube.</p><ul><li>A genetic test can confirm the diagnosis and open the door to clinical trials.</li><li>A white cane at night, good lighting and filters help a lot.</li><li>Patient associations share information about research.</li></ul>"
+   }
+  },
+  {
+   "id": "hm",
+   "cat": "cond",
+   "more": "pat_conditions#miopia-magna",
+   "title": {
+    "ca": "Miopia magna",
+    "es": "Miopía magna",
+    "en": "High (pathological) myopia"
+   },
+   "summary": {
+    "ca": "Miopia molt alta amb risc de complicacions.",
+    "es": "Miopía muy alta con riesgo de complicaciones.",
+    "en": "Very high short-sightedness with risk of complications."
+   },
+   "body": {
+    "ca": "<p>La miopia magna (molt alta) pot anar acompanyada de lesions a la màcula, despreniment de retina, glaucoma o cataracta.</p><ul><li>Fes les revisions que et marquin, encara que hi vegis igual.</li><li>Llampecs, moltes «mosques» noves o una ombra com una cortina són una urgència.</li><li>Lupes amb llum, filtres i ajudes electròniques permeten continuar llegint.</li></ul>",
+    "es": "<p>La miopía magna (muy alta) puede ir acompañada de lesiones en la mácula, desprendimiento de retina, glaucoma o catarata.</p><ul><li>Haz las revisiones que te indiquen, aunque veas igual.</li><li>Destellos, muchas «moscas» nuevas o una sombra como una cortina son una urgencia.</li><li>Lupas con luz, filtros y ayudas electrónicas permiten seguir leyendo.</li></ul>",
+    "en": "<p>Very high myopia can come with damage to the macula, retinal detachment, glaucoma or cataract.</p><ul><li>Keep to your check-ups, even if your sight seems unchanged.</li><li>Flashes, many new floaters or a curtain-like shadow are an emergency.</li><li>Illuminated magnifiers, filters and electronic aids let you keep reading.</li></ul>"
+   }
+  },
+  {
+   "id": "on",
+   "cat": "cond",
+   "more": "pat_conditions#nervi-optic",
+   "title": {
+    "ca": "Malalties del nervi òptic (inclosa la neuropatia de Leber)",
+    "es": "Enfermedades del nervio óptico (incluida la neuropatía de Leber)",
+    "en": "Optic nerve conditions (including Leber's optic neuropathy)"
+   },
+   "summary": {
+    "ca": "Pèrdua de visió central d'origen nerviós.",
+    "es": "Pérdida de visión central de origen nervioso.",
+    "en": "Central vision loss caused by nerve damage."
+   },
+   "body": {
+    "ca": "<p>El nervi òptic porta la imatge de l'ull al cervell. Si es danya (per herència, com la <strong>neuropatia òptica hereditària de Leber</strong>, per un tumor que el comprimeix, per inflamació o per falta de reg), sol afectar el centre de la visió.</p><ul><li>Moltes d'aquestes malalties són minoritàries: demana que t'expliquin el teu cas i si hi ha tractaments o assajos.</li><li>La visió perifèrica que queda es pot aprofitar amb entrenament.</li><li>Els lectors de pantalla i les apps de descripció d'imatges ajuden molt.</li></ul>",
+    "es": "<p>El nervio óptico lleva la imagen del ojo al cerebro. Si se daña (por herencia, como la <strong>neuropatía óptica hereditaria de Leber</strong>, por un tumor que lo comprime, por inflamación o por falta de riego), suele afectar el centro de la visión.</p><ul><li>Muchas de estas enfermedades son minoritarias: pide que te expliquen tu caso y si hay tratamientos o ensayos.</li><li>La visión periférica que queda se puede aprovechar con entrenamiento.</li><li>Los lectores de pantalla y las apps de descripción de imágenes ayudan mucho.</li></ul>",
+    "en": "<p>The optic nerve carries the image from the eye to the brain. If it is damaged (by inheritance, as in <strong>Leber hereditary optic neuropathy</strong>, by a tumour pressing on it, by inflammation or by poor blood supply), central vision is usually affected.</p><ul><li>Many of these conditions are rare: ask for your case to be explained and whether treatments or trials exist.</li><li>The remaining side vision can be used better with training.</li><li>Screen readers and image-description apps help a lot.</li></ul>"
+   }
+  },
+  {
+   "id": "co",
+   "cat": "cond",
+   "more": "pat_conditions#cornia",
+   "title": {
+    "ca": "Còrnia, trasplantaments i després d'una cirurgia",
+    "es": "Córnea, trasplantes y después de una cirugía",
+    "en": "Cornea, transplants and after surgery"
+   },
+   "summary": {
+    "ca": "Visió borrosa o irregular d'origen corneal.",
+    "es": "Visión borrosa o irregular de origen corneal.",
+    "en": "Blurred or distorted vision caused by the cornea."
+   },
+   "body": {
+    "ca": "<p>Quan la còrnia (la «finestra» de davant de l'ull) està danyada o s'ha trasplantat, es pot veure borrós, amb halos o amb molta molèstia per la llum.</p><ul><li>Pregunta quin pronòstic té el teu cas i què pots esperar dels propers mesos.</li><li>Lents de contacte especials, filtres i ajudes de baixa visió poden millorar el dia a dia.</li><li>Segueix el tractament i els controls per evitar el rebuig del trasplantament.</li></ul>",
+    "es": "<p>Cuando la córnea (la «ventana» delantera del ojo) está dañada o se ha trasplantado, se puede ver borroso, con halos o con mucha molestia por la luz.</p><ul><li>Pregunta qué pronóstico tiene tu caso y qué puedes esperar de los próximos meses.</li><li>Lentes de contacto especiales, filtros y ayudas de baja visión pueden mejorar el día a día.</li><li>Sigue el tratamiento y los controles para evitar el rechazo del trasplante.</li></ul>",
+    "en": "<p>When the cornea (the clear “window” at the front of the eye) is damaged or has been transplanted, vision may be blurred, with halos or strong discomfort from light.</p><ul><li>Ask about the outlook in your case and what to expect over the coming months.</li><li>Special contact lenses, filters and low vision aids can improve daily life.</li><li>Keep to your treatment and check-ups to prevent transplant rejection.</li></ul>"
+   }
+  },
+  {
+   "id": "li",
+   "cat": "prac",
+   "more": "fam_home#llum",
+   "title": {
+    "ca": "Il·luminació i contrast a casa",
+    "es": "Iluminación y contraste en casa",
+    "en": "Lighting and contrast at home"
+   },
+   "summary": {
+    "ca": "Consells per veure-hi millor sense obres.",
+    "es": "Consejos para ver mejor sin obras.",
+    "en": "Tips to see better without building work."
+   },
+   "body": {
+    "ca": "<ul><li><strong>Llum uniforme</strong> a tota la casa i un llum focal per llegir i cuinar, apuntant a la tasca i no als ulls.</li><li><strong>Evita l'enlluernament:</strong> cortines fines, superfícies mates, gorra amb visera a fora.</li><li><strong>Contrast:</strong> plats foscos per a menjar clar i a l'inrevés; cinta de color a les vores dels esglaons i als interruptors.</li><li><strong>Ordre:</strong> cada cosa al seu lloc. Qui conviu amb tu ha d'avisar si mou alguna cosa.</li></ul>",
+    "es": "<ul><li><strong>Luz uniforme</strong> en toda la casa y una luz focal para leer y cocinar, apuntando a la tarea y no a los ojos.</li><li><strong>Evita el deslumbramiento:</strong> cortinas finas, superficies mates, gorra con visera fuera.</li><li><strong>Contraste:</strong> platos oscuros para comida clara y al revés; cinta de color en los bordes de los escalones y en los interruptores.</li><li><strong>Orden:</strong> cada cosa en su sitio. Quien convive contigo debe avisar si mueve algo.</li></ul>",
+    "en": "<ul><li><strong>Even lighting</strong> throughout the home and a task lamp for reading and cooking, pointed at the task, not at your eyes.</li><li><strong>Avoid glare:</strong> sheer curtains, matt surfaces, a peaked cap outdoors.</li><li><strong>Contrast:</strong> dark plates for light food and vice versa; coloured tape on step edges and light switches.</li><li><strong>Order:</strong> everything in its place. People you live with should tell you if they move something.</li></ul>"
+   }
+  },
+  {
+   "id": "ai",
+   "cat": "prac",
+   "more": "pat_aids#principis",
+   "title": {
+    "ca": "Ajudes òptiques i filtres",
+    "es": "Ayudas ópticas y filtros",
+    "en": "Optical aids and filters"
+   },
+   "summary": {
+    "ca": "Lupes, telescopis, ulleres especials i filtres selectius.",
+    "es": "Lupas, telescopios, gafas especiales y filtros selectivos.",
+    "en": "Magnifiers, telescopes, special glasses and selective filters."
+   },
+   "body": {
+    "ca": "<ul><li><strong>Lupes</strong> de mà, amb peu o amb llum: per llegir i per a feines de prop.</li><li><strong>Telescopis</strong> petits: per veure rètols o el número de l'autobús.</li><li><strong>Filtres selectius:</strong> lents de colors que redueixen l'enlluernament i milloren el contrast.</li><li><strong>Lupes electròniques:</strong> amplien i permeten canviar colors.</li></ul><p>La millor ajuda és la que s'adapta a la teva visió i al que vols fer. Prova-la sempre amb un professional abans de comprar-la.</p>",
+    "es": "<ul><li><strong>Lupas</strong> de mano, con pie o con luz: para leer y tareas de cerca.</li><li><strong>Telescopios</strong> pequeños: para ver rótulos o el número del autobús.</li><li><strong>Filtros selectivos:</strong> lentes de colores que reducen el deslumbramiento y mejoran el contraste.</li><li><strong>Lupas electrónicas:</strong> amplían y permiten cambiar colores.</li></ul><p>La mejor ayuda es la que se adapta a tu visión y a lo que quieres hacer. Pruébala siempre con un profesional antes de comprarla.</p>",
+    "en": "<ul><li><strong>Magnifiers</strong>, hand-held, stand or illuminated: for reading and close work.</li><li>Small <strong>telescopes</strong>: to see signs or bus numbers.</li><li><strong>Selective filters:</strong> tinted lenses that reduce glare and improve contrast.</li><li><strong>Electronic magnifiers:</strong> enlarge and let you change colours.</li></ul><p>The best aid is the one that suits your vision and what you want to do. Always try it with a professional before buying.</p>"
+   }
+  },
+  {
+   "id": "ap",
+   "cat": "prac",
+   "more": "pat_aids#apps",
+   "title": {
+    "ca": "Mòbil, apps i tiflotecnologia",
+    "es": "Móvil, apps y tiflotecnología",
+    "en": "Phones, apps and assistive technology"
+   },
+   "summary": {
+    "ca": "Eines d'accessibilitat i aplicacions útils.",
+    "es": "Herramientas de accesibilidad y aplicaciones útiles.",
+    "en": "Accessibility tools and useful apps."
+   },
+   "body": {
+    "ca": "<ul><li>El mòbil ja porta <strong>ampliació, lletra gran, mode fosc i lector de pantalla</strong> (VoiceOver a l'iPhone, TalkBack a Android).</li><li>Hi ha <strong>apps amb intel·ligència artificial</strong> que llegeixen textos, descriuen imatges o identifiquen bitllets amb la càmera.</li><li>Les persones amb poca o cap visió poden fer servir <strong>línies braille</strong> i síntesi de veu a l'ordinador.</li><li>Les associacions i l'ONCE ofereixen cursos per aprendre-ho.</li></ul>",
+    "es": "<ul><li>El móvil ya lleva <strong>ampliación, letra grande, modo oscuro y lector de pantalla</strong> (VoiceOver en iPhone, TalkBack en Android).</li><li>Hay <strong>apps con inteligencia artificial</strong> que leen textos, describen imágenes o identifican billetes con la cámara.</li><li>Las personas con poca o ninguna visión pueden usar <strong>líneas braille</strong> y síntesis de voz en el ordenador.</li><li>Las asociaciones y la ONCE ofrecen cursos para aprenderlo.</li></ul>",
+    "en": "<ul><li>Phones already include <strong>magnification, large text, dark mode and a screen reader</strong> (VoiceOver on iPhone, TalkBack on Android).</li><li>There are <strong>AI-powered apps</strong> that read text, describe images or identify banknotes with the camera.</li><li>People with little or no sight can use <strong>braille displays</strong> and speech output on a computer.</li><li>Associations and ONCE run courses to learn how.</li></ul>"
+   }
+  },
+  {
+   "id": "fa",
+   "cat": "prac",
+   "more": "fam_guide#principis",
+   "title": {
+    "ca": "Per a la família: com acompanyar",
+    "es": "Para la familia: cómo acompañar",
+    "en": "For families: how to help"
+   },
+   "summary": {
+    "ca": "Guia breu per a les persones de l'entorn.",
+    "es": "Guía breve para las personas del entorno.",
+    "en": "A short guide for the people around them."
+   },
+   "body": {
+    "ca": "<ul><li><strong>Pregunta abans d'ajudar</strong> i com prefereix que l'ajudis.</li><li><strong>Parla clar:</strong> «la tassa és a la teva dreta», millor que «és aquí».</li><li><strong>Per guiar,</strong> ofereix el braç; que t'agafi just per sobre del colze. Avisa abans d'esglaons i portes.</li><li><strong>No sobreprotegeixis:</strong> fer-ho tot per l'altra persona li treu autonomia.</li><li><strong>No moguis les coses</strong> de lloc sense avisar.</li></ul>",
+    "es": "<ul><li><strong>Pregunta antes de ayudar</strong> y cómo prefiere que le ayudes.</li><li><strong>Habla claro:</strong> «la taza está a tu derecha», mejor que «está aquí».</li><li><strong>Para guiar,</strong> ofrece el brazo; que te coja justo por encima del codo. Avisa antes de escalones y puertas.</li><li><strong>No sobreprotejas:</strong> hacerlo todo por la otra persona le quita autonomía.</li><li><strong>No cambies las cosas</strong> de sitio sin avisar.</li></ul>",
+    "en": "<ul><li><strong>Ask before helping</strong> and how they prefer to be helped.</li><li><strong>Be specific:</strong> “the cup is on your right” is better than “it's over there”.</li><li><strong>To guide,</strong> offer your arm; they hold it just above the elbow. Warn them before steps and doors.</li><li><strong>Do not overprotect:</strong> doing everything for them takes away independence.</li><li><strong>Do not move things</strong> without saying so.</li></ul>"
+   }
+  },
+  {
+   "id": "nw",
+   "cat": "con",
+   "more": "pat_support#directori",
+   "title": {
+    "ca": "Associacions, CUV i ONCE",
+    "es": "Asociaciones, CUV y ONCE",
+    "en": "Associations, CUV and ONCE"
+   },
+   "summary": {
+    "ca": "On adreçar-se a Catalunya.",
+    "es": "Dónde dirigirse en Cataluña.",
+    "en": "Where to go in Catalonia."
+   },
+   "body": {
+    "ca": "<ul><li><strong>Centre Universitari de la Visió (CUV-UPC)</strong>, Terrassa: valoració i rehabilitació de baixa visió. Web: cuv.upc.edu</li><li><strong>Associació Discapacitat Visual Catalunya: B1+B2+B3</strong>: suport entre iguals, activitats i defensa de drets. Web: b1b2b3.org</li><li><strong>Fundació Punt de Vista</strong>: accessibilitat i adaptació de continguts.</li><li><strong>ONCE</strong>: si compleixes els criteris visuals d'afiliació, serveis de rehabilitació, educació, ocupació i tiflotecnologia. Web: once.es</li></ul>",
+    "es": "<ul><li><strong>Centre Universitari de la Visió (CUV-UPC)</strong>, Terrassa: valoración y rehabilitación de baja visión. Web: cuv.upc.edu</li><li><strong>Associació Discapacitat Visual Catalunya: B1+B2+B3</strong>: apoyo entre iguales, actividades y defensa de derechos. Web: b1b2b3.org</li><li><strong>Fundació Punt de Vista</strong>: accesibilidad y adaptación de contenidos.</li><li><strong>ONCE</strong>: si cumples los criterios visuales de afiliación, servicios de rehabilitación, educación, empleo y tiflotecnología. Web: once.es</li></ul>",
+    "en": "<ul><li><strong>University Vision Centre (CUV-UPC)</strong>, Terrassa: low vision assessment and rehabilitation. Website: cuv.upc.edu</li><li><strong>Associació Discapacitat Visual Catalunya: B1+B2+B3</strong>: peer support, activities and rights advocacy. Website: b1b2b3.org</li><li><strong>Fundació Punt de Vista</strong>: accessibility and content adaptation.</li><li><strong>ONCE</strong> (Spanish National Organisation of the Blind): if you meet the visual criteria for membership, rehabilitation, education, employment and assistive technology services. Website: once.es</li></ul>"
+   }
+  },
+  {
+   "id": "ps",
+   "cat": "con",
+   "more": "pat_support#psicologia",
+   "title": {
+    "ca": "Suport psicològic i emocional",
+    "es": "Apoyo psicológico y emocional",
+    "en": "Psychological and emotional support"
+   },
+   "summary": {
+    "ca": "Per a tu i per a la teva família.",
+    "es": "Para ti y para tu familia.",
+    "en": "For you and your family."
+   },
+   "body": {
+    "ca": "<p>Perdre visió pot fer sentir tristesa, por, ràbia o cansament. És una reacció normal davant d'un canvi important.</p><ul><li><strong>No cal esperar</strong> a estar molt malament ni a fer servir bastó per demanar ajuda.</li><li>Hi ha <strong>psicòlegs i psicòlogues</strong> amb experiència en discapacitat visual; demana-ho al teu metge de família, a les associacions o a l'ONCE.</li><li>Parlar amb altres persones que viuen el mateix (grups d'ajuda mútua) ajuda molt.</li></ul>",
+    "es": "<p>Perder visión puede hacer sentir tristeza, miedo, rabia o cansancio. Es una reacción normal ante un cambio importante.</p><ul><li><strong>No hace falta esperar</strong> a estar muy mal ni a usar bastón para pedir ayuda.</li><li>Hay <strong>psicólogos y psicólogas</strong> con experiencia en discapacidad visual; pídelo a tu médico de familia, a las asociaciones o a la ONCE.</li><li>Hablar con otras personas que viven lo mismo (grupos de ayuda mutua) ayuda mucho.</li></ul>",
+    "en": "<p>Losing sight can bring sadness, fear, anger or exhaustion. This is a normal reaction to a major change.</p><ul><li><strong>There is no need to wait</strong> until you feel very low or use a cane before asking for help.</li><li>There are <strong>psychologists</strong> experienced in visual impairment; ask your GP, the associations or ONCE.</li><li>Talking to others in the same situation (peer support groups) helps a lot.</li></ul>"
+   }
+  },
+  {
+   "id": "rg",
+   "cat": "con",
+   "more": "pat_support#drets",
+   "title": {
+    "ca": "Drets i tràmits",
+    "es": "Derechos y trámites",
+    "en": "Rights and paperwork"
+   },
+   "summary": {
+    "ca": "Certificat de discapacitat, ajuts i treball social.",
+    "es": "Certificado de discapacidad, ayudas y trabajo social.",
+    "en": "Disability certificate, benefits and social work."
+   },
+   "body": {
+    "ca": "<ul><li><strong>Certificat de discapacitat:</strong> el pots sol·licitar a la Generalitat de Catalunya. Dona accés a ajuts i avantatges.</li><li><strong>Treball social:</strong> el teu CAP o els serveis socials del teu municipi t'orienten sobre ajuts, dependència i recursos.</li><li><strong>ONCE:</strong> afiliació si l'agudesa visual és igual o inferior a 0,1 o el camp visual és igual o inferior a 10 graus, en el millor ull i amb correcció.</li></ul>",
+    "es": "<ul><li><strong>Certificado de discapacidad:</strong> lo puedes solicitar a la Generalitat de Catalunya. Da acceso a ayudas y ventajas.</li><li><strong>Trabajo social:</strong> tu CAP o los servicios sociales de tu municipio te orientan sobre ayudas, dependencia y recursos.</li><li><strong>ONCE:</strong> afiliación si la agudeza visual es igual o inferior a 0,1 o el campo visual es igual o inferior a 10 grados, en el mejor ojo y con corrección.</li></ul>",
+    "en": "<ul><li><strong>Disability certificate:</strong> you can apply to the Government of Catalonia. It gives access to benefits and concessions.</li><li><strong>Social work:</strong> your primary care centre (CAP) or your local social services can advise on benefits, long-term care and resources.</li><li><strong>ONCE:</strong> membership if visual acuity is 0.1 or less, or the visual field is 10 degrees or less, in the better eye with correction.</li></ul>"
+   }
+  },
+  {
+   "id": "ur",
+   "cat": "con",
+   "more": "pat_diagnosis#urgencies",
+   "title": {
+    "ca": "Signes d'alerta: quan anar a urgències",
+    "es": "Señales de alerta: cuándo ir a urgencias",
+    "en": "Warning signs: when to go to A&amp;E"
+   },
+   "summary": {
+    "ca": "Quan no s'ha d'esperar.",
+    "es": "Cuándo no hay que esperar.",
+    "en": "When you must not wait."
+   },
+   "body": {
+    "ca": "<p>Ves de seguida a urgències o truca al <strong>112</strong> si notes:</p><ul><li>una pèrdua de visió sobtada, en un ull o en tots dos;</li><li>línies rectes que de cop es veuen tortes o ondulades;</li><li>llampecs, moltes «mosques volants» noves o una ombra com una cortina;</li><li>dolor fort a l'ull amb ull vermell, sobretot amb mal de cap o nàusees.</li></ul><p>Si et diuen que esperis mesos i tens algun d'aquests signes, insisteix.</p>",
+    "es": "<p>Ve enseguida a urgencias o llama al <strong>112</strong> si notas:</p><ul><li>una pérdida de visión repentina, en un ojo o en los dos;</li><li>líneas rectas que de golpe se ven torcidas u onduladas;</li><li>destellos, muchas «moscas volantes» nuevas o una sombra como una cortina;</li><li>dolor fuerte en el ojo con ojo rojo, sobre todo con dolor de cabeza o náuseas.</li></ul><p>Si te dicen que esperes meses y tienes alguna de estas señales, insiste.</p>",
+    "en": "<p>Go to A&amp;E straight away or call <strong>112</strong> if you notice:</p><ul><li>sudden loss of vision in one or both eyes;</li><li>straight lines that suddenly look bent or wavy;</li><li>flashes of light, many new floaters or a curtain-like shadow;</li><li>severe eye pain with a red eye, especially with headache or nausea.</li></ul><p>If you are told to wait months and you have any of these signs, insist.</p>"
+   }
+  }
+ ]
+}

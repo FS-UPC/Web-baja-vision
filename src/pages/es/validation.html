@@ -1,0 +1,98 @@
+<!-- meta {"title": "Participa en la validación", "description": "Formulario accesible para que las personas participantes y cualquier usuario valoren la web antes del lanzamiento: compatibilidad con tecnologías de apoyo, legibilidad y contenidos."} -->
+<header class="page-hero">
+  <div class="container">
+    <p class="page-hero__label">{{icon:check}} Validación participativa</p>
+    <h1>Participa en la validación</h1>
+    <p class="lead">Antes de abrir la web a todo el mundo, la prueban las personas que participaron en las sesiones de cocreación y cualquier persona que quiera. Tu opinión decide qué hay que cambiar.</p>
+  </div>
+</header>
+
+<div class="container">
+  <section aria-labelledby="que-provem" class="prose">
+    <h2 id="que-provem">Qué queremos saber</h2>
+    <ul>
+      <li>Si funciona bien con tu lector de pantalla (VoiceOver, TalkBack, NVDA, JAWS) o línea braille.</li>
+      <li>Si se lee bien con tu resto visual: contraste, tamaño del texto, iconos que no se deforman ni desaparecen.</li>
+      <li>Si encuentras lo que buscas en uno o dos clics.</li>
+      <li>Si los contenidos son claros, útiles y realistas.</li>
+    </ul>
+    <p>Todas las preguntas son opcionales excepto las marcadas como obligatorias. No te pedimos el nombre.</p>
+  </section>
+
+  <section aria-labelledby="formulari">
+    <h2 id="formulari">Formulario de valoración</h2>
+    <form class="feedback" data-feedback action="{{feedback_action}}" method="post" data-email="{{feedback_email}}" data-subject="Validación web Baixa visió en xarxa" novalidate>
+      <div class="callout callout--small" id="fb-errors" data-errors role="alert" tabindex="-1" hidden>
+        <p><strong>Falta completar alguna respuesta obligatoria.</strong> Revisa los campos marcados como obligatorios.</p>
+      </div>
+
+      <fieldset>
+        <legend>¿Quién eres? (obligatorio)</legend>
+        <label class="choice"><input type="radio" name="perfil" value="paciente" required> Persona con baja visión o ceguera</label>
+        <label class="choice"><input type="radio" name="perfil" value="familiar"> Familiar o persona interesada</label>
+        <label class="choice"><input type="radio" name="perfil" value="profesional"> Profesional</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-code">Código de participante, si te lo hemos dado (opcional)</label>
+        <input type="text" id="fb-code" name="codigo" autocomplete="off" size="10">
+      </p>
+
+      <fieldset>
+        <legend>¿Cómo usas la web? Marca todo lo que corresponda.</legend>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="lector"> Lector de pantalla (VoiceOver, TalkBack, NVDA, JAWS)</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="braille"> Línea braille</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="ampliacion"> Ampliación de pantalla o letra grande</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="contraste-so"> Alto contraste del sistema operativo</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="barra"> La barra de accesibilidad de esta web</label>
+        <label class="choice"><input type="checkbox" name="tecnologia" value="ninguna"> Ninguna ayuda en especial</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-device">Dispositivo y navegador (opcional)</label>
+        <input type="text" id="fb-device" name="dispositivo" autocomplete="off">
+        <span class="note">Por ejemplo: iPhone con Safari, ordenador con Windows y Chrome.</span>
+      </p>
+
+      <fieldset>
+        <legend>¿Has encontrado lo que buscabas? (obligatorio)</legend>
+        <label class="choice"><input type="radio" name="encontrado" value="si" required> Sí, rápidamente</label>
+        <label class="choice"><input type="radio" name="encontrado" value="en-parte"> En parte, o me ha costado</label>
+        <label class="choice"><input type="radio" name="encontrado" value="no"> No</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Cómo se lee con tu visión o tu lector?</legend>
+        <label class="choice"><input type="radio" name="lectura" value="5"> Muy bien</label>
+        <label class="choice"><input type="radio" name="lectura" value="4"> Bien</label>
+        <label class="choice"><input type="radio" name="lectura" value="3"> Regular</label>
+        <label class="choice"><input type="radio" name="lectura" value="2"> Mal</label>
+        <label class="choice"><input type="radio" name="lectura" value="1"> No la he podido usar</label>
+      </fieldset>
+
+      <p>
+        <label for="fb-page">¿Qué página o apartado has probado? (opcional)</label>
+        <input type="text" id="fb-page" name="pagina" autocomplete="off">
+      </p>
+
+      <p>
+        <label for="fb-comments">¿Qué te ha costado o qué mejorarías? (obligatorio)</label>
+        <textarea id="fb-comments" name="comentarios" rows="6" required></textarea>
+      </p>
+
+      <p><button type="submit" class="btn">{{icon:check}}<span>Enviar la valoración</span></button></p>
+    </form>
+
+    <div class="box feedback-out" data-feedback-out hidden>
+      <h2>¡Gracias! Un último paso</h2>
+      <p>Esta versión de pruebas todavía no tiene un servidor que reciba los formularios. Copia el resumen y envíalo al Centre Universitari de la Visió.</p>
+      <p><label for="fb-summary">Resumen de tu valoración</label>
+        <textarea id="fb-summary" rows="8" readonly></textarea></p>
+      <div class="btn-row">
+        <button type="button" class="btn" data-copy data-done="Copiado">{{icon:check}}<span>Copiar el resumen</span></button>
+        <a class="btn btn--ghost" data-mail hidden href="{{ui:cuv_contact_url}}">{{icon:chat}}<span>Enviarlo por correo</span></a>
+        <a class="btn btn--ghost" href="{{ui:cuv_contact_url}}">{{icon:external}}<span>Formulario de contacto del CUV</span></a>
+      </div>
+    </div>
+  </section>
+</div>
