@@ -1,0 +1,50 @@
+# Genera la web amb build.py i publica el contingut de dist/ a l'arrel de GitHub Pages.
+# Cal activar-ho un cop: Settings → Pages → Build and deployment → Source: «GitHub Actions».
+# Variables opcionals (Settings → Secrets and variables → Actions → Variables):
+#   BASE_URL           domini definitiu (per defecte, l'adreça de GitHub Pages del repositori)
+#   STAGING            1 per a la fase de proves: avís visible i noindex
+#   FEEDBACK_ENDPOINT, FEEDBACK_EMAIL   vegeu el README
+name: Publica a GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Genera el lloc
+        env:
+          BASE_URL: ${{ vars.BASE_URL || format('https://{0}.github.io/{1}', github.repository_owner, github.event.repository.name) }}
+          STAGING: ${{ vars.STAGING }}
+          FEEDBACK_ENDPOINT: ${{ vars.FEEDBACK_ENDPOINT }}
+          FEEDBACK_EMAIL: ${{ vars.FEEDBACK_EMAIL }}
+        run: python3 build.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

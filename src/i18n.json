@@ -269,6 +269,7 @@
   "ui": {
     "ca": {
       "skip": "Salta al contingut principal",
+      "site_name": "Baixa visió en xarxa",
       "tagline": "Coneixement accessible sobre baixa visió",
       "lang_nav": "Idioma",
       "main_nav": "Menú principal",
@@ -370,6 +371,7 @@
     },
     "es": {
       "skip": "Saltar al contenido principal",
+      "site_name": "Baja visión en red",
       "tagline": "Conocimiento accesible sobre baja visión",
       "lang_nav": "Idioma",
       "main_nav": "Menú principal",
@@ -471,6 +473,7 @@
     },
     "en": {
       "skip": "Skip to main content",
+      "site_name": "Low Vision Network",
       "tagline": "Accessible knowledge about low vision",
       "lang_nav": "Language",
       "main_nav": "Main menu",

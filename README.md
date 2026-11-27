@@ -11,6 +11,8 @@ La carpeta `dist/` conté la web ja generada. És HTML estàtic: no necessita se
 
 Per publicar-la, només cal copiar el contingut de `dist/` a qualsevol allotjament estàtic (servidor de la UPC, GitHub Pages, Netlify…).
 
+**GitHub Pages:** el flux `.github/workflows/pages.yml` executa `build.py` a cada *push* a `master` i publica `dist/` com a arrel del lloc (`https://<organització>.github.io/<repositori>/`). Cal activar-lo un cop a *Settings → Pages → Source: GitHub Actions*. L'arrel redirigeix a l'idioma desat o al del navegador, i si no n'hi ha cap, al castellà (`DEFAULT_LANG` a `build.py`).
+
 ## Com regenerar-la
 
 Cal Python 3.8 o superior, sense cap dependència addicional:

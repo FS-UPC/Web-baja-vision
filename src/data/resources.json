@@ -10,13 +10,13 @@
   "es": {
    "more": "Más información en la web",
    "qr_title": "Escanea este código con el móvil para abrir estos recursos con letra grande, contraste y lectura en voz alta",
-   "qr_alt": "Código QR que abre este paquete de recursos en la web Baixa visió en xarxa",
+   "qr_alt": "Código QR que abre este paquete de recursos en la web Baja visión en red",
    "qr_local": "El código QR solo funcionará cuando la web esté publicada en un dominio (ahora se está abriendo desde este ordenador)."
   },
   "en": {
    "more": "More information on the website",
    "qr_title": "Scan this code with your phone to open these resources with large text, high contrast and read-aloud",
-   "qr_alt": "QR code that opens this resource pack on the Baixa visió en xarxa website",
+   "qr_alt": "QR code that opens this resource pack on the Low Vision Network website",
    "qr_local": "The QR code will only work once the website is published on a domain (it is currently being opened from this computer)."
   }
  },

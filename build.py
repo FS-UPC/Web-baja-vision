@@ -44,6 +44,7 @@ import os
 import re
 import shutil
 import sys
+import urllib.parse
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -52,6 +53,10 @@ SRC = ROOT / "src"
 DIST = ROOT / "dist"
 BASE_URL = os.environ.get("BASE_URL", "").rstrip("/")
 STAGING = os.environ.get("STAGING", "") not in ("", "0", "false", "no")
+# Ruta del lloc dins del domini (p. ex. "/Web-baja-vision/" a GitHub Pages de projecte).
+# La fa servir la pàgina 404, que es pot servir des de qualsevol profunditat.
+SITE_PATH = (urllib.parse.urlsplit(BASE_URL).path.rstrip("/") + "/") if BASE_URL else "/"
+DEFAULT_LANG = "es"
 FEEDBACK_ENDPOINT = os.environ.get("FEEDBACK_ENDPOINT", "").strip()
 FEEDBACK_EMAIL = os.environ.get("FEEDBACK_EMAIL", "").strip()
 YEAR = str(datetime.date.today().year)
@@ -656,7 +661,7 @@ def build_page(layout, lang, key):
         alternates.append(f'<link rel="canonical" href="{page_url(lang, key)}">')
         for l in LANGS:
             alternates.append(f'<link rel="alternate" hreflang="{l}" href="{page_url(l, key)}">')
-        alternates.append(f'<link rel="alternate" hreflang="x-default" href="{page_url("ca", key)}">')
+        alternates.append(f'<link rel="alternate" hreflang="x-default" href="{page_url(DEFAULT_LANG, key)}">')
     else:
         for l in LANGS:
             if l != lang:
@@ -665,7 +670,7 @@ def build_page(layout, lang, key):
         alternates.append('<meta name="robots" content="noindex, nofollow">')
 
     title = meta["title"]
-    page_title = f"Baixa visió en xarxa · {ui['tagline']}" if key == "home" else f"{title} · Baixa visió en xarxa"
+    page_title = f"{ui['site_name']} · {ui['tagline']}" if key == "home" else f"{title} · {ui['site_name']}"
 
     scripts = []
     if "{{assistant}}" in body:
@@ -788,22 +793,23 @@ def build_index(lang):
 def build_root_pages():
     names = I18N["languages"]
     homes = {l: f"{l}/{filename('home', l)}" for l in LANGS}
+    site_names = {l: I18N["ui"][l]["site_name"] for l in LANGS}
     titles = {"ca": "Tria l'idioma", "es": "Elige el idioma", "en": "Choose your language"}
     items = "\n".join(
         f'      <li><a class="btn btn--ghost" href="{homes[l]}" hreflang="{l}" lang="{l}"><span>{names[l]["name"]}</span>{flag(l)}</a></li>' for l in LANGS)
     script = (
-        "(function(){var s=['ca','es','en'],l=null;try{l=localStorage.getItem('bvx-lang')}catch(e){}"
-        "if(s.indexOf(l)<0){var n=(navigator.languages||[navigator.language||'ca']);"
+        "(function(){var s=" + json.dumps(LANGS) + ",d=" + json.dumps(DEFAULT_LANG) + ",l=null;try{l=localStorage.getItem('bvx-lang')}catch(e){}"
+        "if(s.indexOf(l)<0){var n=(navigator.languages||[navigator.language||d]);"
         "for(var i=0;i<n.length&&!l;i++){var c=String(n[i]).slice(0,2).toLowerCase();if(s.indexOf(c)>=0)l=c;}"
-        "if(s.indexOf(l)<0)l='ca';}"
+        "if(s.indexOf(l)<0)l=d;}"
         "location.replace(l+'/index.html');})();"
     )
     index = f"""<!doctype html>
-<html lang="ca">
+<html lang="{DEFAULT_LANG}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Baixa visió en xarxa</title>
+<title>{site_names[DEFAULT_LANG]}</title>
 <meta name="description" content="Plataforma digital accessible sobre baixa visió · Plataforma digital accesible sobre baja visión · Accessible digital platform on low vision">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
@@ -814,7 +820,7 @@ def build_root_pages():
 <main class="lang-chooser">
   <div>
     {LOGO.replace('class="brand__logo"', 'class="brand__logo" style="width:6rem;height:6rem;color:var(--primary)"')}
-    <h1>Baixa visió en xarxa</h1>
+    <h1>{site_names[DEFAULT_LANG]}</h1>
     <p><span lang="ca">{titles['ca']}</span> · <span lang="es">{titles['es']}</span> · <span lang="en">{titles['en']}</span></p>
     <ul>
 {items}
@@ -827,13 +833,13 @@ def build_root_pages():
     (DIST / "index.html").write_text(index, encoding="utf-8")
 
     notfound = f"""<!doctype html>
-<html lang="ca">
+<html lang="{DEFAULT_LANG}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>404 · Baixa visió en xarxa</title>
-<link rel="stylesheet" href="/assets/fonts/fonts.css">
-<link rel="stylesheet" href="/assets/css/site.css">
+<title>404 · {site_names[DEFAULT_LANG]}</title>
+<link rel="stylesheet" href="{SITE_PATH}assets/fonts/fonts.css">
+<link rel="stylesheet" href="{SITE_PATH}assets/css/site.css">
 </head>
 <body>
 <main class="lang-chooser">
@@ -843,7 +849,7 @@ def build_root_pages():
     <p lang="es">No hemos encontrado esta página.</p>
     <p lang="en">We could not find this page.</p>
     <ul>
-{items.replace('href="', 'href="/')}
+{items.replace('href="', 'href="' + SITE_PATH)}
     </ul>
   </div>
 </main>
